@@ -1,0 +1,126 @@
+@import "compass";
+
+@import "compass/css3/box-sizing";
+@import "compass/css3/opacity";
+
+@import "vars";
+@import "generic/tools";
+@import "generic/mixins";
+
+.sliding-nav{
+    position: relative;
+    overflow: hidden;
+    
+    width: 240px;
+    
+    @include mq(980px, max) {
+        z-index: auto;
+    }
+}
+
+.site-nav{
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: auto;
+    width: 240px;
+    
+    @include mq(980px, max) {
+        top: 80px;
+        opacity: .001;
+        z-index: 0;        
+    }
+}
+
+.wrap{
+    position: relative;
+    padding: 0;
+    margin-left: 240px;
+    margin-right: 0;
+    width: auto;
+    background-color: #fff;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    height: inherit;
+    
+    @include mq(980px, max) {
+        margin-left: 0;
+        border-left: 0 none;
+        
+        @include backface-visibility(hidden);
+        @include transform(translateZ(0));
+    } 
+    
+}
+
+.site-logo{
+    position: fixed;
+    height: 88px;
+    width: 240px;
+    background-color: #fff;
+    
+    a{
+        background: url("/images/cru-logo.svg") no-repeat scroll 50% 50% transparent;
+        background-size: 94px auto;
+        height: 88px;
+        width: 140px;
+    }
+}
+
+.site-nav{
+    top: 88px;    
+    
+    & > li{
+       font-size: 18px;
+       
+       &:first-child a{
+           border-top: 1px solid #eee; 
+           border-right: none;          
+       }
+       
+       & > a{
+           color: #484848;
+           padding: 12px 15px 12px;
+           border-bottom: 1px solid #eee;
+           border-right: 1px solid #eee;
+           
+           &:hover{
+               color: #484848;
+               text-decoration: none;
+           }
+       } 
+    }
+}
+
+.site-search{
+    height: 89px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    
+    form{
+        float: right;
+    }
+}
+
+.toolbar{
+    border-bottom: 1px solid #eee;
+    padding: 9px ($base-line-height / 2);
+    margin-bottom: $base-line-height;
+}
+
+
+.page-content{
+    padding-top: 0;
+}
+
+.button-group{
+    & > .button{
+        margin-right: 10px;
+        font-size: 14px;
+        padding: 4px 10px;
+    }
+}
+
