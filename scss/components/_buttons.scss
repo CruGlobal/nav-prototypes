@@ -6,12 +6,13 @@
  * Base button styles
  */
 %button, 
-.button {    
+.button {   
     display: inline-block;	
 	font-weight: 500;
     line-height: 1.42857143;
     white-space: nowrap;
     vertical-align: middle;
+    text-align: center;
 
 	cursor: pointer;
     background-image: none;
@@ -22,7 +23,8 @@
     @include font-size($btn-font-size, false);	
     @include user-select(none);
     @include border-radius($base-border-radius);
-        
+    
+
 	/**
 	 * Button size modifiers
 	 *
