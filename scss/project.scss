@@ -83,7 +83,15 @@ html, .main{
        font-size: 18px;
        
        &:first-child a{
-           border-top: 1px solid #eee;           
+           border-top: 1px solid #eee;   
+           background-color: $color-gold; 
+           color: #fff;     
+           
+           &:hover{
+               background-color: darken($color-gold, 10%);
+               color: #fff;
+               text-decoration: none;
+           } 
        }
        
        & > a{
@@ -131,6 +139,13 @@ html, .main{
 
 .page-content{
     padding-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.post__body{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .button-group .button + .dropdown-toggle {

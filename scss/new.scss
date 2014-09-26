@@ -77,8 +77,15 @@
        font-size: 18px;
        
        &:first-child a{
-           border-top: 1px solid #eee; 
-           border-right: none;          
+           border-top: 1px solid #eee;   
+           background-color: $color-gold; 
+           color: #fff;     
+           
+           &:hover{
+               background-color: darken($color-gold, 10%);
+               color: #fff;
+               text-decoration: none;
+           } 
        }
        
        & > a{

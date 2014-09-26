@@ -456,34 +456,40 @@
     /* line 79, ../scss/new.scss */
     .site-nav > li:first-child a {
       border-top: 1px solid #eee;
-      border-right: none; }
-    /* line 84, ../scss/new.scss */
+      background-color: #f9b625;
+      color: #fff; }
+      /* line 84, ../scss/new.scss */
+      .site-nav > li:first-child a:hover {
+        background-color: #e59e06;
+        color: #fff;
+        text-decoration: none; }
+    /* line 91, ../scss/new.scss */
     .site-nav > li > a {
       color: #484848;
       padding: 12px 15px 12px;
       border-bottom: 1px solid #eee;
       border-right: 1px solid #eee; }
-      /* line 90, ../scss/new.scss */
+      /* line 97, ../scss/new.scss */
       .site-nav > li > a:hover {
         background-color: #666062;
         color: #fff;
         text-decoration: none; }
 
-/* line 99, ../scss/new.scss */
+/* line 106, ../scss/new.scss */
 .site-search {
   height: 89px;
   width: 100%;
   border-bottom: 1px solid #eee; }
-  /* line 104, ../scss/new.scss */
+  /* line 111, ../scss/new.scss */
   .site-search form {
     float: right; }
 
-/* line 109, ../scss/new.scss */
+/* line 116, ../scss/new.scss */
 .toolbar {
   border-bottom: 1px solid #eee;
   padding: 8px 14.5px;
   margin-bottom: 29px; }
-  /* line 115, ../scss/new.scss */
+  /* line 122, ../scss/new.scss */
   .toolbar .button-group:not(:last-child):after {
     content: ">";
     margin-left: 8px;
@@ -492,11 +498,11 @@
     padding-top: 8px;
     display: inline-block; }
 
-/* line 127, ../scss/new.scss */
+/* line 134, ../scss/new.scss */
 .page-content {
   padding-top: 0; }
 
-/* line 131, ../scss/new.scss */
+/* line 138, ../scss/new.scss */
 .button-group .button + .dropdown-toggle {
   margin-left: -1px;
   padding: 14px 8px 13px; }
