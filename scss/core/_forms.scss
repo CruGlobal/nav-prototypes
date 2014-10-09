@@ -4,19 +4,19 @@
 
 fieldset{
 	border: 0;
-	
+
 	@include spacing(padding);
-	
+
 	& + fieldset{
 		margin-bottom: 0;
 	}
-	
+
 }
 
 	.form__inputs:first-of-type{
 		margin-bottom: 0;
 	}
-	
+
 	.form__actions{
 		margin-bottom: 0;
 	}
@@ -40,7 +40,7 @@ legend{
    <input type=password class=text-input>
  *
  * For non-text based inputs such as <select>, <radio>, etc use .form-control
- * which allows you to add nice hover/focus effect to the text inputs if you 
+ * which allows you to add nice hover/focus effect to the text inputs if you
  * choose
  *
  */
@@ -53,26 +53,23 @@ legend{
 .text-input, .form-control{
 	display: block;
 	width: auto;
-	
-	/** 
+
+	/**
 	 * Make inputs at least the height of their button counterpart (base line-height + padding + border)
 	 */
     height: $base-line-height + ($base-spacing-unit / 4) - 2px ;
-	
-    padding-top: $base-line-height / 6;
-    padding-bottom: $base-line-height / 6;
-	
+
+    padding: ($base-line-height / 6) ($base-line-height / 3);
+
 	font-size: $base-font-size * 0.875;
 	line-height: $base-line-height;
-	
+
     background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
 	border: 2px solid $base-ui-color;
 	border-radius: $base-border-radius;
-	
-	
-	@include half-spacing(padding-left);
-	@include half-spacing(padding-right);
-	
+
+	@include transition(border-color, ease 0.15s);
+
 	&.disabled{
 	    cursor: not-allowed;
 	}
@@ -106,7 +103,7 @@ legend{
     .form-fields > li{
         @extend %margin-bottom;
     }
-    
+
     .form-fields > li:last-child{
         margin-bottom:0;
     }
@@ -156,7 +153,7 @@ label,
         font-weight: normal;
 		font-style: italic;
     }
-	
+
 	input + .additional{
 		@include rem-calc(margin-top, 6px);
 	}
@@ -212,7 +209,7 @@ label,
  *
  */
 .spoken-form{
-    
+
     input, select, label{
         display:inline-block;
         //font:inherit;
@@ -243,7 +240,7 @@ label,
 .text-input:focus + .form-help{
     visibility:visible;
 	max-height: inherit;
-	
+
 	@include rem(margin-top, 6px);
 }
 
