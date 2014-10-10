@@ -118,6 +118,7 @@ body{
         border-right:1px solid #eee;
     }
     
+    /**
     .has-submenu{
         &:hover{
             .site-nav__submenu{
@@ -126,6 +127,8 @@ body{
         }
     }
     
+    */
+    
     .site-nav__submenu{
         display: none;
         
@@ -133,7 +136,7 @@ body{
         top: 2px;
         right: auto;
         bottom: auto;
-        left: 254px;
+        left: 240px;
         z-index: 2;
         
         border-width: 0;
