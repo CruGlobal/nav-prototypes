@@ -104,12 +104,53 @@ body{
     }
 }
 
-.site-nav__link{
-    color: #484848;
-    padding: 12px 15px 12px;
-    border-bottom: 1px solid #eee;
-    border-right:1px solid #eee;
-}
+    .site-nav__link{
+        color: #484848;
+        padding: 12px 15px 12px;
+        border-bottom: 1px solid #eee;
+        border-right:1px solid #eee;
+    }
+
+    .level0__menu-link{
+        color: #484848;
+        padding: 12px 15px 12px;
+        border-bottom: 1px solid #eee;
+        border-right:1px solid #eee;
+    }
+    
+    .has-submenu{
+        &:hover{
+            .site-nav__submenu{
+                display: block;
+            }
+        }
+    }
+    
+    .site-nav__submenu{
+        display: none;
+        
+        position: absolute;
+        top: 2px;
+        right: auto;
+        bottom: auto;
+        left: 254px;
+        z-index: 2;
+        
+        border-width: 0;
+        min-height: 100%;
+        width: 570px;
+        background-color: #fff;
+        
+        border: 1px solid #eee;
+        margin: 0;
+
+        -ms-user-select: none;
+        zoom: 1;
+        
+        @include box-shadow(0 2px 4px 0 rgba(0,0,0,0.13));
+        @include border-radius(3px 3px 3px 3px);
+        
+    }
 
 .page-content-wrap{
     position: relative;
@@ -208,21 +249,26 @@ body{
     border: 1px solid rgba(0,0,0,0.15);
     border-radius: 4px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-    
-    //left: 240px;
-    //top: 10px;''
+
+    display: none;
+    left: 240px;
+    top: 10px;
     
     & > ul{
-        width: 240px;
+        width: 150px;
     }
     
 }
 
+.nav-cats{
+    width: 150px;
+}
 
 .nav-cat {
     background-image: url(data:image/gif;base64,R0lGODlhBwAKAMIEAObm5uvr6/Dw8P39/f///////////////yH5BAEKAAcALAAAAAAHAAoAAAMWSDPUGoE5AaIj1M4qMW+ZFDYD1ClnAgA7);
-    background-position: right 9px;
+    background-position: right 19px;
     background-repeat: no-repeat;
+    padding: 10px;
     
     &:hover{
         background-image: url(data:image/gif;base64,R0lGODlhBwAKAMIEAICAgJmZmbOzs/f39////////////////yH5BAEKAAcALAAAAAAHAAoAAAMWSDPUGoE5AaIj1M4qMW+ZFDYD1ClnAgA7);
@@ -243,6 +289,9 @@ body{
 
 
 .sub-cats{
-    left: 250px;
     position: absolute;
+    top: 0;
+    //left: 150px;
+    
 }
+

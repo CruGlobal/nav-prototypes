@@ -475,6 +475,41 @@ body {
   border-right: 1px solid #eee; }
 
 /* line 114, ../scss/new.scss */
+.level0__menu-link {
+  color: #484848;
+  padding: 12px 15px 12px;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee; }
+
+/* line 123, ../scss/new.scss */
+.has-submenu:hover .site-nav__submenu {
+  display: block; }
+
+/* line 129, ../scss/new.scss */
+.site-nav__submenu {
+  display: none;
+  position: absolute;
+  top: 2px;
+  right: auto;
+  bottom: auto;
+  left: 254px;
+  z-index: 2;
+  border-width: 0;
+  min-height: 100%;
+  width: 570px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  margin: 0;
+  -ms-user-select: none;
+  zoom: 1;
+  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13);
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 3px 3px 3px; }
+
+/* line 155, ../scss/new.scss */
 .page-content-wrap {
   position: relative;
   width: auto;
@@ -482,30 +517,30 @@ body {
   margin-right: 0;
   height: inherit; }
   @media screen and (max-width: 50.625em) {
-    /* line 114, ../scss/new.scss */
+    /* line 155, ../scss/new.scss */
     .page-content-wrap {
       margin-left: 0; } }
 
-/* line 127, ../scss/new.scss */
+/* line 168, ../scss/new.scss */
 .page-content {
   width: 100%;
   background-color: #fff;
   padding: 29px; }
   @media screen and (max-width: 61.875em) {
-    /* line 127, ../scss/new.scss */
+    /* line 168, ../scss/new.scss */
     .page-content {
       width: 650px; } }
   @media screen and (max-width: 56.25em) {
-    /* line 127, ../scss/new.scss */
+    /* line 168, ../scss/new.scss */
     .page-content {
       width: 560px; } }
   @media screen and (max-width: 50.625em) {
-    /* line 127, ../scss/new.scss */
+    /* line 168, ../scss/new.scss */
     .page-content {
       width: 640px;
       float: none; } }
 
-/* line 146, ../scss/new.scss */
+/* line 187, ../scss/new.scss */
 .dropdown {
   position: absolute;
   left: -9999px;
@@ -523,14 +558,14 @@ body {
   border-radius: 4px;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); }
 
-/* line 166, ../scss/new.scss */
+/* line 207, ../scss/new.scss */
 .has-dropdown {
   position: relative; }
-  /* line 168, ../scss/new.scss */
+  /* line 209, ../scss/new.scss */
   .has-dropdown:hover > .nav-flyout {
     left: 240px;
     top: 10px; }
-  /* line 173, ../scss/new.scss */
+  /* line 214, ../scss/new.scss */
   .has-dropdown:before {
     position: absolute;
     top: 6px;
@@ -541,7 +576,7 @@ body {
     border-bottom: 10px solid transparent;
     border-right: 10px solid #ccc;
     border-right-color: rgba(0, 0, 0, 0.15); }
-  /* line 184, ../scss/new.scss */
+  /* line 225, ../scss/new.scss */
   .has-dropdown:after {
     position: absolute;
     top: 7px;
@@ -552,7 +587,7 @@ body {
     border-bottom: 9px solid transparent;
     border-right: 9px solid #fff; }
 
-/* line 196, ../scss/new.scss */
+/* line 237, ../scss/new.scss */
 .nav-flyout {
   position: absolute;
   left: -9999px;
@@ -567,21 +602,29 @@ body {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); }
-  /* line 215, ../scss/new.scss */
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+  left: 240px;
+  top: 10px; }
+  /* line 257, ../scss/new.scss */
   .nav-flyout > ul {
-    width: 240px; }
+    width: 150px; }
 
-/* line 222, ../scss/new.scss */
+/* line 263, ../scss/new.scss */
+.nav-cats {
+  width: 150px; }
+
+/* line 267, ../scss/new.scss */
 .nav-cat {
   background-image: url(data:image/gif;base64,R0lGODlhBwAKAMIEAObm5uvr6/Dw8P39/f///////////////yH5BAEKAAcALAAAAAAHAAoAAAMWSDPUGoE5AaIj1M4qMW+ZFDYD1ClnAgA7);
-  background-position: right 9px;
-  background-repeat: no-repeat; }
-  /* line 227, ../scss/new.scss */
+  background-position: right 19px;
+  background-repeat: no-repeat;
+  padding: 10px; }
+  /* line 273, ../scss/new.scss */
   .nav-cat:hover {
     background-image: url(data:image/gif;base64,R0lGODlhBwAKAMIEAICAgJmZmbOzs/f39////////////////yH5BAEKAAcALAAAAAAHAAoAAAMWSDPUGoE5AaIj1M4qMW+ZFDYD1ClnAgA7); }
 
-/* line 232, ../scss/new.scss */
+/* line 278, ../scss/new.scss */
 .nav-sub-cats-wrap {
   display: none;
   position: absolute;
@@ -593,9 +636,9 @@ body {
   width: 485px;
   z-index: 3; }
 
-/* line 245, ../scss/new.scss */
+/* line 291, ../scss/new.scss */
 .sub-cats {
-  left: 250px;
-  position: absolute; }
+  position: absolute;
+  top: 0; }
 
 /*# sourceMappingURL=new.css.map */
