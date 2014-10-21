@@ -11,19 +11,6 @@ $nav-break-max: 980px;
     width: 240px;
 }
 
-.site-nav {
-    position: fixed;
-    top: 84px;
-    right: auto;
-    left: 0;
-    bottom: 0;
-    display: block;
-    
-    overflow-y: auto;
-    overflow-x: hidden;
-
-    width: 240px;
-}
 
 .nav > .nav__item,
 .nav__item > .nav__link{
