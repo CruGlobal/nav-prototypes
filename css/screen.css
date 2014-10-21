@@ -972,10 +972,17 @@ small {
  * over and over in your markup.
  */
 /* line 9, ../scss/generic/_clearfix.scss */
+<<<<<<< HEAD
 .cf, .nav, .grid, .media, .home-banner {
   *zoom: 1; }
   /* line 38, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
   .cf:after, .nav:after, .grid:after, .media:after, .home-banner:after {
+=======
+.cf, .nav {
+  *zoom: 1; }
+  /* line 38, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+  .cf:after, .nav:after {
+>>>>>>> refs/heads/master
     content: "";
     display: table;
     clear: both; }
@@ -994,7 +1001,10 @@ ul, ol, dl,
 address, table,
 fieldset, figure,
 pre,
+<<<<<<< HEAD
 .form-fields > li,
+=======
+>>>>>>> refs/heads/master
 .media,
 .island,
 .islet {
@@ -1008,7 +1018,10 @@ ul, ol, dl,
 address, table,
 fieldset, figure,
 pre,
+<<<<<<< HEAD
 .form-fields > li,
+=======
+>>>>>>> refs/heads/master
 .media,
 .island,
 .islet {
@@ -1163,6 +1176,7 @@ h6, .h6 {
   line-height: 1.90789; }
 
 /*------------------------------------*\
+<<<<<<< HEAD
     $PARAGRAPHS
 \*------------------------------------*/
 /* line 5, ../scss/core/_paragraphs.scss */
@@ -2671,6 +2685,46 @@ input + .additional {
 \*------------------------------------*/
 /**
  * Pull classes, to move grid items back to the left by certain amounts.
+=======
+    $LISTS
+\*------------------------------------*/
+/**
+ * Remove vertical spacing from nested lists.
+ */
+/* line 8, ../scss/core/_lists.scss */
+li > ul,
+li > ol,
+li > dl {
+  margin-bottom: 0; }
+
+/**
+ * Have a numbered `ul` without the semantics implied by using an `ol`.
+ */
+/*ul*/
+/* line 18, ../scss/core/_lists.scss */
+.numbered-list {
+  list-style-type: decimal; }
+
+/**
+ * Removes the indentation and the bullets from a list
+ */
+/* line 25, ../scss/core/_lists.scss */
+.bare-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* line 31, ../scss/core/_lists.scss */
+.block-list {
+  list-style: none;
+  margin: 0; }
+  /* line 35, ../scss/core/_lists.scss */
+  .block-list > li a {
+    display: block; }
+
+/**
+ * Objects and abstractions
+>>>>>>> refs/heads/master
  */
 /*------------------------------------*\
     $Buttons
@@ -3077,6 +3131,7 @@ input[disabled]:focus,
   display: none; }
 
 /*------------------------------------*\
+<<<<<<< HEAD
     $PAGINATION
 \*------------------------------------*/
 /**
@@ -3181,6 +3236,8 @@ input[disabled]:focus,
   color: #353535; }
 
 /*------------------------------------*\
+=======
+>>>>>>> refs/heads/master
     $BREADCRUMBS
 \*------------------------------------*/
 /* line 5, ../scss/components/_breadcrumbs.scss */
@@ -3192,6 +3249,7 @@ input[disabled]:focus,
 .breadcrumb > li:after {
   content: "\002F" "\00A0"; }
 
+<<<<<<< HEAD
 /*------------------------------------*\
     $MEDIA
 \*------------------------------------*/
@@ -3240,6 +3298,8 @@ input[disabled]:focus,
 .media__body {
   overflow: hidden; }
 
+=======
+>>>>>>> refs/heads/master
 /**
  * Style trumps; helper and brand classes
  */
@@ -3267,7 +3327,11 @@ input[disabled]:focus,
   margin-right: 29px; }
 
 /* line 40, ../scss/generic/_spacing.scss */
+<<<<<<< HEAD
 .mb, .callout {
+=======
+.mb {
+>>>>>>> refs/heads/master
   margin-bottom: 29px; }
 
 /* line 41, ../scss/generic/_spacing.scss */
@@ -3296,7 +3360,11 @@ input[disabled]:focus,
   margin-top: 7px; }
 
 /* line 55, ../scss/generic/_spacing.scss */
+<<<<<<< HEAD
 .mr--, input[type="checkbox"], input[type="radio"] {
+=======
+.mr-- {
+>>>>>>> refs/heads/master
   margin-right: 7px; }
 
 /* line 56, ../scss/generic/_spacing.scss */
@@ -3387,8 +3455,12 @@ input[disabled]:focus,
  * Remove margins.
  */
 /* line 115, ../scss/generic/_spacing.scss */
+<<<<<<< HEAD
 .m0, .media__body,
 .media__body > :last-child {
+=======
+.m0 {
+>>>>>>> refs/heads/master
   margin: 0; }
 
 /* line 116, ../scss/generic/_spacing.scss */
@@ -3400,7 +3472,11 @@ input[disabled]:focus,
   margin-right: 0; }
 
 /* line 118, ../scss/generic/_spacing.scss */
+<<<<<<< HEAD
 .mb0, .grid__item.media {
+=======
+.mb0 {
+>>>>>>> refs/heads/master
   margin-bottom: 0; }
 
 /* line 119, ../scss/generic/_spacing.scss */
@@ -3474,7 +3550,11 @@ input[disabled]:focus,
   padding-left: 7px; }
 
 /* line 155, ../scss/generic/_spacing.scss */
+<<<<<<< HEAD
 .pe--, input[type="checkbox"], input[type="radio"] {
+=======
+.pe-- {
+>>>>>>> refs/heads/master
   padding-top: 7px;
   padding-bottom: 7px; }
 
@@ -3612,7 +3692,11 @@ input[disabled]:focus,
 }
 */
 /* line 30, ../scss/elements/_fonts.scss */
+<<<<<<< HEAD
 [class^="icon-"], [class*=" icon-"] {
+=======
+[class^="icon-"]:before, [class*=" icon-"]:before {
+>>>>>>> refs/heads/master
   font-family: "cruicons";
   font-style: normal;
   font-weight: normal;
@@ -3809,6 +3893,7 @@ input[disabled]:focus,
 /**
  * Overall site and layout
  */
+<<<<<<< HEAD
 /*------------------------------------*\
     $PAGE
 \*------------------------------------*/
@@ -3951,6 +4036,8 @@ hr {
     margin-right: -1.52632rem;
     /* 9 */ } }
 
+=======
+>>>>>>> refs/heads/master
 /**
  * Site-wide elements and components
  */
@@ -4248,6 +4335,7 @@ q {
   border: 0;
   background: transparent; }
 
+<<<<<<< HEAD
 /*------------------------------------*\
     $FORMS
 \*------------------------------------*/
@@ -4685,6 +4773,8 @@ textarea.text-input {
 .primary-link-active {
   border-bottom: 3px solid #ffd014; }
 
+=======
+>>>>>>> refs/heads/master
 /**
  * Page components
  */
@@ -4837,7 +4927,11 @@ textarea.text-input {
  * Content Alignment
  */
 /* line 75, ../scss/generic/_helpers.scss */
+<<<<<<< HEAD
 hr, .divider, .layout--full, .center-block, .centered,
+=======
+.center-block, .centered,
+>>>>>>> refs/heads/master
 .center {
   margin-left: auto;
   margin-right: auto; }

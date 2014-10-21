@@ -3,13 +3,22 @@
 \*------------------------------------*/
 
 $link-height: 36px;
+<<<<<<< HEAD
 
 .site-header{
     overflow: hidden;
+=======
+.site-header{
+    z-index: 505;
+    overflow: hidden;
+
+    width: 100%;
+>>>>>>> refs/heads/master
     height: $header-height;
     background-color: $color-white;
 
     border-top: 3px solid $color-gold;
+<<<<<<< HEAD
 }
 
 .site-logo{  
@@ -46,3 +55,37 @@ $link-height: 36px;
     }
 }
 
+=======
+
+    // @include vendor(box-shadow, 0 0 6px rgba(0,0,0,0.2));
+
+}
+
+.site-logo{
+  @extend %mb0;
+
+  a{
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+
+    width: 74px;
+    height: 54px;
+    background: url("/images/cru-logo.png");
+    background-image: url("/images/cru-logo.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
+
+  h1{
+    @extend %mb0;
+  }
+}
+
+.page-content-wrap{
+    @include mq(981px){
+        margin-left: 240px;    
+    }
+}
+>>>>>>> refs/heads/master

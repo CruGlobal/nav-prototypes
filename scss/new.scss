@@ -5,7 +5,10 @@
 @import "vars";
 @import "generic/tools";
 @import "generic/mixins";
+<<<<<<< HEAD
 @import "elements/fonts";
+=======
+>>>>>>> refs/heads/master
 
 body{
     margin: 0;
@@ -105,6 +108,7 @@ body{
     }
 }
 
+<<<<<<< HEAD
 .level0{
     &:first-of-type{
         border-top: 1px solid #eee;
@@ -114,10 +118,21 @@ body{
 
     .level0__menu-link{
         position: relative;
+=======
+    .site-nav__link{
         color: #484848;
         padding: 12px 15px 12px;
         border-bottom: 1px solid #eee;
         border-right:1px solid #eee;
+    }
+
+    .level0__menu-link{
+>>>>>>> refs/heads/master
+        color: #484848;
+        padding: 12px 15px 12px;
+        border-bottom: 1px solid #eee;
+        border-right:1px solid #eee;
+<<<<<<< HEAD
         
         &:hover{
             color: #484848;
@@ -151,6 +166,20 @@ body{
                     color: #fff;
             }
         }
+=======
+    }
+    
+    /**
+    .has-submenu{
+        &:hover{
+            .site-nav__submenu{
+                display: block;
+            }
+        }
+    }
+    
+    */
+>>>>>>> refs/heads/master
     
     .site-nav__submenu{
         display: none;
@@ -164,7 +193,11 @@ body{
         
         border-width: 0;
         min-height: 100%;
+<<<<<<< HEAD
         width: 500px;
+=======
+        width: 570px;
+>>>>>>> refs/heads/master
         background-color: #fff;
         
         border: 1px solid #eee;
@@ -273,15 +306,22 @@ body{
     margin-left: 2px;    
     background: #fff;
     border: 1px solid rgba(0,0,0,0.15);
+<<<<<<< HEAD
+=======
+    border-radius: 4px;
+>>>>>>> refs/heads/master
     box-shadow: 0 3px 12px rgba(0,0,0,0.15);
 
     display: none;
     left: 240px;
     top: 10px;
     
+<<<<<<< HEAD
     @include border-radius(3px);
     @include box-shadow(0 2px 4px 0 rgba(0,0,0,0.13));
     
+=======
+>>>>>>> refs/heads/master
     & > ul{
         width: 150px;
     }
@@ -293,7 +333,18 @@ body{
 }
 
 .nav-cat {
+<<<<<<< HEAD
     padding: 0 10px;
+=======
+    background-image: url(data:image/gif;base64,R0lGODlhBwAKAMIEAObm5uvr6/Dw8P39/f///////////////yH5BAEKAAcALAAAAAAHAAoAAAMWSDPUGoE5AaIj1M4qMW+ZFDYD1ClnAgA7);
+    background-position: right 19px;
+    background-repeat: no-repeat;
+    padding: 10px;
+    
+    &:hover{
+        background-image: url(data:image/gif;base64,R0lGODlhBwAKAMIEAICAgJmZmbOzs/f39////////////////yH5BAEKAAcALAAAAAAHAAoAAAMWSDPUGoE5AaIj1M4qMW+ZFDYD1ClnAgA7);
+    }
+>>>>>>> refs/heads/master
 }
 
 .nav-sub-cats-wrap{
@@ -316,6 +367,7 @@ body{
     
 }
 
+<<<<<<< HEAD
 .nav-submenu__group{
     width: 220px;
     padding-top: 15px;
@@ -345,3 +397,5 @@ body{
     }
     
     
+=======
+>>>>>>> refs/heads/master
