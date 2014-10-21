@@ -1,2 +1,6 @@
-.DS_Store
-google-style/config.codekit
+.DS_Store*
+config.codekit
+_site
+_site/
+.sass-cache
+.sass-cache/
