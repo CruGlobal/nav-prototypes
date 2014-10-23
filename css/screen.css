@@ -1987,7 +1987,7 @@ input[disabled]:focus,
 }
 */
 /* line 30, ../scss/elements/_fonts.scss */
-[class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"], [class*=" icon-"] {
   font-family: "cruicons";
   font-style: normal;
   font-weight: normal;
@@ -2480,6 +2480,367 @@ q {
 .button--icon {
   border: 0;
   background: transparent; }
+
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+/* line 7, ../scss/elements/_header.scss */
+.site-header {
+  overflow: hidden;
+  height: 74px;
+  background-color: white;
+  border-top: 3px solid #ffd014; }
+
+/* line 15, ../scss/elements/_header.scss */
+.site-logo {
+  width: 10%;
+  height: 54px;
+  display: inline-block;
+  margin: 6px 15px; }
+  /* line 23, ../scss/elements/_header.scss */
+  .site-logo a {
+    display: block;
+    width: 74px;
+    height: 54px;
+    background: url("/images/cru-logo.svg") no-repeat center center;
+    background-size: contain; }
+  /* line 31, ../scss/elements/_header.scss */
+  .site-logo h1 {
+    margin-bottom: 0; }
+
+/**
+ * No solution for browsers that do not support svg format
+ */
+/* line 39, ../scss/elements/_header.scss */
+.no-svg .site-logo a {
+  background: url("/images/cru-logo.png"); }
+
+@media screen and (min-width: 61.3125em) {
+  /* line 43, ../scss/elements/_header.scss */
+  .page-content-wrap {
+    margin-left: 240px; } }
+
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+/* line 7, ../scss/elements/_navigation.scss */
+.navigation {
+  position: relative;
+  overflow: hidden;
+  width: 240px; }
+
+@media screen and (max-width: 61.25em) {
+  /* line 14, ../scss/elements/_navigation.scss */
+  .nav > .nav__item,
+  .nav__item > .nav__link {
+    display: block; } }
+
+@media screen and (max-width: 61.25em) {
+  /* line 21, ../scss/elements/_navigation.scss */
+  .nav_item {
+    border-bottom-color: #ffd014; } }
+
+/**
+ *  Nav that includes Sign Up, Log In, and Search
+ **/
+@media screen and (min-width: 61.3125em) {
+  /* line 31, ../scss/elements/_navigation.scss */
+  .right-nav {
+    width: 50%;
+    float: right;
+    vertical-align: middle;
+    position: relative;
+    z-index: 506;
+    margin-top: 8px;
+    text-align: right;
+    line-height: 1.26316; } }
+@media screen and (max-width: 61.25em) {
+  /* line 31, ../scss/elements/_navigation.scss */
+  .right-nav {
+    width: 100%; } }
+/* line 50, ../scss/elements/_navigation.scss */
+.right-nav .search__options {
+  display: none; }
+@media screen and (max-width: 61.25em) {
+  /* line 54, ../scss/elements/_navigation.scss */
+  .right-nav > .nav__item {
+    display: block; } }
+@media screen and (max-width: 61.25em) {
+  /* line 59, ../scss/elements/_navigation.scss */
+  .right-nav > .nav__item > a {
+    display: block; } }
+
+/* line 67, ../scss/elements/_navigation.scss */
+.nav__link {
+  max-height: 100%;
+  height: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0 18px;
+  letter-spacing: 0.9px;
+  vertical-align: middle;
+  color: white; }
+  /* line 81, ../scss/elements/_navigation.scss */
+  .nav__link:hover {
+    background-color: #444444;
+    color: #ffd014;
+    text-decoration: none; }
+  @media screen and (min-width: 61.3125em) {
+    /* line 67, ../scss/elements/_navigation.scss */
+    .nav__link {
+      color: #404040;
+      -webkit-transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out;
+      -ms-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out; } }
+
+/* line 99, ../scss/elements/_navigation.scss */
+.is-active {
+  background-color: #444444;
+  color: #ffd014;
+  text-decoration: none; }
+
+@media screen and (min-width: 61.3125em) {
+  /* line 104, ../scss/elements/_navigation.scss */
+  .primary-link i {
+    display: none; } }
+
+/* line 117, ../scss/elements/_navigation.scss */
+.nav .nav__item > .dropdown {
+  position: fixed;
+  left: 0;
+  background-color: #404040;
+  color: #ffffff;
+  width: 100% !important;
+  overflow: hidden;
+  max-height: 0;
+  height: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  opacity: 0;
+  /* Hover Off */
+  -webkit-transition: opacity 0s 0.2s ease-out;
+  -moz-transition: opacity 0s 0.2s ease-out;
+  -ms-transition: opacity 0s 0.2s ease-out;
+  -o-transition: opacity 0s 0.2s ease-out;
+  transition: opacity 0s 0.2s ease-out;
+  -webkit-transform: translate3d(0, 0, -160%);
+  -moz-transform: translate3d(0, 0, -160%);
+  -ms-transform: translate3d(0, 0, -160%);
+  -o-transform: translate3d(0, 0, -160%);
+  transform: translate3d(0, 0, -160%);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000; }
+  /* line 17, ../scss/generic/mixins/_clearfix.scss */
+  .nav .nav__item > .dropdown:before, .nav .nav__item > .dropdown:after {
+    content: " ";
+    display: table; }
+  /* line 22, ../scss/generic/mixins/_clearfix.scss */
+  .nav .nav__item > .dropdown:after {
+    clear: both; }
+
+/* line 139, ../scss/elements/_navigation.scss */
+.nav .nav__item > .off-canvas-desk-is-collasped,
+.nav .nav__item > .off-canvas-desk-is-open {
+  display: none; }
+
+/* line 148, ../scss/elements/_navigation.scss */
+.nav li:hover > .arrow-up,
+.nav li:focus > .arrow-up {
+  display: block; }
+
+/* line 153, ../scss/elements/_navigation.scss */
+.nav .nav__item:hover > .dropdown,
+.nav .nav__item:focus > .dropdown {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  max-height: 640px;
+  height: auto;
+  overflow: visible;
+  opacity: 1;
+  -webkit-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  -moz-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  -ms-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  -o-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  /* Hover On */
+  -webkit-transition: max-height 0.25s ease;
+  -webkit-transition: all 0.3s 0.2s ease;
+  -moz-transition: all 0.3s 0.2s ease;
+  -ms-transition: all 0.3s 0.2s ease;
+  -o-transition: all 0.3s 0.2s ease;
+  transition: all 0.3s 0.2s ease; }
+
+/* line 173, ../scss/elements/_navigation.scss */
+.nav li.dropdown__item:hover:after,
+.nav li.dropdown__item:focus:after {
+  opacity: 1;
+  -webkit-transition: all 0.2s 0.2s ease;
+  -moz-transition: all 0.2s 0.2s ease;
+  -ms-transition: all 0.2s 0.2s ease;
+  -o-transition: all 0.2s 0.2s ease;
+  transition: all 0.2s 0.2s ease; }
+
+@media screen and (min-width: 61.3125em) {
+  /* line 179, ../scss/elements/_navigation.scss */
+  .js-close-button {
+    display: none; } }
+
+@media screen and (max-width: 61.25em) {
+  /* line 185, ../scss/elements/_navigation.scss */
+  .js-nav #inner-wrap {
+    right: 70%; } }
+
+@media screen and (max-width: 61.25em) {
+  /* line 191, ../scss/elements/_navigation.scss */
+  .js-nav .site-header {
+    position: absolute; } }
+
+@media screen and (max-width: 61.25em) {
+  /* line 197, ../scss/elements/_navigation.scss */
+  .js-nav body {
+    padding-top: 0; } }
+
+/* line 203, ../scss/elements/_navigation.scss */
+.js-nav #main {
+  padding-top: 67px; }
+
+/* line 207, ../scss/elements/_navigation.scss */
+.is-hidden, .is-visible {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+/* line 211, ../scss/elements/_navigation.scss */
+.is-hidden {
+  -webkit-transform: translateY(-6em);
+  -ms-transform: translateY(-6em);
+  transform: translateY(-6em); }
+  /* line 216, ../scss/elements/_navigation.scss */
+  .is-hidden .nav li > .dropdown {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -ms-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
+    visibility: hidden; }
+
+/* line 225, ../scss/elements/_navigation.scss */
+.is-visible {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0); }
+  /* line 230, ../scss/elements/_navigation.scss */
+  .is-visible .nav li > .dropdown {
+    -webkit-transform: none;
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+/* line 238, ../scss/elements/_navigation.scss */
+.topbar-toggle {
+  text-transform: uppercase;
+  position: absolute;
+  top: 27px;
+  right: 16px;
+  color: #3a3a3a;
+  font-size: 19.2px;
+  font-size: 1.01053rem; }
+  /* line 249, ../scss/elements/_navigation.scss */
+  .topbar-toggle:after {
+    vertical-align: text-bottom;
+    font-weight: bold;
+    line-height: 0.9em;
+    font-size: 28px;
+    font-size: 1.47368rem; }
+  /* line 257, ../scss/elements/_navigation.scss */
+  .topbar-toggle:hover {
+    color: #ffd014;
+    text-decoration: none; }
+  @media screen and (min-width: 61.3125em) {
+    /* line 238, ../scss/elements/_navigation.scss */
+    .topbar-toggle {
+      display: none; } }
+
+/*
+.topbar-open{
+  float: right;
+  color: #3a3a3a;
+
+  @include mq(981px){
+    display: none;
+  }
+}
+*/
+/* line 276, ../scss/elements/_navigation.scss */
+.topbar-close {
+  position: absolute;
+  z-index: 1;
+  color: #ffffff;
+  top: 27px;
+  top: 1.42105rem;
+  right: 16px;
+  right: 0.84211rem; }
+  /* line 285, ../scss/elements/_navigation.scss */
+  .topbar-close:hover, .topbar-close:focus {
+    text-decoration: none; }
+  @media screen and (min-width: 61.3125em) {
+    /* line 276, ../scss/elements/_navigation.scss */
+    .topbar-close {
+      display: none; } }
+
+/* line 295, ../scss/elements/_navigation.scss */
+.search {
+  height: auto;
+  line-height: 1.5; }
+
+/* line 300, ../scss/elements/_navigation.scss */
+#user-actions {
+  position: absolute;
+  right: 220px;
+  margin: 0; }
+  /* line 307, ../scss/elements/_navigation.scss */
+  #user-actions > li {
+    display: block;
+    float: left; }
+    /* line 311, ../scss/elements/_navigation.scss */
+    #user-actions > li > a {
+      display: block;
+      color: #8a8a8a;
+      padding: 0 10px;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.9px; }
+
+/* line 324, ../scss/elements/_navigation.scss */
+#toolbar form {
+  border-radius: 2px; }
+
+/* line 329, ../scss/elements/_navigation.scss */
+#search_options {
+  z-index: 501;
+  top: 31px;
+  background-color: #ffffff;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px; }
+
+/*-- added for you are here functionality, adds underline to main nav item --*/
+/* line 340, ../scss/elements/_navigation.scss */
+.primary-link-active {
+  border-bottom: 3px solid #ffd014; }
 
 /**
  * Page components

@@ -16,8 +16,8 @@
         };
         var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
         })();
-    </script>
-
+    </script>     
+    
     <link rel="stylesheet" type="text/css" href="css/screen.css"/>
     <link rel="stylesheet" type="text/css" href="css/new.css"/>
 
@@ -33,7 +33,8 @@
             <a class="toggle-nav">Toggle Nav</a>
             
             <!-- TITLE BAR -->
-            <div class="title-bar">
+        <div class="site-header">
+
                 
                 <!-- TITLE GROUP -->
                 <hgroup class="title-group  site-logo  js-nav-toggle">
@@ -76,10 +77,14 @@
                                                        
                             <a href="#" class="level0__menu-link  menu-link">
                                 Opportunities
-                                <i class="chevron-right"></i>
+                                <i class="icon-right-arrow"></i>
                             </a>
                             
-                            <div class="site-nav__submenu  submenu-0" style="width:460px;">
+                            <div class="site-nav__submenu  submenu-0" style="height: 492px;">
+                                <img src="http://g-ecx.images-amazon.com/images/G/01/digital/music/merch/weeklybuild/101414/U2_101414_Whitebelt_Flyout._V323882074_.png" usemap="#nav_imgmap_digital-music" class="nav-browse-promo" style="bottom: -38px; right: -21px; width: 520px; height: 492px;">
+                                <map name="nav_imgmap_digital-music" id="nav_imgmap_digital-music">
+                                    <area shape="poly" coords="238,2,226,233,154,258,115,281,2,281,1,453,497,455,497,1" href="/dp/B00NX53H2W/ref=nav_sa_dm_u2_dp_wb" alt="U2">
+                                </map>
                                 <ul class="nav-submenu__group  block-list  m0  position--absolute">                           
                                     <li>
                                         <a href="#" class="nav-cat">Careers</a>           
@@ -98,15 +103,14 @@
                                     </li>
                                 </ul>
                             </div>
-                            
-                            
+
                         </li>
                         
                         
                         <li class="level0  has-submenu  know-god" data-submenu-class="submenu-1">
                             <a href="#" class="level0__menu-link  menu-link">
                                 How to Know God
-                                <i class="chevron-right"></i>
+                                <i class="icon-right-arrow"></i>
                             </a>                            
                             <div class="site-nav__submenu  submenu-1" style="width:460px;">
                                 <ul class="nav-submenu__group  block-list  m0  position--absolute">                           
@@ -133,7 +137,7 @@
                                                        
                             <a href="#" class="level0__menu-link  menu-link">
                                 Train & Grow
-                                <i class="chevron-right"></i>
+                                <i class="icon-right-arrow"></i>
                             </a>
                             
                             <div class="site-nav__submenu  submenu-2" style="width:460px;">
@@ -165,7 +169,7 @@
                                                        
                             <a href="#" class="level0__menu-link  menu-link">
                                 Communities
-                                <i class="chevron-right"></i>
+                                <i class="icon-right-arrow"></i>
                             </a>
                             
                             <div class="site-nav__submenu  submenu-3"  style="width:460px;" id="train-grow">
@@ -206,7 +210,7 @@
                         <li class="level0  has-submenu  about" data-submenu-class="submenu-4">
                            <a href="#" class="level0__menu-link  menu-link">
                                About
-                               <i class="chevron-right"></i>
+                               <i class="icon-right-arrow"></i>
                            </a>
                            <div class="site-nav__submenu  submenu-4" style="width:460px;">
                                <ul class="nav-submenu__group  block-list  m0  position--absolute">                           
@@ -235,7 +239,7 @@
                         <li class="level0  has-submenu  store" data-submenu-class="submenu-5">
                             <a href="#" class="level0__menu-link  menu-link">
                                 Store
-                                <i class="chevron-right"></i>
+                                <i class="icon-right-arrow"></i>
                             </a>                            
                             <div class="site-nav__submenu  submenu-5" style="width:460px;">
                                 <ul class="nav-submenu__group  block-list  m0  position--absolute">                           
@@ -261,9 +265,8 @@
                 <!-- PAGE CONTENT --> 
                 <div class="page-content-wrap">
                     <ul class="toolbar nav">
-                        <li class="button-group  js-dropdown" ng-controller="AppCtrl">
-                            <a href="#" class="button  button--subtle  button--small">Mission Trips</a>
-                            <a href="#" class="button  button--subtle  button--small  dropdown-toggle  js-dropdown-toggle" ng-click="toggleCustom()">
+                        <li class="toolbar__item  js-dropdown" ng-controller="AppCtrl">
+                            <a href="#" class="">Mission Trips
                                 <span class="caret"></span>
                                 <span class="accessibility">Toggle Dropdown</span>
                             </a>
@@ -298,7 +301,7 @@
                             <a href="#" class="button  button--subtle  button--small">and More Stuff</a>
                         </div>
                             -->
-                        <li>
+                        <li class="toolbar__item">
                             <a>/ Summer Missions</a>
                         </li>
                     </ul>
@@ -439,7 +442,7 @@
         $menu.menuAim({
             activate: activateSubmenu,
             deactivate: deactivateSubmenu,
-             exitMenu: function(){return true;}
+            exitMenu: function(){return true;}
         });
         
         function activateSubmenu(row) {
@@ -457,7 +460,7 @@
            });
 
            // Keep the currently activated row's highlighted look
-           $row.find("a").addClass("maintain-hover");
+           $row.find(".level0__menu-link").addClass("maintain-hover");
        }
 
        function deactivateSubmenu(row) {
@@ -467,7 +470,7 @@
 
            // Hide the submenu and remove the row's highlighted look
            $submenu.css("display", "none");
-           $row.find("a").removeClass("maintain-hover");
+           $row.find(".level0__menu-link").removeClass("maintain-hover");
            
            console.log("deactivate");    
        }

@@ -3,44 +3,46 @@
 \*------------------------------------*/
 
 $link-height: 36px;
-.site-header{
-    z-index: 505;
-    overflow: hidden;
 
-    width: 100%;
+.site-header{
+    overflow: hidden;
     height: $header-height;
     background-color: $color-white;
 
     border-top: 3px solid $color-gold;
-
-    // @include vendor(box-shadow, 0 0 6px rgba(0,0,0,0.2));
-
 }
 
-.site-logo{
-  @extend %mb0;
-
-  a{
-    display: inline-block;
-    overflow: hidden;
-    vertical-align: middle;
-
-    width: 74px;
+.site-logo{  
+    width: 10%;
     height: 54px;
-    background: url("/images/cru-logo.png");
-    background-image: url("/images/cru-logo.svg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-  }
+    
+    display: inline-block;
+    
+    margin: 6px 15px;
 
-  h1{
-    @extend %mb0;
-  }
+    a{
+        display: block;    
+        width: 74px;
+        height: 54px;
+        background: url("/images/cru-logo.svg") no-repeat center center;
+        background-size: contain;
+    }
+
+    h1{
+        margin-bottom: 0;
+    }
+}
+
+/**
+ * No solution for browsers that do not support svg format
+ */
+.no-svg .site-logo a{
+    background: url("/images/cru-logo.png");
 }
 
 .page-content-wrap{
-    @include mq(981px){
+    @include mq(981px) {
         margin-left: 240px;    
     }
 }
+
