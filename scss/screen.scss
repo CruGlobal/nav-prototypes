@@ -143,35 +143,16 @@
  */
 @import "core/base";
 @import "core/headings";
-<<<<<<< HEAD
-@import "core/paragraphs";
-@import "core/quotes";
-@import "core/images";
-@import "core/lists";
-@import "core/tables";
-@import "core/forms";
-=======
 //@import "core/paragraphs";
 //@import "core/quotes";
 //@import "core/images";
 @import "core/lists";
 //@import "core/tables";
 //@import "core/forms";
->>>>>>> refs/heads/master
 
 /**
  * Objects and abstractions
  */
-<<<<<<< HEAD
-@import "core/grids";
-@import "generic/mixins/widths";
-@import "components/buttons";
-@import "components/islands";
-@import "components/navs";
-@import "components/pagination";
-@import "components/breadcrumbs";
-@import "components/media";
-=======
 //@import "core/grids";
 //@import "generic/mixins/widths";
 @import "components/buttons";
@@ -180,7 +161,6 @@
 //@import "components/pagination";
 @import "components/breadcrumbs";
 //@import "components/media";
->>>>>>> refs/heads/master
 
 /**
  * Style trumps; helper and brand classes
@@ -201,13 +181,8 @@
 /**
  * Overall site and layout
  */
-<<<<<<< HEAD
-@import "elements/page";
-@import "elements/layouts";
-=======
 //@import "elements/page";
 //@import "elements/layouts";
->>>>>>> refs/heads/master
 
 
 /**
@@ -215,29 +190,17 @@
  */
 @import "elements/text";
 @import "elements/buttons";
-<<<<<<< HEAD
-@import "elements/forms";
-=======
 //@import "elements/forms";
->>>>>>> refs/heads/master
 //@import "elements/tables";
 //@import "elements/video";
 //@import "elements/images";
  
-<<<<<<< HEAD
 @import "elements/header";
-=======
-//@import "elements/header";
->>>>>>> refs/heads/master
 //@import "elements/footer";
 //@import "elements/social";  
 
 //@import "elements/site-search";
-<<<<<<< HEAD
 @import "elements/navigation";
-=======
-//@import "elements/navigation";
->>>>>>> refs/heads/master
 //@import "elements/dropdowns";
 //@import "elements/off-canvas";
 //@import "elements/ui-autocomplete";
