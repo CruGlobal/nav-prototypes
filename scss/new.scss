@@ -1,5 +1,7 @@
+/**
+ * $LOCAL-IMPORTS
+ */
 @import "compass";
-
 @import "compass/css3";
 
 @import "vars";
@@ -9,25 +11,35 @@
 @import "core/headings";
 @import "generic/helpers";
 
+
+
+
+
+/**
+ * $LOCAL-VARIABLES
+ */
 $half-spacing-unit: $base-spacing-unit / 2;
 $nav-link-height: 45px;
 
+
+
+
+
+/**
+ * $LOCAL-SILENT-CLASSES
+ */
 %nav-link-height{
     line-height: $nav-link-height;
     height: $nav-link-height;
 }
 
 
-body{
-    margin: 0;
-}
 
-.toggle-nav{
-    @include mq(810px) {
-        display: none;
-    }
-}
 
+
+/**
+ * $GENERAL-WRAPS
+ */
 .off-canvas-wrap{
     -webkit-backface-visibility: hidden;
     position: relative;
@@ -44,6 +56,23 @@ body{
     -ms-transition: -ms-transform 500ms ease;
     -o-transition: -o-transform 500ms ease;
     transition: transform 500ms ease;
+}
+
+.site-main{
+    background-color: #f7f7f7;
+}
+
+
+
+
+
+/**
+ * $OFF-CANVAS
+ */
+.toggle-nav{
+    @include mq(810px) {
+        display: none;
+    }
 }
 
 .off-canvas{
@@ -85,44 +114,13 @@ body{
     transform: translate3d(13.88889rem, 0, 0);
 }
 
-.page-content-wrap{
-    position: relative;
-    width: auto;
-    margin-left: 240px;
-    margin-right: 0;
-    height: inherit;
-    
-    
-    @include mq(810px, max) {
-         margin-left: 0;
-    }
-}
 
-.page-content{
-    width: 95%;
-    margin: 0 auto;
-    
-    background-color: #fff;
-    padding: $base-spacing-unit;
-     
-    @include mq(990px, max) {
-        width: 650px;
-    }
-    
-    @include mq(900px, max) {
-        width: 560px;
-    }
-    
-    @include mq(810px, max) {
-        width: 640px;
-        float: none;
-    }
-}
 
-.site-main{
-    background-color: #f7f7f7;
-}
 
+
+/**
+ * $SITE-NAVIGATION
+ */
 .site-nav{
     position: absolute;
     width: 240px;
@@ -207,122 +205,42 @@ body{
             }
         }
     
-    /**
-    .has-submenu{
-        &:hover{
-            .site-nav__submenu{
-                display: block;
-            }
-        }
-    }
-    
-    */    
-    .site-nav__submenu{
-        display: none;
-        
-        position: absolute;
-        top: 0;
-        right: auto;
-        bottom: auto;
-        left: 240px;
-        z-index: 2;
-        
-        border-width: 0;
-        min-height: 100%;
-        width: 570px;
-        background-color: #fff;
-        
-        border: 1px solid #eee;
-        margin: 0;
-
-        -ms-user-select: none;
-        zoom: 1;
-        
-        @include box-shadow(0 1px 2px 0 rgba(0,0,0,0.11));
-        @include border-radius(1px);
-        
-    }
-
-.dropdown{
-    position: absolute;
-    left: -9999px;
-    z-index: 2;
-    list-style: none;
-    margin-left: 0;
-    width: 100%;
-    max-height: none;
-    height: auto;
-    margin-top: 0;
-    margin-left: 2px;
-    padding: $base-spacing-unit / 2;
-    
-    background: #fff;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-}
 
 
-.has-dropdown{
-    position: relative;
-    &:hover > .nav-flyout{
-        left: 240px;
-        top: 10px;
-    }
-    
-    &:before{
-        position: absolute;
-        top: 6px;
-        left: 239px;
-        display: inline-block;
-        content: "";
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        border-right: 10px solid #ccc;
-        border-right-color: rgba(0,0,0,0.15);
-    }
-    &:after{
-        position: absolute;
-        top: 7px;
-        left: 240px;
-        display: inline-block;
-        content: "";
-        border-top: 9px solid transparent;
-        border-bottom: 9px solid transparent;
-        border-right: 9px solid #fff;
-    }
-}
 
-.nav-flyout{
-    position: absolute;
-    left: -9999px;
-    z-index: 2;
-    list-style: none;
-    margin-left: 0;
-    width: 100%;
-    max-height: none;
-    height: auto;
-    margin-top: 0;
-    margin-left: 2px;    
-    background: #fff;
-    border: 1px solid rgba(0,0,0,0.15);
+
+/**
+ * $NAV-FLYOUT
+ */
+.site-nav__submenu{
     display: none;
+    
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: auto;
     left: 240px;
-    top: 10px;
+    z-index: 2;
     
-    @include border-radius(3px);
-    @include box-shadow(0 2px 4px 0 rgba(0,0,0,0.13));
+    border-width: 0;
+    min-height: 100%;
+    width: 570px;
+    background-color: #fff;
     
+    border: 1px solid #eee;
+    margin: 0;
 
-    & > ul{
+    -ms-user-select: none;
+    zoom: 1;
+    
+    @include box-shadow(0 1px 2px 0 rgba(0,0,0,0.11));
+    @include border-radius(1px);
+    
+}
+
+    .nav-cats{
         width: 150px;
     }
-    
-}
-
-.nav-cats{
-    width: 150px;
-}
 
 
 .nav-sub-cats-wrap{
@@ -337,27 +255,22 @@ body{
     z-index: 3;
 }
 
-
-.sub-cats{
-    position: absolute;
-    top: 0;
-    //left: 150px;
+    .sub-cats{
+        position: absolute;
+        top: 0;
+        //left: 150px;
     
+    }
+
+.level1 li{
+    padding-bottom: 7px;
 }
 
-    .level1 li{
-        padding-bottom: 7px;
-    }
-
-    .nav-cat, .nav-cat--sub {
-        padding: 0 10px;
-        color: $color-text;
-        
-    }
-
-    .nav-cat{
-        
-    }
+.nav-cat, .nav-cat--sub {
+    padding: 0 10px;
+    color: $color-text;
+    
+}
 
     .nav-cat--sub{
         font-size: 85%;
@@ -391,10 +304,53 @@ body{
     max-width: auto;
 }
 
+
+
+
+/** 
+ * $PRIMARY-CONTENT-WRAPS
+ */
+.page-content-wrap{
+    position: relative;
+    width: auto;
+    margin-left: 240px;
+    margin-right: 0;
+    height: inherit;
+    
+    
+    @include mq(810px, max) {
+         margin-left: 0;
+    }
+}
+
+    .page-content{
+        width: 95%;
+        margin: 0 auto;
+    
+        background-color: #fff;
+        padding: $base-spacing-unit;
+     
+        @include mq(990px, max) {
+            width: 650px;
+        }
+    
+        @include mq(900px, max) {
+            width: 560px;
+        }
+    
+        @include mq(810px, max) {
+            width: 640px;
+            float: none;
+        }
+    }
+
+
+
+
+
 /**
  * $TOOLBAR
  */
-
 .toolbar{
     margin-left: 0;
     
@@ -416,12 +372,70 @@ body{
         margin-right: $half-spacing-unit;
     }
     
+
+
+
+
 /**
- * $PAGE-TITLE
+ * $DROPDOWNS
+ */
+.has-dropdown{
+    position: relative;
+    &:hover > .nav-flyout{
+        left: 240px;
+        top: 10px;
+    }
+
+    &:before{
+        position: absolute;
+        top: 6px;
+        left: 239px;
+        display: inline-block;
+        content: "";
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #ccc;
+        border-right-color: rgba(0,0,0,0.15);
+    }
+    &:after{
+        position: absolute;
+        top: 7px;
+        left: 240px;
+        display: inline-block;
+        content: "";
+        border-top: 9px solid transparent;
+        border-bottom: 9px solid transparent;
+        border-right: 9px solid #fff;
+    }
+}
+
+    .dropdown{
+        position: absolute;
+        left: -9999px;
+        z-index: 2;
+        list-style: none;
+        margin-left: 0;
+        width: 100%;
+        max-height: none;
+        height: auto;
+        margin-top: 0;
+        margin-left: 2px;
+        padding: $base-spacing-unit / 2;
+    
+        background: #fff;
+        border: 1px solid rgba(0,0,0,0.15);
+        border-radius: 4px;
+        box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    }
+ 
+ 
+ 
+    
+    
+/**
+ * $PAGE-TITLE AND WRAP
  */   
 .page-title-bar{
-    background-color: rgba(98, 96, 98, 0.15);
-    border-radius: 1px;
     margin-bottom: $half-spacing-unit;
     padding-top: $half-spacing-unit;
 }
@@ -430,13 +444,17 @@ body{
     .page__title{
         @extend %h2;
         margin-bottom: 12px;
-        padding: 0px 10px;
-        //padding-bottom: 15px
     }
 
+
+
+
+
+/**
+ * $NAV-TABS
+ */
 .nav-tabs{
     border-top: 1px solid #eee;
-    padding: 0px 10px;
     
     .nav-tabs__list{
         margin-top: -1px;
@@ -451,7 +469,6 @@ body{
         font-style: normal;
         display: inline-block;
         font-size: 65%;
-        //text-transform: uppercase;
         letter-spacing: .2em;
         color: rgba(0,0,0,0.3);
         padding: 16px 0;
@@ -470,3 +487,32 @@ body{
         color: $color-text;
     }
 }
+
+/**
+ * $GRAY-TITLE-BACKGROUND 
+ */
+
+/**
+.page-title-bar{
+    background-color: rgba(98, 96, 98, 0.15); 
+    border-radius: 1px;
+}
+    
+.nav-tabs, .page__title{
+    padding: 0px 10px;
+}
+*/
+
+
+
+
+
+/**
+ * $UPPERCASE-PAGE-NAV
+ */
+
+/**
+.nav-tabs__link {
+    text-transform: uppercase;
+}
+*/
