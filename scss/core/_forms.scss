@@ -245,3 +245,8 @@ label,
 }
 
 
+input[type="search"] {
+  -webkit-appearance: textfield;
+  @include box-sizing(border-box);
+}
+

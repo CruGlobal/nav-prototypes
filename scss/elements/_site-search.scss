@@ -1,18 +1,21 @@
 /*------------------------------------*\
     $SEARCH
 \*------------------------------------*/
-$search-height: 29px;
+$search-height: $header-height;
 
-.right-nav{
-	.spoken-form{
-        @extend %ms-;
-	}
-}
-
-.primary-search{
-    position: relative;
+.site-search{
+    position: absolute;
+    top: 0;
+    right: 15px;
     
-	//top: 2px;
+    fieldset{
+        height: $search-height;
+        padding: 0;
+    }
+    
+    ul{
+        line-height: $search-height;
+    }
 }
 
 	.search-field{
