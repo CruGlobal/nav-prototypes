@@ -972,10 +972,10 @@ small {
  * over and over in your markup.
  */
 /* line 9, ../scss/generic/_clearfix.scss */
-.cf, .nav {
+.cf, .nav, .home-banner {
   *zoom: 1; }
   /* line 38, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
-  .cf:after, .nav:after {
+  .cf:after, .nav:after, .home-banner:after {
     content: "";
     display: table;
     clear: both; }
@@ -994,6 +994,7 @@ ul, ol, dl,
 address, table,
 fieldset, figure,
 pre,
+.form-fields > li,
 .media,
 .island,
 .islet {
@@ -1007,6 +1008,7 @@ ul, ol, dl,
 address, table,
 fieldset, figure,
 pre,
+.form-fields > li,
 .media,
 .island,
 .islet {
@@ -1190,12 +1192,261 @@ li > dl {
   list-style: none; }
 
 /* line 31, ../scss/core/_lists.scss */
-.block-list {
+.block-list, .form-fields, .check-list {
   list-style: none;
   margin: 0; }
   /* line 35, ../scss/core/_lists.scss */
-  .block-list > li a {
+  .block-list > li a, .form-fields > li a, .check-list > li a {
     display: block; }
+
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+/* line 5, ../scss/core/_forms.scss */
+fieldset {
+  border: 0;
+  padding: 29px;
+  padding: 1.52632rem; }
+  /* line 10, ../scss/core/_forms.scss */
+  fieldset + fieldset {
+    margin-bottom: 0; }
+
+/* line 16, ../scss/core/_forms.scss */
+.form__inputs:first-of-type {
+  margin-bottom: 0; }
+
+/* line 20, ../scss/core/_forms.scss */
+.form__actions {
+  margin-bottom: 0; }
+
+/* line 25, ../scss/core/_forms.scss */
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  font-size: 23.75px;
+  font-size: 1.25rem;
+  line-height: 1.22105; }
+
+/**
+ * Text Inputs and Form Control
+ *
+ * Instead of a `[type]` selector for each kind of form input, we just use a
+ * class to target any/every one, e.g.:
+ *a
+   <input type=text class=text-input>
+   <input type=email class=text-input>
+   <input type=password class=text-input>
+ *
+ * For non-text based inputs such as <select>, <radio>, etc use .form-control
+ * which allows you to add nice hover/focus effect to the text inputs if you
+ * choose
+ *
+ */
+/* line 48, ../scss/core/_forms.scss */
+.text-input:hover, textarea:hover {
+  border-color: #8c8c8c; }
+
+/* line 53, ../scss/core/_forms.scss */
+.text-input, .form-control {
+  display: block;
+  width: auto;
+  /**
+   * Make inputs at least the height of their button counterpart (base line-height + padding + border)
+   */
+  height: 34.25px;
+  padding: 4.83333px 9.66667px;
+  font-size: 16.625px;
+  line-height: 29px;
+  background-image: none;
+  border: 2px solid #cccccc;
+  border-radius: 2px;
+  -moz-transition: border-color, ease 0.15s;
+  -o-transition: border-color, ease 0.15s;
+  -webkit-transition: border-color, ease 0.15s;
+  transition: border-color, ease 0.15s; }
+  /* line 73, ../scss/core/_forms.scss */
+  .text-input.disabled, .form-control.disabled {
+    cursor: not-allowed; }
+
+/**
+ * Group sets of form fields in a list, e.g.:
+ *
+   <ul class=form-fields>
+       <li>
+           <label />
+           <input />
+       </li>
+       <li>
+           <label />
+           <select />
+       </li>
+       <li>
+           <label />
+           <input />
+       </li>
+   </ul>
+ *
+ */
+/* line 107, ../scss/core/_forms.scss */
+.form-fields > li:last-child {
+  margin-bottom: 0; }
+
+/**
+ * Labels
+ *
+ * Define a `.label` class as well as a `label` element. This means we can apply
+ * label-like styling to meta-labels for groups of options where a `label`
+ * element is not suitable, e.g.:
+ *
+   <li>
+      <span class=label>Select an option below:</span>
+      <ul class="multi-list  four-cols">
+          <li>
+              <input /> <label />
+          </li>
+          <li>
+              <input /> <label />
+          </li>
+          <li>
+              <input /> <label />
+          </li>
+          <li>
+              <input /> <label />
+          </li>
+      </ul>
+  </li>
+ *
+ */
+/* line 139, ../scss/core/_forms.scss */
+label,
+.label {
+  display: block;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 6px;
+  /* 9 */
+  margin-bottom: 0.31579rem;
+  /* 9 */ }
+
+/**
+ * Extra help text in `label`s, e.g.:
+ *
+   <label>Card number <small class=additional>No spaces</small></label>
+ *
+ */
+/* line 151, ../scss/core/_forms.scss */
+.additional {
+  display: block;
+  font-weight: normal;
+  font-style: italic; }
+
+/* line 157, ../scss/core/_forms.scss */
+input + .additional {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: 6px;
+  /* 9 */
+  margin-top: 0.31579rem;
+  /* 9 */ }
+
+/* line 161, ../scss/core/_forms.scss */
+.additional, .check-list > li {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 12px;
+  /* 9 */
+  margin-bottom: 0.63158rem;
+  /* 9 */ }
+
+/*
+ * Groups of checkboxes and radios, e.g.:
+ *
+   <li>
+       <ul class=check-list>
+           <li>
+               <input /> <label />
+           </li>
+           <li>
+               <input /> <label />
+           </li>
+       </ul>
+   </li>
+ *
+ */
+/*
+ * Labels in check-lists
+ */
+/* line 188, ../scss/core/_forms.scss */
+.check-label,
+.check-list label,
+.check-list .label {
+  display: inline-block; }
+
+/**
+ * Spoken forms are for forms that read like spoken word, e.g.:
+ *
+   <li class=spoken-form>
+       Hello, my <label for=spoken-name>name</label> is
+       <input type=text class=text-input id=spoken-name>. My home
+       <label for=country>country</label> is
+       <select id=country>
+           <option>UK</option>
+           <option>US</option>
+           <option>Other</option>
+       </select>
+   </li>
+ *
+ */
+/* line 213, ../scss/core/_forms.scss */
+.spoken-form input, .spoken-form select, .spoken-form label {
+  display: inline-block; }
+
+/**
+ * Extra help text displayed after a field when that field is in focus, e.g.:
+ *
+   <label for=email>Email:</label>
+   <input type=email class=text-input id=email>
+   <small class=extra-help>.edu emails only</small>
+ *
+ * We leave the help text in the document flow and merely set it to
+ * `visibility:hidden;`. This means that it won’t interfere with anything once
+ * it reappears.
+ *
+ */
+/*small*/
+/* line 233, ../scss/core/_forms.scss */
+.form-help {
+  display: block;
+  visibility: hidden;
+  max-height: 0; }
+
+/* line 239, ../scss/core/_forms.scss */
+.text-input:active + .form-help,
+.text-input:focus + .form-help {
+  visibility: visible;
+  max-height: inherit;
+  margin-top: 6px;
+  margin-top: 0.31579rem; }
+
+/* line 248, ../scss/core/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 /**
  * Objects and abstractions
@@ -1643,7 +1894,7 @@ input[disabled]:focus,
   margin-right: 29px; }
 
 /* line 40, ../scss/generic/_spacing.scss */
-.mb {
+.mb, .callout {
   margin-bottom: 29px; }
 
 /* line 41, ../scss/generic/_spacing.scss */
@@ -1808,7 +2059,7 @@ input[disabled]:focus,
   padding-right: 29px; }
 
 /* line 138, ../scss/generic/_spacing.scss */
-.pb {
+.pb, .primary-search__results h3 {
   padding-bottom: 29px; }
 
 /* line 139, ../scss/generic/_spacing.scss */
@@ -1829,7 +2080,7 @@ input[disabled]:focus,
  * Tiny paddings.
  */
 /* line 150, ../scss/generic/_spacing.scss */
-.p-- {
+.p--, .primary-search--dropdown {
   padding: 7px; }
 
 /* line 151, ../scss/generic/_spacing.scss */
@@ -2120,7 +2371,7 @@ input[disabled]:focus,
  * Font Colors
  */
 /* line 21, ../scss/elements/_colors.scss */
-.text-base {
+.text-base, .primary-search__results--item > a {
   color: #353535; }
 
 /* line 22, ../scss/elements/_colors.scss */
@@ -2184,23 +2435,89 @@ input[disabled]:focus,
 /**
  * Overall site and layout
  */
+/*------------------------------------*\
+    $PAGE
+\*------------------------------------*/
+/* line 5, ../scss/elements/_page.scss */
+.preload {
+  display: none !important; }
+
+/* line 9, ../scss/elements/_page.scss */
+.page-content {
+  padding-top: 116px;
+  padding-top: 6.10526rem; }
+
+@media screen and (max-width: 31.25em) {
+  /* line 13, ../scss/elements/_page.scss */
+  .background-size-contain.layout-single-column {
+    margin-left: 0;
+    margin-right: 0; } }
+
+@media screen and (min-width: 61.3125em) {
+  /* line 23, ../scss/elements/_page.scss */
+  .home-banner .h4, .home-banner a {
+    display: inline-block; } }
+
+@media screen and (min-width: 61.3125em) {
+  /* line 30, ../scss/elements/_page.scss */
+  .callout {
+    margin-bottom: 0; } }
+
+@media screen and (min-width: 61.3125em) {
+  /* line 38, ../scss/elements/_page.scss */
+  .callout-button {
+    text-align: left; } }
+
+/**
+ * A different type of <hr> styling. 
+ */
+/*hr.section-divider{
+	display: block;
+	width: 14%;
+	margin: 50px auto 40px auto;
+	border: 0;
+	border-top: 1px solid #dddddd;
+}*/
+/* line 56, ../scss/elements/_page.scss */
+hr, .divider {
+  clear: both;
+  display: block; }
+
+/** 
+ * The primary hr, small width 
+ */
+/* line 66, ../scss/elements/_page.scss */
+hr {
+  width: 14%; }
+
+/** 
+ * Full width hr 
+ */
+/* hr */
+/* line 75, ../scss/elements/_page.scss */
+.divider {
+  width: 100%; }
+
 /**
  * Site-wide elements and components
  */
-/* line 4, ../scss/elements/_text.scss */
+/*------------------------------------*\
+    $TEXT
+\*------------------------------------*/
+/* line 5, ../scss/elements/_text.scss */
 abbr[title="required"], abbr[title="Required"] {
   border: 0;
   color: #d95c5c; }
 
-/* line 9, ../scss/elements/_text.scss */
+/* line 10, ../scss/elements/_text.scss */
 b, strong {
   font-weight: 600; }
 
-/* line 13, ../scss/elements/_text.scss */
+/* line 14, ../scss/elements/_text.scss */
 figure {
   position: relative; }
 
-/* line 17, ../scss/elements/_text.scss */
+/* line 18, ../scss/elements/_text.scss */
 figcaption {
   line-height: 1.6;
   /* 3 */
@@ -2222,11 +2539,11 @@ figcaption {
   font-size: 14px;
   font-size: 0.73684rem; }
 
-/* line 24, ../scss/elements/_text.scss */
+/* line 25, ../scss/elements/_text.scss */
 .dark-link {
   color: #353535; }
 
-/* line 31, ../scss/elements/_text.scss */
+/* line 32, ../scss/elements/_text.scss */
 .block-link:hover {
   text-decoration: none;
   background-color: #f2f2f2; }
@@ -2235,7 +2552,7 @@ figcaption {
  * Places a dash after a piece of text. Mainly for post meta info
  * 
  */
-/* line 43, ../scss/elements/_text.scss */
+/* line 44, ../scss/elements/_text.scss */
 .accent + .accent:before {
   content: "\2013";
   /* 3 */
@@ -2259,14 +2576,14 @@ figcaption {
   margin-right: 0.63158rem;
   /* 9 */ }
 
-/* line 52, ../scss/elements/_text.scss */
+/* line 53, ../scss/elements/_text.scss */
 .affordance:after {
   color: #ffd014;
   font-family: "cruicons";
   padding-left: 10px;
   font-size: 18px; }
 
-/* line 62, ../scss/elements/_text.scss */
+/* line 63, ../scss/elements/_text.scss */
 blockquote {
   font-weight: 300;
   letter-spacing: .01rem;
@@ -2288,7 +2605,7 @@ blockquote {
   font-size: 1.10526rem;
   line-height: 1.38095; }
 
-/* line 75, ../scss/elements/_text.scss */
+/* line 76, ../scss/elements/_text.scss */
 .pullquote {
   border-left-color: transparent;
   margin: 48px 0;
@@ -2299,46 +2616,46 @@ blockquote {
   -o-transition: margin 0.1s;
   transition: margin 0.1s; }
   @media screen and (min-width: 31.3125em) {
-    /* line 75, ../scss/elements/_text.scss */
+    /* line 76, ../scss/elements/_text.scss */
     .pullquote {
       margin: 48px -10px; } }
   @media screen and (min-width: 62.5625em) {
-    /* line 75, ../scss/elements/_text.scss */
+    /* line 76, ../scss/elements/_text.scss */
     .pullquote {
       margin: 48px -100px; } }
-  /* line 92, ../scss/elements/_text.scss */
+  /* line 93, ../scss/elements/_text.scss */
   .pullquote em, .pullquote strong {
     font-weight: 500;
     font-style: normal;
     font-size: 110%; }
 
-/* line 99, ../scss/elements/_text.scss */
+/* line 100, ../scss/elements/_text.scss */
 q {
   quotes: "“" "”";
   /**
    * If an element opens with an inline quote, let’s hang that.
    */ }
-  /* line 102, ../scss/elements/_text.scss */
+  /* line 103, ../scss/elements/_text.scss */
   q:before {
     content: "“";
     content: open-quote; }
-  /* line 107, ../scss/elements/_text.scss */
+  /* line 108, ../scss/elements/_text.scss */
   q:after {
     content: "“";
     content: close-quote; }
-  /* line 112, ../scss/elements/_text.scss */
+  /* line 113, ../scss/elements/_text.scss */
   q q:before {
     content: "“";
     content: open-quote; }
-  /* line 117, ../scss/elements/_text.scss */
+  /* line 118, ../scss/elements/_text.scss */
   q q:after {
     content: "“";
     content: close-quote; }
-  /* line 125, ../scss/elements/_text.scss */
+  /* line 126, ../scss/elements/_text.scss */
   q.opener {
     display: inline-block;
     text-indent: -0.22em; }
-  /* line 131, ../scss/elements/_text.scss */
+  /* line 132, ../scss/elements/_text.scss */
   q:first-child {
     display: inline-block;
     text-indent: 0; }
@@ -2521,6 +2838,124 @@ q {
     margin-left: 240px; } }
 
 /*------------------------------------*\
+    $SEARCH
+\*------------------------------------*/
+/* line 6, ../scss/elements/_site-search.scss */
+.site-search {
+  position: absolute;
+  top: 0;
+  right: 15px; }
+  /* line 11, ../scss/elements/_site-search.scss */
+  .site-search fieldset {
+    height: 74px;
+    padding: 0; }
+  /* line 16, ../scss/elements/_site-search.scss */
+  .site-search ul {
+    line-height: 74px; }
+
+/* line 20, ../scss/elements/_site-search.scss */
+.search-field {
+  width: 254px;
+  max-height: 74px;
+  line-height: 18px;
+  border-width: 1px;
+  padding-left: 8px;
+  padding-right: 60px;
+  display: block; }
+  /* line 31, ../scss/elements/_site-search.scss */
+  .search-field::-webkit-input-placeholder {
+    font-size: 14px; }
+  /* line 32, ../scss/elements/_site-search.scss */
+  .search-field::-moz-placeholder {
+    font-size: 14px; }
+  /* line 33, ../scss/elements/_site-search.scss */
+  .search-field:-ms-input-placeholder {
+    font-size: 14px; }
+  /* line 34, ../scss/elements/_site-search.scss */
+  .search-field:-moz-placeholder {
+    font-size: 14px; }
+
+/* line 38, ../scss/elements/_site-search.scss */
+.search-button, .primary-search--options {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  display: block;
+  text-align: center;
+  width: 74px;
+  height: 74px;
+  line-height: 74px; }
+  /* line 51, ../scss/elements/_site-search.scss */
+  .search-button > i, .primary-search--options > i {
+    color: #6d6e71;
+    font-size: 70%; }
+  /* line 58, ../scss/elements/_site-search.scss */
+  .search-button:hover i, .primary-search--options:hover i {
+    color: #ffd014; }
+
+/* line 64, ../scss/elements/_site-search.scss */
+.search-button {
+  right: 29px; }
+
+/* line 71, ../scss/elements/_site-search.scss */
+.primary-search--options {
+  right: 0; }
+
+/* line 78, ../scss/elements/_site-search.scss */
+.primary-search--dropdown {
+  position: absolute;
+  overflow: hidden;
+  visibility: hidden;
+  color: white;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: #333333; }
+  /* line 99, ../scss/elements/_site-search.scss */
+  .primary-search--dropdown li a {
+    display: block;
+    text-align: left;
+    color: #ffd014;
+    border-radius: 3px;
+    margin: 0.22656rem;
+    padding-left: 0.45313rem;
+    padding-right: 0.45313rem; }
+    /* line 111, ../scss/elements/_site-search.scss */
+    .primary-search--dropdown li a:hover {
+      text-decoration: none;
+      background: #ffd014;
+      color: #333333; }
+
+/* line 121, ../scss/elements/_site-search.scss */
+.primary-search.active .primary-search--options {
+  background-color: #333333; }
+  /* line 124, ../scss/elements/_site-search.scss */
+  .primary-search.active .primary-search--options .icon-down-arrow {
+    color: #ffd014; }
+    /* line 127, ../scss/elements/_site-search.scss */
+    .primary-search.active .primary-search--options .icon-down-arrow:before {
+      content: '\e80c'; }
+/* line 134, ../scss/elements/_site-search.scss */
+.primary-search.active .primary-search--dropdown {
+  visibility: visible; }
+
+/* line 141, ../scss/elements/_site-search.scss */
+.primary-search__results h3 {
+  border-bottom: 1px solid #ddd; }
+
+/* line 152, ../scss/elements/_site-search.scss */
+.primary-search__results--item > a:hover {
+  text-decoration: none; }
+
+/* line 158, ../scss/elements/_site-search.scss */
+.results-title {
+  color: #3eb1c8; }
+
+/* line 162, ../scss/elements/_site-search.scss */
+#search-dropdown a.selected {
+  text-decoration: underline; }
+
+/*------------------------------------*\
     $NAVIGATION
 \*------------------------------------*/
 /* line 7, ../scss/elements/_navigation.scss */
@@ -2529,294 +2964,29 @@ q {
   overflow: hidden;
   width: 240px; }
 
-@media screen and (max-width: 61.25em) {
-  /* line 14, ../scss/elements/_navigation.scss */
-  .nav > .nav__item,
-  .nav__item > .nav__link {
-    display: block; } }
-
-@media screen and (max-width: 61.25em) {
-  /* line 21, ../scss/elements/_navigation.scss */
-  .nav_item {
-    border-bottom-color: #ffd014; } }
-
-/**
- *  Nav that includes Sign Up, Log In, and Search
- **/
-@media screen and (min-width: 61.3125em) {
-  /* line 31, ../scss/elements/_navigation.scss */
-  .right-nav {
-    width: 50%;
-    float: right;
-    vertical-align: middle;
-    position: relative;
-    z-index: 506;
-    margin-top: 8px;
-    text-align: right;
-    line-height: 1.26316; } }
-@media screen and (max-width: 61.25em) {
-  /* line 31, ../scss/elements/_navigation.scss */
-  .right-nav {
-    width: 100%; } }
-/* line 50, ../scss/elements/_navigation.scss */
-.right-nav .search__options {
-  display: none; }
-@media screen and (max-width: 61.25em) {
-  /* line 54, ../scss/elements/_navigation.scss */
-  .right-nav > .nav__item {
-    display: block; } }
-@media screen and (max-width: 61.25em) {
-  /* line 59, ../scss/elements/_navigation.scss */
-  .right-nav > .nav__item > a {
-    display: block; } }
-
-/* line 67, ../scss/elements/_navigation.scss */
-.nav__link {
-  max-height: 100%;
-  height: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  font-size: 15px;
-  padding: 0 18px;
-  letter-spacing: 0.9px;
-  vertical-align: middle;
-  color: white; }
-  /* line 81, ../scss/elements/_navigation.scss */
-  .nav__link:hover {
-    background-color: #444444;
-    color: #ffd014;
-    text-decoration: none; }
-  @media screen and (min-width: 61.3125em) {
-    /* line 67, ../scss/elements/_navigation.scss */
-    .nav__link {
-      color: #404040;
-      -webkit-transition: all 0.25s ease-in-out;
-      -moz-transition: all 0.25s ease-in-out;
-      -ms-transition: all 0.25s ease-in-out;
-      -o-transition: all 0.25s ease-in-out;
-      transition: all 0.25s ease-in-out; } }
-
-/* line 99, ../scss/elements/_navigation.scss */
-.is-active {
-  background-color: #444444;
-  color: #ffd014;
-  text-decoration: none; }
-
-@media screen and (min-width: 61.3125em) {
-  /* line 104, ../scss/elements/_navigation.scss */
-  .primary-link i {
-    display: none; } }
-
-/* line 117, ../scss/elements/_navigation.scss */
-.nav .nav__item > .dropdown {
-  position: fixed;
-  left: 0;
-  background-color: #404040;
-  color: #ffffff;
-  width: 100% !important;
-  overflow: hidden;
-  max-height: 0;
-  height: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  opacity: 0;
-  /* Hover Off */
-  -webkit-transition: opacity 0s 0.2s ease-out;
-  -moz-transition: opacity 0s 0.2s ease-out;
-  -ms-transition: opacity 0s 0.2s ease-out;
-  -o-transition: opacity 0s 0.2s ease-out;
-  transition: opacity 0s 0.2s ease-out;
-  -webkit-transform: translate3d(0, 0, -160%);
-  -moz-transform: translate3d(0, 0, -160%);
-  -ms-transform: translate3d(0, 0, -160%);
-  -o-transform: translate3d(0, 0, -160%);
-  transform: translate3d(0, 0, -160%);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  -ms-perspective: 1000;
-  -o-perspective: 1000;
-  perspective: 1000; }
-  /* line 17, ../scss/generic/mixins/_clearfix.scss */
-  .nav .nav__item > .dropdown:before, .nav .nav__item > .dropdown:after {
-    content: " ";
-    display: table; }
-  /* line 22, ../scss/generic/mixins/_clearfix.scss */
-  .nav .nav__item > .dropdown:after {
-    clear: both; }
-
-/* line 139, ../scss/elements/_navigation.scss */
-.nav .nav__item > .off-canvas-desk-is-collasped,
-.nav .nav__item > .off-canvas-desk-is-open {
-  display: none; }
-
-/* line 148, ../scss/elements/_navigation.scss */
-.nav li:hover > .arrow-up,
-.nav li:focus > .arrow-up {
-  display: block; }
-
-/* line 153, ../scss/elements/_navigation.scss */
-.nav .nav__item:hover > .dropdown,
-.nav .nav__item:focus > .dropdown {
-  padding-top: 30px;
-  padding-bottom: 15px;
-  max-height: 640px;
-  height: auto;
-  overflow: visible;
-  opacity: 1;
-  -webkit-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
-  -moz-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
-  -ms-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
-  -o-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
-  box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
-  /* Hover On */
-  -webkit-transition: max-height 0.25s ease;
-  -webkit-transition: all 0.3s 0.2s ease;
-  -moz-transition: all 0.3s 0.2s ease;
-  -ms-transition: all 0.3s 0.2s ease;
-  -o-transition: all 0.3s 0.2s ease;
-  transition: all 0.3s 0.2s ease; }
-
-/* line 173, ../scss/elements/_navigation.scss */
-.nav li.dropdown__item:hover:after,
-.nav li.dropdown__item:focus:after {
-  opacity: 1;
-  -webkit-transition: all 0.2s 0.2s ease;
-  -moz-transition: all 0.2s 0.2s ease;
-  -ms-transition: all 0.2s 0.2s ease;
-  -o-transition: all 0.2s 0.2s ease;
-  transition: all 0.2s 0.2s ease; }
-
-@media screen and (min-width: 61.3125em) {
-  /* line 179, ../scss/elements/_navigation.scss */
-  .js-close-button {
-    display: none; } }
-
-@media screen and (max-width: 61.25em) {
-  /* line 185, ../scss/elements/_navigation.scss */
-  .js-nav #inner-wrap {
-    right: 70%; } }
-
-@media screen and (max-width: 61.25em) {
-  /* line 191, ../scss/elements/_navigation.scss */
-  .js-nav .site-header {
-    position: absolute; } }
-
-@media screen and (max-width: 61.25em) {
-  /* line 197, ../scss/elements/_navigation.scss */
-  .js-nav body {
-    padding-top: 0; } }
-
-/* line 203, ../scss/elements/_navigation.scss */
-.js-nav #main {
-  padding-top: 67px; }
-
-/* line 207, ../scss/elements/_navigation.scss */
-.is-hidden, .is-visible {
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
-
-/* line 211, ../scss/elements/_navigation.scss */
-.is-hidden {
-  -webkit-transform: translateY(-6em);
-  -ms-transform: translateY(-6em);
-  transform: translateY(-6em); }
-  /* line 216, ../scss/elements/_navigation.scss */
-  .is-hidden .nav li > .dropdown {
-    height: 0;
-    overflow: hidden;
-    -webkit-transition: all 0s;
-    -moz-transition: all 0s;
-    -ms-transition: all 0s;
-    -o-transition: all 0s;
-    transition: all 0s;
-    visibility: hidden; }
-
-/* line 225, ../scss/elements/_navigation.scss */
-.is-visible {
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0); }
-  /* line 230, ../scss/elements/_navigation.scss */
-  .is-visible .nav li > .dropdown {
-    -webkit-transform: none;
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-
-/* line 238, ../scss/elements/_navigation.scss */
-.topbar-toggle {
-  text-transform: uppercase;
-  position: absolute;
-  top: 27px;
-  right: 16px;
-  color: #3a3a3a;
-  font-size: 19.2px;
-  font-size: 1.01053rem; }
-  /* line 249, ../scss/elements/_navigation.scss */
-  .topbar-toggle:after {
-    vertical-align: text-bottom;
-    font-weight: bold;
-    line-height: 0.9em;
-    font-size: 28px;
-    font-size: 1.47368rem; }
-  /* line 257, ../scss/elements/_navigation.scss */
-  .topbar-toggle:hover {
-    color: #ffd014;
-    text-decoration: none; }
-  @media screen and (min-width: 61.3125em) {
-    /* line 238, ../scss/elements/_navigation.scss */
-    .topbar-toggle {
-      display: none; } }
-
-/*
-.topbar-open{
-  float: right;
-  color: #3a3a3a;
-
-  @include mq(981px){
-    display: none;
-  }
-}
-*/
-/* line 276, ../scss/elements/_navigation.scss */
-.topbar-close {
-  position: absolute;
-  z-index: 1;
-  color: #ffffff;
-  top: 27px;
-  top: 1.42105rem;
-  right: 16px;
-  right: 0.84211rem; }
-  /* line 285, ../scss/elements/_navigation.scss */
-  .topbar-close:hover, .topbar-close:focus {
-    text-decoration: none; }
-  @media screen and (min-width: 61.3125em) {
-    /* line 276, ../scss/elements/_navigation.scss */
-    .topbar-close {
-      display: none; } }
-
-/* line 295, ../scss/elements/_navigation.scss */
+/* line 14, ../scss/elements/_navigation.scss */
 .search {
   height: auto;
   line-height: 1.5; }
 
-/* line 300, ../scss/elements/_navigation.scss */
+/* line 20, ../scss/elements/_navigation.scss */
+#search_options {
+  z-index: 501;
+  top: 31px;
+  background-color: #ffffff;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px; }
+
+/* line 29, ../scss/elements/_navigation.scss */
 #user-actions {
   position: absolute;
   right: 220px;
   margin: 0; }
-  /* line 307, ../scss/elements/_navigation.scss */
+  /* line 36, ../scss/elements/_navigation.scss */
   #user-actions > li {
     display: block;
     float: left; }
-    /* line 311, ../scss/elements/_navigation.scss */
+    /* line 40, ../scss/elements/_navigation.scss */
     #user-actions > li > a {
       display: block;
       color: #8a8a8a;
@@ -2825,22 +2995,9 @@ q {
       font-weight: 400;
       letter-spacing: 0.9px; }
 
-/* line 324, ../scss/elements/_navigation.scss */
+/* line 52, ../scss/elements/_navigation.scss */
 #toolbar form {
   border-radius: 2px; }
-
-/* line 329, ../scss/elements/_navigation.scss */
-#search_options {
-  z-index: 501;
-  top: 31px;
-  background-color: #ffffff;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px; }
-
-/*-- added for you are here functionality, adds underline to main nav item --*/
-/* line 340, ../scss/elements/_navigation.scss */
-.primary-link-active {
-  border-bottom: 3px solid #ffd014; }
 
 /**
  * Page components
@@ -2892,7 +3049,7 @@ q {
   text-align: right; }
 
 /* line 27, ../scss/generic/_helpers.scss */
-.small-text {
+.small-text, .search-field, .primary-search--dropdown {
   font-size: 80%; }
 
 /**
@@ -2994,7 +3151,7 @@ q {
  * Content Alignment
  */
 /* line 75, ../scss/generic/_helpers.scss */
-.center-block, .centered,
+hr, .divider, .center-block, .centered,
 .center {
   margin-left: auto;
   margin-right: auto; }

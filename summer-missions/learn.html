@@ -18,8 +18,8 @@
         })();
     </script>     
     
-    <link rel="stylesheet" type="text/css" href="css/screen.css"/>
-    <link rel="stylesheet" type="text/css" href="css/new.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/screen.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/new.css"/>
 
 </head>
 <body class="page" ng-app="ngToggle">
@@ -54,10 +54,10 @@
                         <fieldset class="m0">
                             <ul class="nav  bare-list">
                                 <li>
-                                    <input class="form-control"></input>
+                                    <input type="search" class="form-control"></input>
                                 </li>
                                 <li>
-                                     <input type="submit"  class="button button--subtle  button--small"></input>
+                                     <input type="submit" value="Search"  class="button button--subtle  button--small"></input>
                                 </li>
                             </ul>
                         </fieldset>
@@ -75,31 +75,49 @@
                         
                         <li class="level0  has-submenu  opportunities" data-submenu-class="submenu-0">
                                                        
-                            <a href="#" class="level0__menu-link  menu-link">
+                            <a href="#" class="level0__menu-link  menu-link active">
                                 Opportunities
                                 <i class="icon-right-arrow"></i>
                             </a>
                             
                             <div class="site-nav__submenu  submenu-0" style="height: 492px;">
-                                <img src="http://g-ecx.images-amazon.com/images/G/01/digital/music/merch/weeklybuild/101414/U2_101414_Whitebelt_Flyout._V323882074_.png" usemap="#nav_imgmap_digital-music" class="nav-browse-promo" style="bottom: -38px; right: -21px; width: 520px; height: 492px;">
-                                <map name="nav_imgmap_digital-music" id="nav_imgmap_digital-music">
-                                    <area shape="poly" coords="238,2,226,233,154,258,115,281,2,281,1,453,497,455,497,1" href="/dp/B00NX53H2W/ref=nav_sa_dm_u2_dp_wb" alt="U2">
+                               <!-- <img src="http://g-ecx.images-amazon.com/images/G/01/digital/music/merch/weeklybuild/101414/U2_101414_Whitebelt_Flyout._V323882074_.png" usemap="#nav_imgmap_digital-music" class="nav-browse-promo" style="bottom: -38px; right: -21px; width: 520px; height: 492px;">
+                               <map name="nav_imgmap_digital-music" id="nav_imgmap_digital-music">
+                                    <area shape="poly" coords="238,2,226,233,154,258,115,281,2,281,1,453,497,455,497,1" href="/dp/B00NX53H2W/ref=nav_sa_dm_u2_dp_wb" alt="U2"> -->
                                 </map>
-                                <ul class="nav-submenu__group  block-list  m0  position--absolute">                           
-                                    <li>
-                                        <a href="#" class="nav-cat">Careers</a>           
-                                    </li>
-                                    <li>
+                                <ul class="nav-submenu__group  level1  block-list  m0  position--absolute">                                                                            <li>
                                         <a href="#" class="nav-cat">Mission Trips</a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="nav-cat">Internships</a>
+
+                                    <li class="nav-divider-before">
+                                        <a href="#" class="nav-cat">Careers</a>   
+                                        <ul class="block-list  level2">
+                                            <li><a href="#" class="nav-cat--sub">Hourly & Salaried Positions at Our World Headquarters</a></li>
+                                            <li><a href="#" class="nav-cat--sub">World Headquarters Opportunities</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Missionary Staff Careers</a></li>
+                                            <li><a href="#" class="nav-cat--sub">International Missions Opportunities</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Staff Profiles</a></li>
+                                        </ul>        
                                     </li>
+                                    
+                                    <li class="nav-divider-before">
+                                        <a href="#" class="nav-cat">Internships</a>
+                                        <ul class="block-list  level2">
+                                            <li><a href="#" class="nav-cat--sub">Orlando Summer Project</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Preview Weekend</a></li>
+                                            <li><a href="#" class="nav-cat--sub">1-Year Internship in Orlando</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="nav-submenu__group  level1  cat-2  block-list  m0  position--absolute">
                                     <li>
                                         <a href="#" class="nav-cat">Volunteer</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-cat">Link 5</a>
+                                        <ul class="block-list  level2">
+                                            <li><a href="#" class="nav-cat--sub">Contact Us</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Orlando Openings</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Volunteer Profiles</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Volunteer Sign Up</a></li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </div>
@@ -266,7 +284,7 @@
                 <div class="page-content-wrap">
                     <ul class="toolbar nav">
                         <li class="toolbar__item  js-dropdown" ng-controller="AppCtrl">
-                            <a href="#" class="">Mission Trips
+                            <a href="#" class="toolbar__link">Mission Trips
                                 <span class="caret"></span>
                                 <span class="accessibility">Toggle Dropdown</span>
                             </a>
@@ -302,34 +320,38 @@
                         </div>
                             -->
                         <li class="toolbar__item">
-                            <a>/ Summer Missions</a>
+                            <a class="toolbar__link">Summer Missions</a>
                         </li>
                     </ul>
                     <div class="page-content">
-                        <ul class="nav m0">
-                            <li>
-                                <a href="#">Can I get a job?</a>
-                            </li>
-                            <li>
-                                <a href="#">Questions for Parents</a>
-                            </li>
-                            <li>
-                                <a href="#">List of Opportunities</a>
-                            </li>
-                            <li>
-                                <a href="#">Stories</a>
-                            </li>
-                            <li>
-                                <a href="#">Apply</a>
-                            </li>
-                        </ul>
+                        
+                        <header class="page-title-bar">
+                            <h1 class="page__title h4">Summer Missions</h1>
+                            <nav class="nav-tabs">
+                                <ul class="nav-tabs__list  nav m0">
+                                    <li class="nav-tabs__item  is-active">
+                                        <a href="" class="nav-tabs__link  active">Learn</a>
+                                    </li>
+                                    <li class="nav-tabs__item">
+                                        <a href="#" class="nav-tabs__link">Explore</a>
+                                    </li>
+                                    <li class="nav-tabs__item">
+                                        <a href="#" class="nav-tabs__link">Plan</a>
+                                    </li>
+                                    <li class="nav-tabs__item">
+                                        <a href="#" class="nav-tabs__link">Apply</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </header>
+
                         <div class="post-article  post__body">
                             <div class="layout-single-column">
-                            <header class="post__headline  layout-single-column">
-                                <h1 class="post-title pt_x">
-                                    Summer Missions
-                                </h1>
-                            </header>
+                                <h2>Learn</h2>
+                                
+                            <img src="http://www.cru.org/content/cru/us/en/train-and-grow/evangelism/this-halloween-turn-the-lights-on/_jcr_content/image.transform/Cru704x396/image.jpg"></img>
+                               
+                                
                             <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
@@ -435,7 +457,7 @@
         document.addEventListener('scroll', onScroll);
     </script>
 
-    <script src="js/menu-aim.js"></script>
+    <script src="../js/menu-aim.js"></script>
     <script>
         var $menu = $(".site-nav");
         
