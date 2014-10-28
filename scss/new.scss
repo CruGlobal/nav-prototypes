@@ -165,8 +165,8 @@ body{
         position: relative;
         font-size: 95%;
         color: #484848;
-        border-bottom: 1px solid #eee;
-        border-right:1px solid #eee;
+        border: solid #eee;
+        border-width: 0 1px 1px 0;
                 
         &:hover{
             color: #484848;
@@ -391,6 +391,9 @@ body{
     max-width: auto;
 }
 
+/**
+ * $TOOLBAR
+ */
 
 .toolbar{
     margin-left: 0;
@@ -413,6 +416,9 @@ body{
         margin-right: $half-spacing-unit;
     }
     
+/**
+ * $PAGE-TITLE
+ */   
 .page-title-bar{
     background-color: rgba(98, 96, 98, 0.15);
     border-radius: 1px;

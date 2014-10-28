@@ -950,8 +950,8 @@ body {
   position: relative;
   font-size: 95%;
   color: #484848;
-  border-bottom: 1px solid #eee;
-  border-right: 1px solid #eee; }
+  border: solid #eee;
+  border-width: 0 1px 1px 0; }
   /* line 171, ../scss/new.scss */
   .level0__menu-link:hover {
     color: #484848; }
@@ -1148,7 +1148,10 @@ body {
   margin-right: 1px;
   max-width: auto; }
 
-/* line 395, ../scss/new.scss */
+/**
+ * $TOOLBAR
+ */
+/* line 398, ../scss/new.scss */
 .toolbar {
   margin-left: 0;
   border-top: 1px solid #eee;
@@ -1156,36 +1159,39 @@ body {
   margin-bottom: 14.5px;
   margin-left: 14.5px; }
 
-/* line 407, ../scss/new.scss */
+/* line 410, ../scss/new.scss */
 .toolbar__link {
   font-size: 70%;
   color: rgba(0, 0, 0, 0.3);
   font-weight: 500;
   margin-right: 14.5px; }
 
-/* line 416, ../scss/new.scss */
+/**
+ * $PAGE-TITLE
+ */
+/* line 422, ../scss/new.scss */
 .page-title-bar {
   background-color: rgba(98, 96, 98, 0.15);
   border-radius: 1px;
   margin-bottom: 14.5px;
   padding-top: 14.5px; }
 
-/* line 424, ../scss/new.scss */
+/* line 430, ../scss/new.scss */
 .page__title {
   margin-bottom: 12px;
   padding: 0px 10px; }
 
-/* line 431, ../scss/new.scss */
+/* line 437, ../scss/new.scss */
 .nav-tabs {
   border-top: 1px solid #eee;
   padding: 0px 10px; }
-  /* line 435, ../scss/new.scss */
+  /* line 441, ../scss/new.scss */
   .nav-tabs .nav-tabs__list {
     margin-top: -1px; }
-  /* line 439, ../scss/new.scss */
+  /* line 445, ../scss/new.scss */
   .nav-tabs .nav-tabs__item {
     margin-right: 15px; }
-  /* line 443, ../scss/new.scss */
+  /* line 449, ../scss/new.scss */
   .nav-tabs .nav-tabs__link {
     font-weight: 600;
     font-style: normal;
@@ -1194,13 +1200,13 @@ body {
     letter-spacing: .2em;
     color: rgba(0, 0, 0, 0.3);
     padding: 16px 0; }
-    /* line 453, ../scss/new.scss */
+    /* line 459, ../scss/new.scss */
     .nav-tabs .nav-tabs__link:hover {
       text-decoration: none; }
-  /* line 459, ../scss/new.scss */
+  /* line 465, ../scss/new.scss */
   .nav-tabs .nav-tabs__item.is-active .nav-tabs__link {
     border-top: 1px rgba(0, 0, 0, 0.6) solid; }
-  /* line 463, ../scss/new.scss */
+  /* line 469, ../scss/new.scss */
   .nav-tabs .nav-tabs__item.is-active .nav-tabs__link, .nav-tabs .nav-tabs__link:hover {
     color: #404040; }
 
