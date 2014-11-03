@@ -165,6 +165,7 @@ $nav-link-height: 45px;
         color: #484848;
         border: solid #eee;
         border-width: 0 1px 1px 0;
+        padding-left: $half-spacing-unit;
                 
         &:hover{
             color: #484848;
@@ -340,12 +341,11 @@ $nav-link-height: 45px;
  * $TOOLBAR
  */
 .toolbar{
-    margin-left: 0;
-    
     border-top: 1px solid #eee;
     border-left: none;
+    margin-left: 0;
     margin-bottom: $half-spacing-unit;
-    margin-left: $half-spacing-unit;
+    padding-left: $half-spacing-unit;
 }
 
     .toolbar__item{
@@ -492,18 +492,9 @@ $nav-link-height: 45px;
 */
 
 
-
-
-
 /**
- * $UPPERCASE-PAGE-NAV
+ * $LAYOUTS
  */
-
-/**
-.nav-tabs__link {
-    text-transform: uppercase;
-}
-*/
 
 .post-article figure > img{
     width: 100%;
@@ -518,3 +509,20 @@ $nav-link-height: 45px;
     max-width: 720px;
     margin: 0 auto;
 }
+
+/**
+ * $NO-TILE
+ */
+.page--no-tile{
+    
+    .site-main{
+        background-color: #fcfcfc;
+    }
+
+     .page-content{
+        background-color: transparent;
+        border: none;
+    
+    }
+}
+
