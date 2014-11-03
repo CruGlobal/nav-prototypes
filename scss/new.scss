@@ -313,16 +313,11 @@ $nav-link-height: 45px;
 .page-content-wrap{
     position: relative;
     width: auto;
-    //margin-left: 240px;
     margin-right: 0;
     height: inherit;
     
-    
-    @include mq(810px, max) {
-         margin-left: 0;
-    }
     @include mq(810px) {
-        padding-left: 240px;
+        margin-left: 240px;
     }
 }
 
