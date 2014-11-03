@@ -2059,7 +2059,7 @@ input[disabled]:focus,
   padding-right: 29px; }
 
 /* line 138, ../scss/generic/_spacing.scss */
-.pb, .primary-search__results h3 {
+.pb, .global-footer > nav, .global-footer .copy, .primary-search__results h3 {
   padding-bottom: 29px; }
 
 /* line 139, ../scss/generic/_spacing.scss */
@@ -2105,7 +2105,7 @@ input[disabled]:focus,
   padding-bottom: 7px; }
 
 /* line 156, ../scss/generic/_spacing.scss */
-.ps-- {
+.ps--, .global-footer > nav a {
   padding-right: 7px;
   padding-left: 7px; }
 
@@ -2832,10 +2832,33 @@ q {
 .no-svg .site-logo a {
   background: url("/images/cru-logo.png"); }
 
-@media screen and (min-width: 61.3125em) {
-  /* line 43, ../scss/elements/_header.scss */
-  .page-content-wrap {
-    margin-left: 240px; } }
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+/* line 5, ../scss/elements/_footer.scss */
+.global-footer {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: 100px;
+  /* 9 */
+  margin-top: 5.26316rem;
+  /* 9 */ }
+  /* line 9, ../scss/elements/_footer.scss */
+  .global-footer .section-divider {
+    border-color: #ffd014; }
+  /* line 16, ../scss/elements/_footer.scss */
+  .global-footer > nav ul {
+    text-align: center; }
+  /* line 20, ../scss/elements/_footer.scss */
+  .global-footer > nav a {
+    color: #353535; }
+  /* line 27, ../scss/elements/_footer.scss */
+  .global-footer .copy {
+    text-align: center; }
 
 /*------------------------------------*\
     $SEARCH
@@ -2853,7 +2876,7 @@ q {
   .site-search ul {
     line-height: 74px; }
 
-/* line 20, ../scss/elements/_site-search.scss */
+/* line 21, ../scss/elements/_site-search.scss */
 .search-field {
   width: 254px;
   max-height: 74px;
@@ -2862,20 +2885,20 @@ q {
   padding-left: 8px;
   padding-right: 60px;
   display: block; }
-  /* line 31, ../scss/elements/_site-search.scss */
+  /* line 32, ../scss/elements/_site-search.scss */
   .search-field::-webkit-input-placeholder {
     font-size: 14px; }
-  /* line 32, ../scss/elements/_site-search.scss */
+  /* line 33, ../scss/elements/_site-search.scss */
   .search-field::-moz-placeholder {
     font-size: 14px; }
-  /* line 33, ../scss/elements/_site-search.scss */
+  /* line 34, ../scss/elements/_site-search.scss */
   .search-field:-ms-input-placeholder {
     font-size: 14px; }
-  /* line 34, ../scss/elements/_site-search.scss */
+  /* line 35, ../scss/elements/_site-search.scss */
   .search-field:-moz-placeholder {
     font-size: 14px; }
 
-/* line 38, ../scss/elements/_site-search.scss */
+/* line 39, ../scss/elements/_site-search.scss */
 .search-button, .primary-search--options {
   padding: 0;
   position: absolute;
@@ -2885,23 +2908,23 @@ q {
   width: 74px;
   height: 74px;
   line-height: 74px; }
-  /* line 51, ../scss/elements/_site-search.scss */
+  /* line 52, ../scss/elements/_site-search.scss */
   .search-button > i, .primary-search--options > i {
     color: #6d6e71;
     font-size: 70%; }
-  /* line 58, ../scss/elements/_site-search.scss */
+  /* line 59, ../scss/elements/_site-search.scss */
   .search-button:hover i, .primary-search--options:hover i {
     color: #ffd014; }
 
-/* line 64, ../scss/elements/_site-search.scss */
+/* line 65, ../scss/elements/_site-search.scss */
 .search-button {
   right: 29px; }
 
-/* line 71, ../scss/elements/_site-search.scss */
+/* line 72, ../scss/elements/_site-search.scss */
 .primary-search--options {
   right: 0; }
 
-/* line 78, ../scss/elements/_site-search.scss */
+/* line 79, ../scss/elements/_site-search.scss */
 .primary-search--dropdown {
   position: absolute;
   overflow: hidden;
@@ -2911,7 +2934,7 @@ q {
   z-index: 2;
   width: 100%;
   background-color: #333333; }
-  /* line 99, ../scss/elements/_site-search.scss */
+  /* line 100, ../scss/elements/_site-search.scss */
   .primary-search--dropdown li a {
     display: block;
     text-align: left;
@@ -2920,38 +2943,38 @@ q {
     margin: 0.22656rem;
     padding-left: 0.45313rem;
     padding-right: 0.45313rem; }
-    /* line 111, ../scss/elements/_site-search.scss */
+    /* line 112, ../scss/elements/_site-search.scss */
     .primary-search--dropdown li a:hover {
       text-decoration: none;
       background: #ffd014;
       color: #333333; }
 
-/* line 121, ../scss/elements/_site-search.scss */
+/* line 122, ../scss/elements/_site-search.scss */
 .primary-search.active .primary-search--options {
   background-color: #333333; }
-  /* line 124, ../scss/elements/_site-search.scss */
+  /* line 125, ../scss/elements/_site-search.scss */
   .primary-search.active .primary-search--options .icon-down-arrow {
     color: #ffd014; }
-    /* line 127, ../scss/elements/_site-search.scss */
+    /* line 128, ../scss/elements/_site-search.scss */
     .primary-search.active .primary-search--options .icon-down-arrow:before {
       content: '\e80c'; }
-/* line 134, ../scss/elements/_site-search.scss */
+/* line 135, ../scss/elements/_site-search.scss */
 .primary-search.active .primary-search--dropdown {
   visibility: visible; }
 
-/* line 141, ../scss/elements/_site-search.scss */
+/* line 142, ../scss/elements/_site-search.scss */
 .primary-search__results h3 {
   border-bottom: 1px solid #ddd; }
 
-/* line 152, ../scss/elements/_site-search.scss */
+/* line 153, ../scss/elements/_site-search.scss */
 .primary-search__results--item > a:hover {
   text-decoration: none; }
 
-/* line 158, ../scss/elements/_site-search.scss */
+/* line 159, ../scss/elements/_site-search.scss */
 .results-title {
   color: #3eb1c8; }
 
-/* line 162, ../scss/elements/_site-search.scss */
+/* line 163, ../scss/elements/_site-search.scss */
 #search-dropdown a.selected {
   text-decoration: underline; }
 
