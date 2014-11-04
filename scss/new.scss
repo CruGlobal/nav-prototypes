@@ -125,6 +125,7 @@ $nav-link-height: 45px;
     position: absolute;
     width: 240px;
     background-color: #fff;
+    z-index: 500;
     
     @include mq(810px, max) {
         display: none;    
@@ -165,7 +166,7 @@ $nav-link-height: 45px;
         color: #484848;
         border: solid #eee;
         border-width: 0 1px 1px 0;
-        padding-left: $half-spacing-unit;
+        padding: 0 15px;
                 
         &:hover{
             color: #484848;
@@ -425,7 +426,6 @@ $nav-link-height: 45px;
  */   
 .page-title-bar{
     margin-bottom: $half-spacing-unit;
-    padding-top: $half-spacing-unit;
 }
 
 
@@ -496,33 +496,42 @@ $nav-link-height: 45px;
  * $LAYOUTS
  */
 
+/**
+.nav-tabs__link {
+    text-transform: uppercase;
+}
+*/
+
 .post-article figure > img{
     width: 100%;
 }
 
 .layout--wide{
     max-width: 1000px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .layout-single-column{
     max-width: 720px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /**
  * $NO-TILE
  */
-.page--no-tile{
+.page--image-small{
     
     .site-main{
         background-color: #fcfcfc;
-    }
+}
 
-     .page-content{
-        background-color: transparent;
-        border: none;
-    
+.page--tile-narrow{
+    .page-content{
+        max-width: 860px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

@@ -907,44 +907,45 @@ h6, .h6 {
 .site-nav {
   position: absolute;
   width: 240px;
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: 500; }
   @media screen and (max-width: 50.625em) {
     /* line 124, ../scss/new.scss */
     .site-nav {
       display: none; } }
-  /* line 138, ../scss/new.scss */
+  /* line 139, ../scss/new.scss */
   .site-nav li:first-child > .site-nav__link {
     background-color: #ffd014;
     color: #fff;
     border-right-color: transparent; }
-    /* line 143, ../scss/new.scss */
+    /* line 144, ../scss/new.scss */
     .site-nav li:first-child > .site-nav__link:hover {
       background-color: #e0b300;
       color: #fff;
       text-decoration: none; }
 
-/* line 154, ../scss/new.scss */
+/* line 155, ../scss/new.scss */
 .level0:first-of-type {
   border-top: 1px solid #eee; }
 
-/* line 160, ../scss/new.scss */
+/* line 161, ../scss/new.scss */
 .level0__menu-link {
   position: relative;
   font-size: 95%;
   color: #484848;
   border: solid #eee;
   border-width: 0 1px 1px 0;
-  padding-left: 15px; }
-  /* line 170, ../scss/new.scss */
+  padding: 0 15px; }
+  /* line 171, ../scss/new.scss */
   .level0__menu-link:hover {
     color: #484848; }
-    /* line 173, ../scss/new.scss */
+    /* line 174, ../scss/new.scss */
     .level0__menu-link:hover, .level0__menu-link:hover .icon-right-arrow {
       text-decoration: none; }
-  /* line 179, ../scss/new.scss */
+  /* line 180, ../scss/new.scss */
   .level0__menu-link.active .icon-right-arrow {
     color: #ffd014; }
-  /* line 184, ../scss/new.scss */
+  /* line 185, ../scss/new.scss */
   .level0__menu-link .icon-right-arrow {
     display: inline-block;
     color: #aaa;
@@ -954,20 +955,20 @@ h6, .h6 {
     right: 10px;
     top: 0; }
 
-/* line 197, ../scss/new.scss */
+/* line 198, ../scss/new.scss */
 .maintain-hover {
   background-color: #eee; }
-  /* line 200, ../scss/new.scss */
+  /* line 201, ../scss/new.scss */
   .maintain-hover, .maintain-hover:hover {
     text-decoration: none; }
-  /* line 204, ../scss/new.scss */
+  /* line 205, ../scss/new.scss */
   .maintain-hover > .icon-right-arrow {
     color: #fff; }
 
 /**
  * $NAV-FLYOUT
  */
-/* line 216, ../scss/new.scss */
+/* line 217, ../scss/new.scss */
 .site-nav__submenu {
   display: none;
   position: absolute;
@@ -991,11 +992,11 @@ h6, .h6 {
   -webkit-border-radius: 1px;
   border-radius: 1px; }
 
-/* line 242, ../scss/new.scss */
+/* line 243, ../scss/new.scss */
 .nav-cats {
   width: 150px; }
 
-/* line 247, ../scss/new.scss */
+/* line 248, ../scss/new.scss */
 .nav-sub-cats-wrap {
   display: none;
   position: absolute;
@@ -1007,41 +1008,41 @@ h6, .h6 {
   width: 485px;
   z-index: 3; }
 
-/* line 259, ../scss/new.scss */
+/* line 260, ../scss/new.scss */
 .sub-cats {
   position: absolute;
   top: 0; }
 
-/* line 266, ../scss/new.scss */
+/* line 267, ../scss/new.scss */
 .level1 li {
   padding-bottom: 7px; }
 
-/* line 270, ../scss/new.scss */
+/* line 271, ../scss/new.scss */
 .nav-cat, .nav-cat--sub {
   padding: 0 10px;
   color: #404040; }
 
-/* line 276, ../scss/new.scss */
+/* line 277, ../scss/new.scss */
 .nav-cat--sub {
   font-size: 85%; }
 
-/* line 280, ../scss/new.scss */
+/* line 281, ../scss/new.scss */
 .nav-divider-before {
   border-top: 1px solid #eee;
   padding-top: 9px; }
 
-/* line 287, ../scss/new.scss */
+/* line 288, ../scss/new.scss */
 .nav-submenu__group {
   width: 220px;
   padding-top: 15px;
   position: absolute;
   overflow: visible; }
 
-/* line 294, ../scss/new.scss */
+/* line 295, ../scss/new.scss */
 .nav-submenu__group.cat-2 {
   left: 235px; }
 
-/* line 299, ../scss/new.scss */
+/* line 300, ../scss/new.scss */
 .nav-browse-promo {
   position: absolute;
   bottom: -15px;
@@ -1053,18 +1054,18 @@ h6, .h6 {
 /** 
  * $PRIMARY-CONTENT-WRAPS
  */
-/* line 314, ../scss/new.scss */
+/* line 315, ../scss/new.scss */
 .page-content-wrap {
   position: relative;
   width: auto;
   margin-right: 0;
   height: inherit; }
   @media screen and (min-width: 50.625em) {
-    /* line 314, ../scss/new.scss */
+    /* line 315, ../scss/new.scss */
     .page-content-wrap {
       margin-left: 240px; } }
 
-/* line 325, ../scss/new.scss */
+/* line 326, ../scss/new.scss */
 .page-content {
   background-color: #fff;
   padding: 29px;
@@ -1076,7 +1077,7 @@ h6, .h6 {
 /**
  * $TOOLBAR
  */
-/* line 343, ../scss/new.scss */
+/* line 344, ../scss/new.scss */
 .toolbar {
   border-top: 1px solid #eee;
   border-left: none;
@@ -1084,7 +1085,7 @@ h6, .h6 {
   margin-bottom: 15px;
   padding-left: 15px; }
 
-/* line 354, ../scss/new.scss */
+/* line 356, ../scss/new.scss */
 .toolbar__link {
   font-size: 70%;
   color: rgba(0, 0, 0, 0.3);
@@ -1094,14 +1095,14 @@ h6, .h6 {
 /**
  * $DROPDOWNS
  */
-/* line 370, ../scss/new.scss */
+/* line 372, ../scss/new.scss */
 .has-dropdown {
   position: relative; }
-  /* line 372, ../scss/new.scss */
+  /* line 374, ../scss/new.scss */
   .has-dropdown:hover > .nav-flyout {
     left: 240px;
     top: 10px; }
-  /* line 377, ../scss/new.scss */
+  /* line 379, ../scss/new.scss */
   .has-dropdown:before {
     position: absolute;
     top: 6px;
@@ -1112,7 +1113,7 @@ h6, .h6 {
     border-bottom: 10px solid transparent;
     border-right: 10px solid #ccc;
     border-right-color: rgba(0, 0, 0, 0.15); }
-  /* line 388, ../scss/new.scss */
+  /* line 390, ../scss/new.scss */
   .has-dropdown:after {
     position: absolute;
     top: 7px;
@@ -1123,7 +1124,7 @@ h6, .h6 {
     border-bottom: 9px solid transparent;
     border-right: 9px solid #fff; }
 
-/* line 400, ../scss/new.scss */
+/* line 402, ../scss/new.scss */
 .dropdown {
   position: absolute;
   left: -9999px;
@@ -1144,28 +1145,27 @@ h6, .h6 {
 /**
  * $PAGE-TITLE AND WRAP
  */
-/* line 426, ../scss/new.scss */
+/* line 428, ../scss/new.scss */
 .page-title-bar {
-  margin-bottom: 15px;
-  padding-top: 15px; }
+  margin-bottom: 15px; }
 
-/* line 432, ../scss/new.scss */
+/* line 433, ../scss/new.scss */
 .page__title {
   margin-bottom: 12px; }
 
 /**
  * $NAV-TABS
  */
-/* line 444, ../scss/new.scss */
+/* line 445, ../scss/new.scss */
 .nav-tabs {
   border-top: 1px solid #eee; }
-  /* line 447, ../scss/new.scss */
+  /* line 448, ../scss/new.scss */
   .nav-tabs .nav-tabs__list {
     margin-top: -1px; }
-  /* line 451, ../scss/new.scss */
+  /* line 452, ../scss/new.scss */
   .nav-tabs .nav-tabs__item {
     margin-right: 15px; }
-  /* line 455, ../scss/new.scss */
+  /* line 456, ../scss/new.scss */
   .nav-tabs .nav-tabs__link {
     font-weight: 600;
     font-style: normal;
@@ -1174,13 +1174,13 @@ h6, .h6 {
     letter-spacing: .2em;
     color: rgba(0, 0, 0, 0.3);
     padding: 16px 0; }
-    /* line 464, ../scss/new.scss */
+    /* line 465, ../scss/new.scss */
     .nav-tabs .nav-tabs__link:hover {
       text-decoration: none; }
-  /* line 470, ../scss/new.scss */
+  /* line 471, ../scss/new.scss */
   .nav-tabs .nav-tabs__item.is-active .nav-tabs__link {
     border-top: 1px rgba(0, 0, 0, 0.6) solid; }
-  /* line 474, ../scss/new.scss */
+  /* line 475, ../scss/new.scss */
   .nav-tabs .nav-tabs__item.is-active .nav-tabs__link, .nav-tabs .nav-tabs__link:hover {
     color: #404040; }
 
@@ -1199,30 +1199,34 @@ h6, .h6 {
 */
 /**
  * $LAYOUTS
+    text-transform: uppercase;
+}
  */
-/* line 499, ../scss/new.scss */
+/* line 509, ../scss/new.scss */
 .post-article figure > img {
   width: 100%; }
 
-/* line 503, ../scss/new.scss */
+/* line 513, ../scss/new.scss */
 .layout--wide {
   max-width: 1000px;
-  margin: 0 auto; }
+  margin-left: auto;
+  margin-right: auto; }
 
-/* line 508, ../scss/new.scss */
+/* line 519, ../scss/new.scss */
 .layout-single-column {
   max-width: 720px;
-  margin: 0 auto; }
+  margin-left: auto;
+  margin-right: auto; }
 
 /**
  * $NO-TILE
  */
-/* line 518, ../scss/new.scss */
-.page--no-tile .site-main {
-  background-color: #fcfcfc; }
+/* line 530, ../scss/new.scss */
+.page--tile-narrow .page-content {
+  max-width: 860px;
 /* line 522, ../scss/new.scss */
 .page--no-tile .page-content {
-  background-color: transparent;
-  border: none; }
+  margin-left: auto;
+  margin-right: auto; }
 
 /*# sourceMappingURL=new.css.map */
