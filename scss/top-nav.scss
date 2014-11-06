@@ -70,7 +70,7 @@ $nav-link-height: 45px;
  * $OFF-CANVAS
  */
 .toggle-nav{
-    @include mq(810px) {
+    @include mq(860px) {
         display: none;
     }
 }
@@ -115,19 +115,97 @@ $nav-link-height: 45px;
 }
 
 
+/**
+ * $SITE-NAVIGATION
+ */
+.title-bar{
+    border-bottom: 1px solid #e7e7e7;
+}
 
+.site-header{
+    height: auto;
+    overflow: initial;
+    margin-bottom: $base-spacing-unit;
+    @include box-shadow(0 0 0 3px rgba(0,0,0,0.025));
+}
+
+.nav-icon{
+    background-image: url(http://g-ecx.images-amazon.com/images/G/01/gno/sprites/global-sprite-32-v3._CB325667795_.png);
+    position: absolute;
+    top: 20px;
+    right: 14px;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+    background-position: -10px -200px;
+    width: 10px;
+    height: 7px;
+}
+
+.site-search{
+    top: 18px;
+    
+    ul{
+        line-height: initial;
+    }
+}
+
+.site-search-form{
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    float: right;
+    height: 37px;
+}
+    .site-search fieldset{
+        height: auto;
+    }
+
+    .site-search__select{
+        width: 136px;
+        border-radius: none;
+        margin-right: -4px;
+        height: 34px;
+        border: none;
+        
+        @include border-radius(0);
+    }
+    
+
+    .site-search__label{
+        line-height: 31px;
+        color:  rgba(0, 0, 0, 0.3);
+        padding: 0 8px 0 6px;
+        font-weight: normal;
+        float: left;
+        font-size: 85%;
+        margin-top: 4px;
+    }
+
+    .site-search__button{
+        border: none;
+        height: 34px;
+        
+        @include border-radius(0);
+    }
+    
+    .site-search__input{
+        border: none;
+        height: 34px;
+        margin-right: -2px;
+        
+        @include border-radius(0);     
+    }
 
 
 /**
  * $SITE-NAVIGATION
  */
 .site-nav{
-    position: absolute;
-    width: 240px;
     background-color: #fff;
     z-index: 500;
+    border-bottom: 1px solid #e7e7e7;
     
-    @include mq(810px, max) {
+    @include mq(859px, max) {
         display: none;    
     }
     
@@ -150,24 +228,24 @@ $nav-link-height: 45px;
     }
 }
 
+.site-nav-wrap{
+    margin: 0 10px 0 4px;
+}
+
 
 .level0{
-    &:first-of-type{
-        border-top: 1px solid #eee;
-        
-    }
+    position: relative;
+    margin-right: -4px;
 }
 
     .level0__menu-link{
         @extend %nav-link-height;
         
         position: relative;
-        font-size: 95%;
+        font-size: 90%;
         color: #484848;
-        border: solid #eee;
-        border-width: 0 1px 1px 0;
-        padding: 0 15px;
-                
+        padding: 0 30px 0 14px;      
+                  
         &:hover{
             color: #484848;
         
@@ -196,7 +274,8 @@ $nav-link-height: 45px;
     }
 
         .maintain-hover{
-            background-color: #eee;
+            border-left: 1px solid #e7e7e7;
+            border-right: 1px solid #e7e7e7;
     
             &, &:hover{
                 text-decoration: none;   
@@ -207,6 +286,48 @@ $nav-link-height: 45px;
             }
         }
     
+    
+        .nav-subnav{
+            position: relative;
+            margin: 0;
+            padding: 0 8px;
+            overflow: hidden;
+            border-bottom: 1px solid #e7e7e7;
+            white-space: nowrap;
+            height: 31px;
+            background: #fff;
+            z-index: 1;
+            
+        }
+        
+            .subnav__link a{
+                height: 30px;
+                line-height: 31px;
+                color: #404040;
+                font-size: 70%;
+                padding: 0 11px;
+                overflow: hidden;
+                
+                &:hover{
+                    color: #404040;
+                    text-decoration: none;
+                    border-bottom: 2px solid #404040;
+                    border-bottom: 3px solid $color-gold;
+                }
+            }
+            
+            .subnav__link--primary a{
+                font-weight: bold;
+            }
+            
+            .subnav__link--primary + .subnav__link--primary{
+                &:before{
+                    content: "/";
+                    display: inline-block;
+                    position: relative;
+                    top: -8px;
+                }
+            }
 
 
 
@@ -218,14 +339,16 @@ $nav-link-height: 45px;
     display: none;
     
     position: absolute;
-    top: 0;
+    top: 45px;
+    
     right: auto;
     bottom: auto;
-    left: 240px;
-    z-index: 2;
+    left: 0;
+    z-index: 5000;
     
     border-width: 0;
-    min-height: 100%;
+    height: 100%;
+    min-height: 400px;
     width: 570px;
     background-color: #fff;
     
@@ -317,20 +440,10 @@ $nav-link-height: 45px;
     width: auto;
     margin-right: 0;
     height: inherit;
-    
-    @include mq(810px) {
-        margin-left: 240px;
-    }
 }
 
     .page-content{
-        background-color: #fff;
-        padding: $base-spacing-unit;
-        
-        border: 1px solid #eee;
-        border-radius: 5px;
-        margin-left: $half-spacing-unit;
-        margin-right: $half-spacing-unit;
+        padding-top: 0;
         
     }
 
