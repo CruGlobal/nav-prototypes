@@ -3917,10 +3917,33 @@ q {
 .no-svg .site-logo a {
   background: url("/images/cru-logo.png"); }
 
-@media screen and (min-width: 61.3125em) {
-  /* line 43, ../scss/elements/_header.scss */
-  .page-content-wrap {
-    margin-left: 240px; } }
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+/* line 5, ../scss/elements/_footer.scss */
+.global-footer {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: 100px;
+  /* 9 */
+  margin-top: 5.26316rem;
+  /* 9 */ }
+  /* line 9, ../scss/elements/_footer.scss */
+  .global-footer .section-divider {
+    border-color: #ffd014; }
+  /* line 16, ../scss/elements/_footer.scss */
+  .global-footer > nav ul {
+    text-align: center; }
+  /* line 20, ../scss/elements/_footer.scss */
+  .global-footer > nav a {
+    color: #353535; }
+  /* line 27, ../scss/elements/_footer.scss */
+  .global-footer .copy {
+    text-align: center; }
 
 /*------------------------------------*\
     $FOOTER

@@ -41,8 +41,6 @@ $link-height: 36px;
     }
 
 .page-content-wrap{
-    @include mq(981px) {
-        margin-left: 240px;    
-    }
+    
 }
 
