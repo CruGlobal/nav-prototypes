@@ -6,7 +6,7 @@ baseurl: ""
 url: "http://cruglobal.github.io/nav-prototypes"
 
 #root: '/'
-root: http://cruglobal.github.io/nav-prototypes
+root: http://cruglobal.github.io/nav-prototypes/
 
 
 # Build settings
