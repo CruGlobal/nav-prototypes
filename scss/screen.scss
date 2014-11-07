@@ -153,8 +153,8 @@
 /**
  * Objects and abstractions
  */
-//@import "core/grids";
-//@import "generic/mixins/widths";
+@import "core/grids";
+@import "generic/mixins/widths";
 @import "components/buttons";
 //@import "components/islands";
 @import "components/navs";
@@ -182,7 +182,7 @@
  * Overall site and layout
  */
 @import "elements/page";
-//@import "elements/layouts";
+@import "elements/layouts";
 
 
 /**
@@ -197,21 +197,21 @@
  
 @import "elements/header";
 @import "elements/footer";
-//@import "elements/social";  
+@import "elements/social";  
 
 @import "elements/site-search";
 @import "elements/navigation";
 //@import "elements/dropdowns";
 //@import "elements/off-canvas";
 //@import "elements/ui-autocomplete";
-//@import "elements/tiles";
+@import "elements/tiles";
 
 /**
  * Page components
  */
 //@import "elements/campus-locator";
 //@import "elements/country-list";
-//@import "elements/slider";
+@import "elements/slider";
  
 //@import "elements/post";
 //@import "elements/post-images";
