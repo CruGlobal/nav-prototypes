@@ -38,12 +38,14 @@
                 $(  ".level0" ).hover(function() {
                     $( this ).delay( 1400 ).addClass( "is-active" );
                     
-                    $(".cover").fadeIn(200).show();
+                    //$(".cover").fadeIn(200).show();
+                    $(".cover").show();
                     
                 }, function() {
                     $( this ).delay( 1400 ).removeClass( "is-active" );
                     
-                    $(".cover").fadeOut(200).hide();
+                    //$(".cover").fadeOut(200).hide();
+                    $(".cover").hide();
                     
                 });
             });     

@@ -907,10 +907,14 @@ h6, .h6 {
  * $SITE-NAVIGATION
  */
 /* line 125, ../scss/top-nav.scss */
+.site-logo a {
+  background: url("http://www.cru.org/images/cru-logo.svg") no-repeat center center; }
+
+/* line 128, ../scss/top-nav.scss */
 .title-bar {
   border-bottom: 1px solid #e7e7e7; }
 
-/* line 129, ../scss/top-nav.scss */
+/* line 132, ../scss/top-nav.scss */
 .site-header {
   position: relative;
   height: auto;
@@ -920,7 +924,7 @@ h6, .h6 {
   -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.025);
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.025); }
 
-/* line 137, ../scss/top-nav.scss */
+/* line 140, ../scss/top-nav.scss */
 .nav-icon {
   background-image: url(http://g-ecx.images-amazon.com/images/G/01/gno/sprites/global-sprite-32-v3._CB325667795_.png);
   position: absolute;
@@ -933,25 +937,25 @@ h6, .h6 {
   width: 10px;
   height: 7px; }
 
-/* line 150, ../scss/top-nav.scss */
+/* line 153, ../scss/top-nav.scss */
 .site-search {
   top: 18px; }
-  /* line 153, ../scss/top-nav.scss */
+  /* line 156, ../scss/top-nav.scss */
   .site-search ul {
     line-height: initial; }
 
-/* line 158, ../scss/top-nav.scss */
+/* line 161, ../scss/top-nav.scss */
 .site-search-form {
   border-radius: 2px;
   border: 1px solid #ccc;
   float: right;
   height: 37px; }
 
-/* line 164, ../scss/top-nav.scss */
+/* line 167, ../scss/top-nav.scss */
 .site-search fieldset {
   height: auto; }
 
-/* line 168, ../scss/top-nav.scss */
+/* line 171, ../scss/top-nav.scss */
 .site-search__select {
   width: 136px;
   border-radius: none;
@@ -962,7 +966,7 @@ h6, .h6 {
   -webkit-border-radius: 0;
   border-radius: 0; }
 
-/* line 179, ../scss/top-nav.scss */
+/* line 182, ../scss/top-nav.scss */
 .site-search__label {
   line-height: 31px;
   color: rgba(0, 0, 0, 0.3);
@@ -972,7 +976,7 @@ h6, .h6 {
   font-size: 85%;
   margin-top: 4px; }
 
-/* line 189, ../scss/top-nav.scss */
+/* line 192, ../scss/top-nav.scss */
 .site-search__button {
   border: none;
   height: 34px;
@@ -980,7 +984,7 @@ h6, .h6 {
   -webkit-border-radius: 0;
   border-radius: 0; }
 
-/* line 196, ../scss/top-nav.scss */
+/* line 199, ../scss/top-nav.scss */
 .site-search__input {
   border: none;
   height: 34px;
@@ -992,51 +996,51 @@ h6, .h6 {
 /**
  * $SITE-NAVIGATION
  */
-/* line 208, ../scss/top-nav.scss */
+/* line 211, ../scss/top-nav.scss */
 .site-nav {
   background-color: #fff;
   z-index: 500;
   border-bottom: 1px solid #e7e7e7; }
   @media screen and (max-width: 53.6875em) {
-    /* line 208, ../scss/top-nav.scss */
+    /* line 211, ../scss/top-nav.scss */
     .site-nav {
       display: none; } }
-  /* line 222, ../scss/top-nav.scss */
+  /* line 225, ../scss/top-nav.scss */
   .site-nav li:first-child > .site-nav__link {
     background-color: #ffd014;
     color: #fff;
     border-right-color: transparent; }
-    /* line 227, ../scss/top-nav.scss */
+    /* line 230, ../scss/top-nav.scss */
     .site-nav li:first-child > .site-nav__link:hover {
       background-color: #e0b300;
       color: #fff;
       text-decoration: none; }
 
-/* line 236, ../scss/top-nav.scss */
+/* line 239, ../scss/top-nav.scss */
 .site-nav-wrap {
   margin: 0 10px 0 4px; }
 
-/* line 241, ../scss/top-nav.scss */
+/* line 244, ../scss/top-nav.scss */
 .level0 {
   position: relative;
   margin-right: -4px; }
 
-/* line 246, ../scss/top-nav.scss */
+/* line 249, ../scss/top-nav.scss */
 .level0__menu-link {
   position: relative;
   font-size: 90%;
   color: #484848;
   padding: 0 30px 0 14px; }
-  /* line 254, ../scss/top-nav.scss */
+  /* line 257, ../scss/top-nav.scss */
   .level0__menu-link:hover {
     color: #484848; }
-    /* line 257, ../scss/top-nav.scss */
+    /* line 260, ../scss/top-nav.scss */
     .level0__menu-link:hover, .level0__menu-link:hover .icon-right-arrow {
       text-decoration: none; }
-  /* line 263, ../scss/top-nav.scss */
+  /* line 266, ../scss/top-nav.scss */
   .level0__menu-link.active .icon-right-arrow {
     color: #ffd014; }
-  /* line 268, ../scss/top-nav.scss */
+  /* line 271, ../scss/top-nav.scss */
   .level0__menu-link .icon-right-arrow {
     display: inline-block;
     color: #aaa;
@@ -1046,19 +1050,19 @@ h6, .h6 {
     right: 10px;
     top: 0; }
 
-/* line 284, ../scss/top-nav.scss */
+/* line 287, ../scss/top-nav.scss */
 .is-active .level0__menu-link {
   padding: 0 29px 0 13px;
   border-left: 1px solid #e7e7e7;
   border-right: 1px solid #e7e7e7; }
-  /* line 289, ../scss/top-nav.scss */
+  /* line 292, ../scss/top-nav.scss */
   .is-active .level0__menu-link, .is-active .level0__menu-link:hover {
     text-decoration: none; }
-  /* line 293, ../scss/top-nav.scss */
+  /* line 296, ../scss/top-nav.scss */
   .is-active .level0__menu-link > .icon-right-arrow {
     color: #fff; }
 
-/* line 300, ../scss/top-nav.scss */
+/* line 303, ../scss/top-nav.scss */
 .nav-subnav {
   position: relative;
   margin: 0;
@@ -1070,7 +1074,7 @@ h6, .h6 {
   background: #fff;
   z-index: 1; }
 
-/* line 313, ../scss/top-nav.scss */
+/* line 316, ../scss/top-nav.scss */
 .subnav__link a {
   height: 30px;
   line-height: 31px;
@@ -1078,18 +1082,18 @@ h6, .h6 {
   font-size: 70%;
   padding: 0 11px;
   overflow: hidden; }
-  /* line 321, ../scss/top-nav.scss */
+  /* line 324, ../scss/top-nav.scss */
   .subnav__link a:hover {
     color: #404040;
     text-decoration: none;
     border-bottom: 2px solid #404040;
     border-bottom: 3px solid #ffd014; }
 
-/* line 329, ../scss/top-nav.scss */
+/* line 332, ../scss/top-nav.scss */
 .subnav__link--primary a {
   font-weight: bold; }
 
-/* line 334, ../scss/top-nav.scss */
+/* line 337, ../scss/top-nav.scss */
 .subnav__link--primary + .subnav__link--primary:before {
   content: "/";
   display: inline-block;
@@ -1099,11 +1103,11 @@ h6, .h6 {
 /**
  * $MENU-DROPDOWNS
  */
-/* line 348, ../scss/top-nav.scss */
+/* line 351, ../scss/top-nav.scss */
 .is-active:hover .menu-dropdown {
   display: block !important; }
 
-/* line 354, ../scss/top-nav.scss */
+/* line 357, ../scss/top-nav.scss */
 .menu-dropdown, .menu-submenu {
   display: none;
   z-index: 2;
@@ -1121,17 +1125,17 @@ h6, .h6 {
   -webkit-border-radius: 1px;
   border-radius: 1px; }
 
-/* line 373, ../scss/top-nav.scss */
+/* line 376, ../scss/top-nav.scss */
 .menu-dropdown__content {
   float: left;
   clear: none;
   width: 240px;
   padding: 14px 0 7px;
   background-color: #fff;
-  border: 1px solid #eee;
+  border: 1px solid #ccc;
   border-top: 0; }
 
-/* line 383, ../scss/top-nav.scss */
+/* line 386, ../scss/top-nav.scss */
 .nav-item {
   position: relative;
   padding: 6px 20px 6px 10px;
@@ -1139,10 +1143,10 @@ h6, .h6 {
   font-size: 80%;
   color: #404040; }
 
-/* line 392, ../scss/top-nav.scss */
+/* line 395, ../scss/top-nav.scss */
 .nav-cat {
   border-left: 4px solid #fff; }
-  /* line 395, ../scss/top-nav.scss */
+  /* line 398, ../scss/top-nav.scss */
   .nav-cat:hover {
     color: #404040;
     text-decoration: none;
@@ -1151,29 +1155,32 @@ h6, .h6 {
 /**
  * $NAV-FLYOUT
  */
-/* line 407, ../scss/top-nav.scss */
+/* line 410, ../scss/top-nav.scss */
 .menu-submenu {
   top: 0;
   left: 240px; }
 
-/* line 414, ../scss/top-nav.scss */
+/* line 417, ../scss/top-nav.scss */
 .menu-submenu__content {
   float: left;
   clear: none;
   width: 240px;
   height: 374px;
   padding: 14px 20px 7px 0;
-  background-color: #fff; }
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 2px 1px 2px 0 rgba(0, 0, 0, 0.11); }
 
-/* line 424, ../scss/top-nav.scss */
+/* line 430, ../scss/top-nav.scss */
 .has-submenu:hover > .menu-submenu {
   display: block; }
 
-/* line 429, ../scss/top-nav.scss */
+/* line 435, ../scss/top-nav.scss */
 .nav-cats {
   width: 150px; }
 
-/* line 434, ../scss/top-nav.scss */
+/* line 440, ../scss/top-nav.scss */
 .nav-sub-cats-wrap {
   display: none;
   position: absolute;
@@ -1185,36 +1192,36 @@ h6, .h6 {
   width: 485px;
   z-index: 3; }
 
-/* line 446, ../scss/top-nav.scss */
+/* line 452, ../scss/top-nav.scss */
 .sub-cats {
   position: absolute;
   top: 0; }
 
-/* line 453, ../scss/top-nav.scss */
+/* line 459, ../scss/top-nav.scss */
 .level1 li {
   padding-bottom: 7px; }
 
-/* line 457, ../scss/top-nav.scss */
+/* line 463, ../scss/top-nav.scss */
 .nav-cat--sub {
   font-size: 85%; }
 
-/* line 461, ../scss/top-nav.scss */
+/* line 467, ../scss/top-nav.scss */
 .nav-divider-before {
   border-top: 1px solid #eee;
   padding-top: 9px; }
 
-/* line 468, ../scss/top-nav.scss */
+/* line 474, ../scss/top-nav.scss */
 .nav-submenu__group {
   width: 220px;
   padding-top: 15px;
   position: absolute;
   overflow: visible; }
 
-/* line 475, ../scss/top-nav.scss */
+/* line 481, ../scss/top-nav.scss */
 .nav-submenu__group.cat-2 {
   left: 235px; }
 
-/* line 480, ../scss/top-nav.scss */
+/* line 486, ../scss/top-nav.scss */
 .nav-browse-promo {
   position: absolute;
   bottom: -15px;
@@ -1226,21 +1233,21 @@ h6, .h6 {
 /** 
  * $PRIMARY-CONTENT-WRAPS
  */
-/* line 495, ../scss/top-nav.scss */
+/* line 501, ../scss/top-nav.scss */
 .page-content-wrap {
   position: relative;
   width: auto;
   margin-right: 0;
   height: inherit; }
 
-/* line 502, ../scss/top-nav.scss */
+/* line 508, ../scss/top-nav.scss */
 .page-content {
   padding-top: 0; }
 
 /**
  * $TOOLBAR
  */
-/* line 514, ../scss/top-nav.scss */
+/* line 520, ../scss/top-nav.scss */
 .toolbar {
   border-top: 1px solid #eee;
   border-left: none;
@@ -1248,7 +1255,7 @@ h6, .h6 {
   margin-bottom: 15px;
   padding-left: 15px; }
 
-/* line 525, ../scss/top-nav.scss */
+/* line 531, ../scss/top-nav.scss */
 .toolbar__link {
   font-size: 70%;
   color: rgba(0, 0, 0, 0.3);
@@ -1258,27 +1265,27 @@ h6, .h6 {
 /**
  * $PAGE-TITLE AND WRAP
  */
-/* line 539, ../scss/top-nav.scss */
+/* line 545, ../scss/top-nav.scss */
 .page-title-bar {
   margin-bottom: 15px; }
 
-/* line 544, ../scss/top-nav.scss */
+/* line 550, ../scss/top-nav.scss */
 .page__title {
   margin-bottom: 12px; }
 
 /**
  * $NAV-TABS
  */
-/* line 556, ../scss/top-nav.scss */
+/* line 562, ../scss/top-nav.scss */
 .nav-tabs {
   border-top: 1px solid #eee; }
-  /* line 559, ../scss/top-nav.scss */
+  /* line 565, ../scss/top-nav.scss */
   .nav-tabs .nav-tabs__list {
     margin-top: -1px; }
-  /* line 563, ../scss/top-nav.scss */
+  /* line 569, ../scss/top-nav.scss */
   .nav-tabs .nav-tabs__item {
     margin-right: 15px; }
-  /* line 567, ../scss/top-nav.scss */
+  /* line 573, ../scss/top-nav.scss */
   .nav-tabs .nav-tabs__link {
     font-weight: 600;
     font-style: normal;
@@ -1287,13 +1294,13 @@ h6, .h6 {
     letter-spacing: .2em;
     color: rgba(0, 0, 0, 0.3);
     padding: 16px 0; }
-    /* line 576, ../scss/top-nav.scss */
+    /* line 582, ../scss/top-nav.scss */
     .nav-tabs .nav-tabs__link:hover {
       text-decoration: none; }
-  /* line 582, ../scss/top-nav.scss */
+  /* line 588, ../scss/top-nav.scss */
   .nav-tabs .nav-tabs__item.is-active .nav-tabs__link {
     border-top: 1px rgba(0, 0, 0, 0.6) solid; }
-  /* line 586, ../scss/top-nav.scss */
+  /* line 592, ../scss/top-nav.scss */
   .nav-tabs .nav-tabs__item.is-active .nav-tabs__link, .nav-tabs .nav-tabs__link:hover {
     color: #404040; }
 
@@ -1318,17 +1325,17 @@ h6, .h6 {
     text-transform: uppercase;
 }
 */
-/* line 617, ../scss/top-nav.scss */
+/* line 623, ../scss/top-nav.scss */
 .post-article figure > img {
   width: 100%; }
 
-/* line 621, ../scss/top-nav.scss */
+/* line 627, ../scss/top-nav.scss */
 .layout--wide {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto; }
 
-/* line 627, ../scss/top-nav.scss */
+/* line 633, ../scss/top-nav.scss */
 .layout-single-column {
   max-width: 720px;
   margin-left: auto;
@@ -1337,21 +1344,21 @@ h6, .h6 {
 /**
  * $NO-TILE
  */
-/* line 637, ../scss/top-nav.scss */
+/* line 643, ../scss/top-nav.scss */
 .page--image-small .site-main {
   background-color: #fcfcfc; }
 
-/* line 643, ../scss/top-nav.scss */
+/* line 649, ../scss/top-nav.scss */
 .page--tile-narrow .page-content {
   max-width: 860px;
   margin-left: auto;
   margin-right: auto; }
 
-/* line 651, ../scss/top-nav.scss */
+/* line 657, ../scss/top-nav.scss */
 .page-content {
   position: relative; }
 
-/* line 655, ../scss/top-nav.scss */
+/* line 661, ../scss/top-nav.scss */
 .cover {
   width: 100%;
   height: 100%;
@@ -1366,7 +1373,7 @@ h6, .h6 {
   transform: translate3d(0, 0, 0);
   z-index: 1; }
 
-/* line 671, ../scss/top-nav.scss */
+/* line 677, ../scss/top-nav.scss */
 .submenu-open {
   height: 374px;
   border-left: 0; }
