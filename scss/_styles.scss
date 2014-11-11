@@ -32,7 +32,6 @@
 .site-logo a {
 	background: url("/images/cru-logo_new.svg") no-repeat center center;
 	height: 47px;
-	/* margin: 19px 20px 20px; */
 }
 
 /**
@@ -52,4 +51,46 @@
 	color: #8c8c8c;
 	padding: 0 10px 0 0;
 	margin-top: 3px;
+}
+
+/**
+ * $SITE-NAV
+ */
+
+.site-nav-wrap {
+margin: 0;
+}
+
+.site-nav {
+background-color: #404040;
+border-bottom: none;
+padding: 0 10px;
+}
+
+.level0__menu-link, .is-active .level0__menu-link {
+border-left: none;
+border-right: none;
+padding: 0 25px 0 10px;
+font-weight: 500;
+
+line-height: 44px;
+height: 45px;
+}
+
+.level0__menu-link {
+color: #fff;
+}
+
+.is-active .level0__menu-link {
+background-color: #fff;
+color: #404040;
+}
+
+.is-active .level0__menu-link .nav-icon {
+background-position: -31px -201px;
+}
+
+.nav-icon {
+background-image: url("/images/global-sprite.png");
+right: 9px;
 }
