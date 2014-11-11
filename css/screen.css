@@ -3229,8 +3229,8 @@ input[disabled]:focus,
  */
 @font-face {
   font-family: 'cruicons';
-  src: url("/fonts/cruicons.eot?13550619");
-  src: url("/fonts/cruicons.eot?13550619#iefix") format("embedded-opentype"), url("/fonts/cruicons.woff?13550619") format("woff"), url("/fonts/cruicons.ttf?13550619") format("truetype"), url("/fonts/cruicons.svg?13550619#cruicons") format("svg");
+  src: url("http://cruglobal.github.io/nav-prototypesfonts/cruicons.eot?13550619");
+  src: url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.eot?13550619#iefix") format("embedded-opentype"), url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.woff?13550619") format("woff"), url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.ttf?13550619") format("truetype"), url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.svg?13550619#cruicons") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
@@ -3916,34 +3916,6 @@ q {
 /* line 39, ../scss/elements/_header.scss */
 .no-svg .site-logo a {
   background: url("/images/cru-logo.png"); }
-
-/*------------------------------------*\
-    $FOOTER
-\*------------------------------------*/
-/* line 5, ../scss/elements/_footer.scss */
-.global-footer {
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  margin-top: 100px;
-  /* 9 */
-  margin-top: 5.26316rem;
-  /* 9 */ }
-  /* line 9, ../scss/elements/_footer.scss */
-  .global-footer .section-divider {
-    border-color: #ffd014; }
-  /* line 16, ../scss/elements/_footer.scss */
-  .global-footer > nav ul {
-    text-align: center; }
-  /* line 20, ../scss/elements/_footer.scss */
-  .global-footer > nav a {
-    color: #353535; }
-  /* line 27, ../scss/elements/_footer.scss */
-  .global-footer .copy {
-    text-align: center; }
 
 /*------------------------------------*\
     $FOOTER
