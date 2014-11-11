@@ -411,7 +411,7 @@
 }
 */
 /* line 30, ../scss/elements/_fonts.scss */
-[class^="icon-"], .has-submenu:hover:before, [class*=" icon-"], .has-submenu:hover:before {
+[class^="icon-"], .has-submenu:before, .has-submenu:hover:before, [class*=" icon-"], .has-submenu:before, .has-submenu:hover:before {
   font-family: "cruicons";
   font-style: normal;
   font-weight: normal;
@@ -451,7 +451,7 @@
 
 /* '' */
 /* line 64, ../scss/elements/_fonts.scss */
-.icon-right-arrow:before, .has-submenu:hover:before {
+.icon-right-arrow:before, .has-submenu:before, .has-submenu:hover:before {
   content: '\e80d'; }
 
 /* '' */
@@ -818,6 +818,29 @@ h6, .h6 {
   -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
+
+/* line 1, ../scss/_mega-menu.scss */
+.page--mega-menu .nav-item {
+  padding: 4px 10px; }
+/* line 5, ../scss/_mega-menu.scss */
+.page--mega-menu .nav-cat {
+  font-weight: bold;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 4px;
+  display: block; }
+/* line 14, ../scss/_mega-menu.scss */
+.page--mega-menu .has-submenu ul {
+  margin-left: 4px; }
+/* line 18, ../scss/_mega-menu.scss */
+.page--mega-menu .has-submenu:before, .page--mega-menu .has-submenu:hover:before {
+  display: none !important; }
+
+/* line 2, ../scss/styles.scss */
+.has-submenu:before {
+  float: right;
+  padding-top: 10px;
+  font-size: 14px; }
 
 /**
  * $LOCAL-VARIABLES
