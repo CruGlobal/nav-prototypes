@@ -13,26 +13,26 @@
 }
 
 /**
- * $TITLE GROUP
- */
-
-/**
- * $SITE-LOGO
+ * $TITLE GROUP $SITE-LOGO
  */
 .title-bar {
+	position: relative;
+	z-index: 1;
 	border-bottom: none;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 .site-logo {
 	height: inherit;
 	display: block;
 	margin: 0;
+	padding: 19px 0 20px 20px;
 }
 
 .site-logo a {
 	background: url("/images/cru-logo_new.svg") no-repeat center center;
 	height: 47px;
-	margin: 19px 20px 20px;
+	/* margin: 19px 20px 20px; */
 }
 
 /**
