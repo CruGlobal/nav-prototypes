@@ -1,0 +1,13 @@
+
+.has-submenu:before {
+    @extend [class^="icon-"], [class*=" icon-"];
+    @extend .icon-right-arrow:before;
+    
+    float: right;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.site-nav-wrap {
+	
+}
