@@ -11,7 +11,11 @@
 @import "core/headings";
 @import "generic/helpers";
 
+.page--mega-menu{
+    @import "mega-menu";   
+}
 
+@import "styles";
 
 
 
@@ -678,6 +682,15 @@ $nav-link-height: 45px;
 
 .submenu-open{
     height: 374px;
+}
+
+.has-submenu:hover:before{
+    @extend [class^="icon-"], [class*=" icon-"];
+    @extend .icon-right-arrow:before;
+    
+    float: right;
+    padding-top: 10px;
+    font-size: 14px;
 }
 
 
