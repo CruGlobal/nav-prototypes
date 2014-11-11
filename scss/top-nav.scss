@@ -370,17 +370,20 @@ $nav-link-height: 45px;
                 zoom: 1;
     
                 @include box-shadow(0 1px 2px 0 rgba(0,0,0,0.11));
-                @include border-radius(1px);                            
+                @include border-radius(1px);  
             }
             
             .menu-dropdown__content{
                 float: left;
                 clear: none;
-                width: 240px;
+                width: 220px;
                 padding: 14px 0 7px;
                 background-color: #fff;   
                 border: 1px solid #ccc;
-                border-top: 0;                           
+                border-top: 0;   
+                //max-height: 200px;
+                //@include transition(max-height, 0.9s);                      
+                                        
             }
             
             .nav-item{
@@ -411,19 +414,18 @@ $nav-link-height: 45px;
      @extend %menu-dropdown;
      
      top: 0;
-     left: 240px;   
+     left: 220px;   
 }
 
     .menu-submenu__content{
         float: left;
         clear: none;
-        width: 240px;
+        min-width: 240px;
         height: 374px;
-        padding: 14px 20px 7px 0;
+        padding: 14px 20px 7px 14px;
         background-color: #fff;     
         border-right: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;    
-        box-shadow: 2px 1px 2px 0 rgba(0, 0, 0, 0.11);       
+        border-bottom: 1px solid #ccc;
     }
     
     .has-submenu:hover{
@@ -676,5 +678,16 @@ $nav-link-height: 45px;
 
 .submenu-open{
     height: 374px;
-    border-left: 0;
 }
+
+
+.page__links{position:relative;top:71px;z-index:1;text-align:center;float:none; padding-left: 0;}
+.page__links li{display:inline-block;position:relative;vertical-align:middle;border-right:1px solid #514c4e}
+.page__links li:last-child{border-right:0}
+.page__links li>a{display:inline-block;padding:8px 26px;background-color:#666062;position:relative;color:#fff;font-weight:500;font-size:17px;text-transform:capitalize}
+.page__links li>a:hover{background-color:#514c4e;border-color:#393637;text-decoration:none}
+@media screen and (max-width:31.3125em){.page__links li>a{padding:6px 16px}
+}
+@media screen and (max-width:36.25em){.page__links li>a{font-size:75%}
+}
+.page--article .page__links{z-index:1;margin-bottom:42px;top:42px}
