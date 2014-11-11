@@ -705,3 +705,24 @@ $nav-link-height: 45px;
 @media screen and (max-width:36.25em){.page__links li>a{font-size:75%}
 }
 .page--article .page__links{z-index:1;margin-bottom:42px;top:42px}
+
+.slider0{    
+    @include mq(980px){
+        left: 100%;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+        opacity: 0.3;
+    }
+    
+    -webkit-animation-name: sliderEnd;
+    -moz-animation-name: sliderEnd;
+    -ms-animation-name: sliderEnd;
+    animation-name: sliderEnd;
+    -webkit-animation-duration: .7s;
+    -moz-animation-duration: .7s;
+    -ms-animation-duration: .7s;
+    animation-duration: .7s;
+    -webkit-animation-delay: 0,0.1s;
+    -moz-animation-delay: 0,0.1s;
+    -ms-animation-delay: 0,0.1s;
+    animation-delay: 0,0.1s;
+}
