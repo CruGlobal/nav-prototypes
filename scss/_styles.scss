@@ -1,4 +1,8 @@
 
+/**
+ * $ARROWS FOR EXPANDING FLYOUT
+ */
+
 .has-submenu:before {
     @extend [class^="icon-"], [class*=" icon-"];
     @extend .icon-right-arrow:before;
@@ -8,6 +12,44 @@
     font-size: 14px;
 }
 
-.site-nav-wrap {
-	
+/**
+ * $TITLE GROUP
+ */
+
+/**
+ * $SITE-LOGO
+ */
+.title-bar {
+	border-bottom: none;
+}
+
+.site-logo {
+	height: inherit;
+	display: block;
+	margin: 0;
+}
+
+.site-logo a {
+	background: url("/images/cru-logo_new.svg") no-repeat center center;
+	height: 47px;
+	margin: 19px 20px 20px;
+}
+
+/**
+ * $SITE-SEARCH
+ */
+
+.site-search {
+	top: 25px;
+	rigth: 20px;
+}
+
+.site-search-form {
+	height: 36px;
+}
+
+.site-search__label {
+	color: #8c8c8c;
+	padding: 0 10px 0 0;
+	margin-top: 3px;
 }
