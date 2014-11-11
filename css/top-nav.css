@@ -410,7 +410,7 @@
   }
 }
 */
-[class^="icon-"], .has-submenu:before, .has-submenu:hover:before, [class*=" icon-"], .has-submenu:before, .has-submenu:hover:before {
+[class^="icon-"], .has-submenu:hover:before, .has-submenu:before, [class*=" icon-"], .has-submenu:hover:before, .has-submenu:before {
   font-family: "cruicons";
   font-style: normal;
   font-weight: normal;
@@ -446,7 +446,7 @@
   content: '\e80e'; }
 
 /* '' */
-.icon-right-arrow:before, .has-submenu:before, .has-submenu:hover:before {
+.icon-right-arrow:before, .has-submenu:hover:before, .has-submenu:before {
   content: '\e80d'; }
 
 /* '' */
@@ -752,11 +752,6 @@ h6, .h6 {
   -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
-
-.has-submenu:before {
-  float: right;
-  padding-top: 10px;
-  font-size: 14px; }
 
 /**
  * $LOCAL-VARIABLES
@@ -1283,3 +1278,45 @@ h6, .h6 {
   z-index: 1;
   margin-bottom: 42px;
   top: 42px; }
+
+/**
+ * $ARROWS FOR EXPANDING FLYOUT
+ */
+.has-submenu:before {
+  float: right;
+  padding-top: 10px;
+  font-size: 14px; }
+
+/**
+ * $TITLE GROUP
+ */
+/**
+ * $SITE-LOGO
+ */
+.title-bar {
+  border-bottom: none; }
+
+.site-logo {
+  height: inherit;
+  display: block;
+  margin: 0; }
+
+.site-logo a {
+  background: url("/images/cru-logo_new.svg") no-repeat center center;
+  height: 47px;
+  margin: 19px 20px 20px; }
+
+/**
+ * $SITE-SEARCH
+ */
+.site-search {
+  top: 25px;
+  rigth: 20px; }
+
+.site-search-form {
+  height: 36px; }
+
+.site-search__label {
+  color: #8c8c8c;
+  padding: 0 10px 0 0;
+  margin-top: 3px; }
