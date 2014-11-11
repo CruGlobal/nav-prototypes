@@ -361,7 +361,7 @@ $nav-link-height: 45px;
             .menu-dropdown, %menu-dropdown{
                 display: none;
     
-                z-index: 2;
+                z-index: 4;
                 position: absolute;
                 top: 45px;
                 left: 0;
@@ -676,7 +676,7 @@ $nav-link-height: 45px;
     -ms-transform: translate3d(0,0,0);
     -o-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-    z-index: 1;
+    z-index: 3;
 }
 
 
@@ -691,6 +691,7 @@ $nav-link-height: 45px;
     float: right;
     padding-top: 10px;
     font-size: 14px;
+    margin-right: 7px;
 }
 
 

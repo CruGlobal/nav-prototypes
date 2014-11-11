@@ -396,7 +396,7 @@
  */
 @font-face {
   font-family: 'cruicons';
-  src: url("fonts/cruicons.eot?13550619");
+  src: url("http://cruglobal.github.io/nav-prototypesfonts/cruicons.eot?13550619");
   src: url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.eot?13550619#iefix") format("embedded-opentype"), url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.woff?13550619") format("woff"), url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.ttf?13550619") format("truetype"), url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.svg?13550619#cruicons") format("svg");
   font-weight: normal;
   font-style: normal; }
@@ -411,7 +411,7 @@
 }
 */
 /* line 30, ../scss/elements/_fonts.scss */
-[class^="icon-"], .has-submenu:before, .has-submenu:hover:before, [class*=" icon-"], .has-submenu:before, .has-submenu:hover:before {
+[class^="icon-"], .has-submenu:hover:before, [class*=" icon-"], .has-submenu:hover:before {
   font-family: "cruicons";
   font-style: normal;
   font-weight: normal;
@@ -451,7 +451,7 @@
 
 /* '' */
 /* line 64, ../scss/elements/_fonts.scss */
-.icon-right-arrow:before, .has-submenu:before, .has-submenu:hover:before {
+.icon-right-arrow:before, .has-submenu:hover:before {
   content: '\e80d'; }
 
 /* '' */
@@ -835,12 +835,6 @@ h6, .h6 {
 .page--mega-menu .has-submenu:before, .page--mega-menu .has-submenu:hover:before {
   display: none !important; }
 
-/* line 2, ../scss/styles.scss */
-.has-submenu:before {
-  float: right;
-  padding-top: 10px;
-  font-size: 14px; }
-
 /**
  * $LOCAL-VARIABLES
  */
@@ -1132,7 +1126,7 @@ h6, .h6 {
 /* line 361, ../scss/top-nav.scss */
 .menu-dropdown, .menu-submenu {
   display: none;
-  z-index: 2;
+  z-index: 4;
   position: absolute;
   top: 45px;
   left: 0;
@@ -1392,7 +1386,7 @@ h6, .h6 {
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  z-index: 1; }
+  z-index: 3; }
 
 /* line 683, ../scss/top-nav.scss */
 .submenu-open {
@@ -1402,9 +1396,10 @@ h6, .h6 {
 .has-submenu:hover:before {
   float: right;
   padding-top: 10px;
-  font-size: 14px; }
+  font-size: 14px;
+  margin-right: 7px; }
 
-/* line 697, ../scss/top-nav.scss */
+/* line 698, ../scss/top-nav.scss */
 .page__links {
   position: relative;
   top: 71px;
@@ -1413,18 +1408,18 @@ h6, .h6 {
   float: none;
   padding-left: 0; }
 
-/* line 698, ../scss/top-nav.scss */
+/* line 699, ../scss/top-nav.scss */
 .page__links li {
   display: inline-block;
   position: relative;
   vertical-align: middle;
   border-right: 1px solid #514c4e; }
 
-/* line 699, ../scss/top-nav.scss */
+/* line 700, ../scss/top-nav.scss */
 .page__links li:last-child {
   border-right: 0; }
 
-/* line 700, ../scss/top-nav.scss */
+/* line 701, ../scss/top-nav.scss */
 .page__links li > a {
   display: inline-block;
   padding: 8px 26px;
@@ -1435,21 +1430,21 @@ h6, .h6 {
   font-size: 17px;
   text-transform: capitalize; }
 
-/* line 701, ../scss/top-nav.scss */
+/* line 702, ../scss/top-nav.scss */
 .page__links li > a:hover {
   background-color: #514c4e;
   border-color: #393637;
   text-decoration: none; }
 
 @media screen and (max-width: 31.3125em) {
-  /* line 702, ../scss/top-nav.scss */
+  /* line 703, ../scss/top-nav.scss */
   .page__links li > a {
     padding: 6px 16px; } }
 @media screen and (max-width: 36.25em) {
-  /* line 704, ../scss/top-nav.scss */
+  /* line 705, ../scss/top-nav.scss */
   .page__links li > a {
     font-size: 75%; } }
-/* line 706, ../scss/top-nav.scss */
+/* line 707, ../scss/top-nav.scss */
 .page--article .page__links {
   z-index: 1;
   margin-bottom: 42px;
