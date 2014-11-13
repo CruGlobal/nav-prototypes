@@ -834,6 +834,9 @@ h6, .h6 {
 /* line 17, ../scss/_mega-menu.scss */
 .page--mega-menu .has-submenu:before, .page--mega-menu .has-submenu:hover:before {
   display: none !important; }
+/* line 21, ../scss/_mega-menu.scss */
+.page--mega-menu .page__links-wrap {
+  display: none !important; }
 
 /**
  * $LOCAL-VARIABLES
@@ -1470,5 +1473,9 @@ h6, .h6 {
       left: 100%;
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
       opacity: 0.3; } }
+
+/* line 730, ../scss/top-nav.scss */
+.page__links-wrap {
+  display: none !important; }
 
 /*# sourceMappingURL=top-nav.css.map */

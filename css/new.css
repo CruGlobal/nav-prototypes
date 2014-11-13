@@ -1503,4 +1503,8 @@ h6, .h6 {
   margin-left: auto;
   margin-right: auto; }
 
+/* line 28, ../scss/new.scss */
+.page__links-wrap {
+  display: none !important; }
+
 /*# sourceMappingURL=new.css.map */
