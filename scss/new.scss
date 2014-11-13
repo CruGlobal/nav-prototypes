@@ -24,3 +24,7 @@ html{
 .options-title{
     margin: $base-spacing-unit 0 $half-spacing-unit $base-spacing-unit;
 }
+
+.page__links-wrap{
+    display: none !important;
+}
