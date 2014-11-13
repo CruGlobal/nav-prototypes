@@ -833,4 +833,8 @@ html {
 .options-title {
   margin: 29px 0 15px 29px; }
 
+/* line 28, ../scss/new.scss */
+.page__links-wrap {
+  display: none !important; }
+
 /*# sourceMappingURL=new.css.map */
