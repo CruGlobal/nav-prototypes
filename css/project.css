@@ -424,7 +424,7 @@ html, .main {
 /* line 44, ../scss/project.scss */
 .js-stick .toolbar {
   top: 0;
-  background: white;
+  background: #f7f7f7;
   width: 100%; }
 /* line 56, ../scss/project.scss */
 .js-stick .post-article {

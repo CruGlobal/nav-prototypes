@@ -13,10 +13,6 @@
 
 $half-spacing-unit: round($base-spacing-unit / 2);
 
-html{
-    background-color: #f7f7f7;
-}
-
 .site-header{
     @include box-shadow(0 0 2px rgba(6,8,8,0.15));
 }
