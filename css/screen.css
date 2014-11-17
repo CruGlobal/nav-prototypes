@@ -1081,7 +1081,7 @@ html {
   /* [1] */
   line-height: 1.52632;
   /* [2] */
-  background-color: white;
+  background-color: #f7f7f7;
   color: #353535;
   overflow-y: scroll;
   min-height: 100%;
