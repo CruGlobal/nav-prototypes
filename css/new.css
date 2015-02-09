@@ -388,16 +388,16 @@
  * @thierrylemoulec for refining and improving my initial mixin.
  */
 /*------------------------------------*\
-    $FONTS
+    $CRUICONS
 \*------------------------------------*/
 /**
  * As of now this is where we will be placing our icon fonts. 
  * Freight Sans Pro will be served up from Typekit. 
  */
 @font-face {
-  font-family: 'cruicons';
-  src: url("http://cruglobal.github.io/nav-prototypesfonts/cruicons.eot?13550619");
-  src: url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.eot?13550619#iefix") format("embedded-opentype"), url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.woff?13550619") format("woff"), url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.ttf?13550619") format("truetype"), url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.svg?13550619#cruicons") format("svg");
+  font-family: "cruicons";
+  src: url("/fonts/cruicons.eot?13550619");
+  src: url("/fonts/cruicons.eot?13550619#iefix") format("embedded-opentype"), url("/fonts/cruicons.woff?13550619") format("woff"), url("/fonts/cruicons.ttf?13550619") format("truetype"), url("/fonts/cruicons.svg?13550619#cruicons") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
@@ -410,16 +410,16 @@
   }
 }
 */
-/* line 30, ../scss/elements/_fonts.scss */
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  display: inline-block;
   font-family: "cruicons";
   font-style: normal;
   font-weight: normal;
   speak: none;
-  display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -429,90 +429,74 @@
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 0.2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
-/* line 61, ../scss/elements/_fonts.scss */
 .icon-info-circled:before {
-  content: '\e808'; }
+  content: "\e808"; }
 
 /* '' */
-/* line 62, ../scss/elements/_fonts.scss */
 .icon-right-circle:before {
-  content: '\e800'; }
+  content: "\e800"; }
 
 /* '' */
-/* line 63, ../scss/elements/_fonts.scss */
 .icon-left-arrow:before {
-  content: '\e80e'; }
+  content: "\e80e"; }
 
 /* '' */
-/* line 64, ../scss/elements/_fonts.scss */
 .icon-right-arrow:before {
-  content: '\e80d'; }
+  content: "\e80d"; }
 
 /* '' */
-/* line 65, ../scss/elements/_fonts.scss */
 .icon-up-arrow:before {
-  content: '\e80c'; }
+  content: "\e80c"; }
 
 /* '' */
-/* line 66, ../scss/elements/_fonts.scss */
 .icon-twitter:before {
-  content: '\e801'; }
+  content: "\e801"; }
 
 /* '' */
-/* line 67, ../scss/elements/_fonts.scss */
 .icon-facebook:before {
-  content: '\e802'; }
+  content: "\e802"; }
 
 /* '' */
-/* line 68, ../scss/elements/_fonts.scss */
 .icon-down-arrow:before {
-  content: '\e80f'; }
+  content: "\e80f"; }
 
 /* '' */
-/* line 69, ../scss/elements/_fonts.scss */
 .icon-location:before {
-  content: '\e806'; }
+  content: "\e806"; }
 
 /* '' */
-/* line 70, ../scss/elements/_fonts.scss */
 .icon-hamburger:before {
-  content: '\e805'; }
+  content: "\e805"; }
 
 /* '' */
-/* line 71, ../scss/elements/_fonts.scss */
 .icon-mail:before {
-  content: '\e807'; }
+  content: "\e807"; }
 
 /* '' */
-/* line 72, ../scss/elements/_fonts.scss */
 .icon-search:before {
-  content: '\e804'; }
+  content: "\e804"; }
 
 /* '' */
-/* line 73, ../scss/elements/_fonts.scss */
 .icon-tag:before {
-  content: '\e811'; }
+  content: "\e811"; }
 
 /* '' */
-/* line 74, ../scss/elements/_fonts.scss */
 .icon-comment-1:before {
-  content: '\e812'; }
+  content: "\e812"; }
 
 /* '' */
-/* line 75, ../scss/elements/_fonts.scss */
 .icon-gplus:before {
-  content: '\e803'; }
+  content: "\e803"; }
 
 /* '' */
-/* line 76, ../scss/elements/_fonts.scss */
 .icon-cancel-circled:before {
-  content: '\e809'; }
+  content: "\e809"; }
 
 /* '' */
 /*------------------------------------*\
@@ -522,62 +506,52 @@
  * Headings 1-6
  * 
  */
-/* line 8, ../scss/core/_headings.scss */
 h1, .h1 {
   font-size: 200;
   font-size: 75.9541px;
   font-size: 3.99758rem;
   line-height: 1.14543; }
   @media screen and (max-width: 34.375em) {
-    /* line 8, ../scss/core/_headings.scss */
     h1, .h1 {
       font-size: 60.9541px;
       font-size: 3.20811rem;
       line-height: 1.4273; } }
 
-/* line 19, ../scss/core/_headings.scss */
 h2, .h2 {
   font-size: 53.71577px;
   font-size: 2.82715rem;
   line-height: 1.07976; }
   @media screen and (max-width: 34.375em) {
-    /* line 19, ../scss/core/_headings.scss */
     h2, .h2 {
       font-size: 45.71577px;
       font-size: 2.40609rem;
       line-height: 1.26871; } }
 
-/* line 27, ../scss/core/_headings.scss */
 h3, .h3 {
   font-size: 37.98852px;
   font-size: 1.9994rem;
   line-height: 1.52678; }
   @media screen and (max-width: 34.375em) {
-    /* line 27, ../scss/core/_headings.scss */
     h3, .h3 {
       font-size: 32.98852px;
       font-size: 1.73624rem;
       line-height: 1.75819; } }
 
-/* line 36, ../scss/core/_headings.scss */
 h4, .h4 {
   font-size: 26.866px;
   font-size: 1.414rem;
   line-height: 1.07943; }
   @media screen and (max-width: 34.375em) {
-    /* line 36, ../scss/core/_headings.scss */
     h4, .h4 {
       font-size: 21.866px;
       font-size: 1.15084rem;
       line-height: 1.32626; } }
 
-/* line 45, ../scss/core/_headings.scss */
 h5, .h5 {
   font-size: 19px;
   font-size: 1rem;
   line-height: 1.52632; }
 
-/* line 50, ../scss/core/_headings.scss */
 h6, .h6 {
   font-size: 15.2px;
   font-size: 0.8rem;
@@ -596,136 +570,108 @@ h6, .h6 {
 /**
  * Add/remove floats
  */
-/* line 16, ../scss/generic/_helpers.scss */
 .float--right {
   float: right; }
 
-/* line 17, ../scss/generic/_helpers.scss */
 .float--left {
   float: left; }
 
-/* line 18, ../scss/generic/_helpers.scss */
 .float--none {
   float: none; }
 
 /**
  * Text alignment and sizing
  */
-/* line 24, ../scss/generic/_helpers.scss */
 .text--left {
   text-align: left; }
 
-/* line 25, ../scss/generic/_helpers.scss */
 .text--center, .center-block {
   text-align: center; }
 
-/* line 26, ../scss/generic/_helpers.scss */
 .text--right {
   text-align: right; }
 
-/* line 27, ../scss/generic/_helpers.scss */
 .small-text {
   font-size: 80%; }
 
 /**
  * Font weights
  */
-/* line 33, ../scss/generic/_helpers.scss */
 .weight--light, h1, .h1 {
   font-weight: 100; }
 
-/* line 34, ../scss/generic/_helpers.scss */
 .weight--semi-light, h2, .h2, h3, .h3 {
   font-weight: 300; }
 
-/* line 35, ../scss/generic/_helpers.scss */
 .weight--normal, h4, .h4, h5, .h5 {
   font-weight: 400; }
 
-/* line 36, ../scss/generic/_helpers.scss */
 .weight--semibold, h6, .h6 {
   font-weight: 500; }
 
-/* line 37, ../scss/generic/_helpers.scss */
 .weight--bold {
   font-weight: 600; }
 
 /**
  * View helpers
  */
-/* line 42, ../scss/generic/_helpers.scss */
 .overflow--hide {
   overflow: hidden; }
 
-/* line 43, ../scss/generic/_helpers.scss */
 .overflow--show {
   overflow: visible; }
 
 /**
  * Positioning
  */
-/* line 49, ../scss/generic/_helpers.scss */
 .position--absolute {
   position: absolute; }
 
-/* line 50, ../scss/generic/_helpers.scss */
 .position--relative {
   position: relative; }
 
-/* line 51, ../scss/generic/_helpers.scss */
 .position--fixed {
   position: fixed; }
 
-/* line 52, ../scss/generic/_helpers.scss */
 .position--t0 {
   top: 0; }
 
-/* line 53, ../scss/generic/_helpers.scss */
 .position--b0 {
   bottom: 0; }
 
-/* line 54, ../scss/generic/_helpers.scss */
 .position--l0 {
   left: 0; }
 
-/* line 55, ../scss/generic/_helpers.scss */
 .position--r0 {
   right: 0; }
 
 /**
  * Display
  */
-/* line 60, ../scss/generic/_helpers.scss */
 .display--block {
   display: block; }
 
-/* line 61, ../scss/generic/_helpers.scss */
 .display--inline-block {
   display: inline-block; }
 
-/* line 62, ../scss/generic/_helpers.scss */
 .display--inline {
   display: inline; }
 
-/* line 63, ../scss/generic/_helpers.scss */
 .display--none {
   display: none; }
 
 /**
  * Sizes
  */
-/* line 69, ../scss/generic/_helpers.scss */
 .full-height {
   height: 100%; }
 
-/* line 70, ../scss/generic/_helpers.scss */
 .full-width, .center-block {
   width: 100%; }
 
 /**
  * Content Alignment
  */
-/* line 75, ../scss/generic/_helpers.scss */
 .center-block, .centered,
 .center {
   margin-left: auto;
@@ -734,18 +680,15 @@ h6, .h6 {
 /**
  * Borders
  */
-/* line 84, ../scss/generic/_helpers.scss */
 .border-bottom-solid {
   border-bottom: 1px solid #aaaaaa; }
 
 /**
  * Pull items full width of `.island` parents.
  */
-/* line 92, ../scss/generic/_helpers.scss */
 .full-bleed {
   margin-right: -29px;
   margin-left: -29px; }
-  /* line 96, ../scss/generic/_helpers.scss */
   .islet .full-bleed {
     margin-right: -14.5px;
     margin-left: -14.5px; }
@@ -754,14 +697,12 @@ h6, .h6 {
  * Add a help cursor to any element that gives the user extra information on
  * `:hover`.
  */
-/* line 107, ../scss/generic/_helpers.scss */
 .informative {
   cursor: help; }
 
 /**
  * Mute an object by reducing its opacity.
  */
-/* line 115, ../scss/generic/_helpers.scss */
 .muted {
   opacity: 0.5;
   filter: alpha(opacity=50); }
@@ -772,14 +713,12 @@ h6, .h6 {
    <a href=# class=go>Read more</a>
  *
  */
-/* line 127, ../scss/generic/_helpers.scss */
 .go:after, .go:after {
   content: "\00A0" "\00BB"; }
 
 /**
  * Apply capital case to an element (usually a `strong`).
  */
-/* line 135, ../scss/generic/_helpers.scss */
 .caps {
   text-transform: uppercase; }
 
@@ -787,7 +726,6 @@ h6, .h6 {
  * Hide content off-screen without resorting to `display:none;`, also provide
  * breakpoint specific hidden elements.
  */
-/* line 155, ../scss/generic/_helpers.scss */
 .accessibility,
 .visuallyhidden {
   border: 0;
@@ -799,7 +737,6 @@ h6, .h6 {
   position: absolute;
   width: 1px; }
 
-/* line 173, ../scss/generic/_helpers.scss */
 .basic-transition {
   -webkit-transition: 250ms ease;
   -moz-transition: 250ms ease;
@@ -807,11 +744,9 @@ h6, .h6 {
   -o-transition: 250ms ease;
   transition: 250ms ease; }
 
-/* line 175, ../scss/generic/_helpers.scss */
 .decoration--none {
   text-decoration: none; }
 
-/* line 177, ../scss/generic/_helpers.scss */
 .box-shadow--thin {
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
@@ -819,18 +754,13 @@ h6, .h6 {
   -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
 
-/* line 16, ../scss/new.scss */
 .site-header {
   -moz-box-shadow: 0 0 2px rgba(6, 8, 8, 0.15);
   -webkit-box-shadow: 0 0 2px rgba(6, 8, 8, 0.15);
   box-shadow: 0 0 2px rgba(6, 8, 8, 0.15); }
 
-/* line 20, ../scss/new.scss */
 .options-title {
   margin: 29px 0 15px 29px; }
 
-/* line 24, ../scss/new.scss */
 .page__links-wrap {
   display: none !important; }
-
-/*# sourceMappingURL=new.css.map */
