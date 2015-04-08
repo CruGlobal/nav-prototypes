@@ -143,17 +143,10 @@ $nav-link-height: 45px;
     @include box-shadow(0 0 0 3px rgba(0,0,0,0.025));
 }
 
-.nav-icon{
-    background-image: url(http://g-ecx.images-amazon.com/images/G/01/gno/sprites/global-sprite-32-v3._CB325667795_.png);
-    position: absolute;
-    top: 20px;
-    right: 14px;
-    line-height: 0;
-    padding: 0;
-    margin: 0;
-    background-position: -10px -200px;
-    width: 10px;
-    height: 7px;
+.icon-down-arrow{
+    line-height: 48px;
+    font-size: 80%;
+    font-weight: bold;
 }
 
 .site-search{
@@ -258,7 +251,7 @@ $nav-link-height: 45px;
         position: relative;
         font-size: 90%;
         color: #484848;
-        padding: 0 30px 0 14px;      
+        padding: 0 14px;      
                   
         &:hover{
             color: #484848;
@@ -291,7 +284,7 @@ $nav-link-height: 45px;
         }
         
         .is-active .level0__menu-link{
-            padding: 0 29px 0 13px;      
+            padding: 0 13px;      
             border-left: 1px solid #e7e7e7;
             border-right: 1px solid #e7e7e7;
             
