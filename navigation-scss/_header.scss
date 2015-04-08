@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #TITLE-GROUP
+\*------------------------------------*/
+
+.title-group {
+    float: left;
+    width: 24%;
+    height: 100%;
+    max-height: $headerHeight;
+    display: inline-block;
+
+    @include mq(520px) {
+        width: 15%;
+    }
+
+    @include mq(840px) {
+        width: 10%;
+    }
+}

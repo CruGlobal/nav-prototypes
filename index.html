@@ -31,467 +31,445 @@
         var s=document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(tk,s)
     })();
-</script>     
+</script>
 
-<link rel="stylesheet" type="text/css" href="./css/screen.css"/>
     <link rel="stylesheet" type="text/css" href="./css/navigation.css"/>
-        <link rel="stylesheet" type="text/css" href="./css/search.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/search.css"/>
 
 
 </head>
 
     <body class="page">
-        <div class="preload">
-        	<img src="./images/cru-logo.svg" alt="" width="0" height="0">
-        	<img src="./images/cru-logo.png" alt="" width="0" height="0">
-        </div>
-        <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="http://static.ak.facebook.com/connect/xd_arbiter/QjK2hWv6uak.js?version=41#channel=f2d32dc64&amp;origin=http%3A%2F%2Fwww.cru.org" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://s-static.ak.facebook.com/connect/xd_arbiter/QjK2hWv6uak.js?version=41#channel=f2d32dc64&amp;origin=http%3A%2F%2Fwww.cru.org" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
-        <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=116517098374395&version=v2.0";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-
-        <div class="off-canvas-wrap">
-            <div class="inner-wrap">
 
     <div class="off-canvas-wrap">
-    <div class="inner-wrap">            
+    <div class="inner-wrap">
         <!-- TITLE BAR -->
-        <header class="site-header">
-            <div class="navbar" role="navigation">
-                <div class="title-bar">
-                    <!-- TITLE GROUP -->
-                    <hgroup class="title-group  site-logo  js-nav-toggle">
-                        <a href="./flyout/index.html" title="Return to Homepage">
-                            <h1>
-                                <span class="accessibility">
-                                    Cru is a caring community passionate about connecting people to Jesus Christ
-                                </span>
-                            </h1>
-                        </a>
-                    </hgroup>
-                     <!-- END TITLE GROUP -->
-             
-                    <!-- SITE SEARCH -->                        
-                    <div class="site-search">
-                        <label for="site-search" class="site-search__label">Search</label>
-                        <form class="m0 site-search-form">
-                            <fieldset class="m0">
-                                <ul class="nav  bare-list">
-                                    <li>
-                                        <select type="select" class="form-control site-search__select">
-                                            <option value="Entire Site">Entire Site</option>
-                                            <option value="Give">Give to Staff and Ministries</option>
-                                        </select>
-                                    </li>
-                                    <li>
-                                        <input id="site-search" type="search" class="site-search__input  form-control"></input>
-                                    </li>
-                                    <li>
-                                         <input type="submit" value="Go"  class="site-search__button  button button--subtle  button--small"></input>
-                                    </li>
-                                </ul>
-                            </fieldset>
-                        </form>
-                    </div>
-                    <!-- END SITE SEARCH -->
+        <header class="navbar-fixed-top  navbar-default">
+            <div class="title-bar  site-header">
+                <!-- TITLE GROUP -->
+                <hgroup class="title-group  site-logo  js-nav-toggle">
+                    <a class="cruLogo" href="./flyout/index.html" title="Return to Homepage">
+                    <h1 class="sr-only">Cru is a caring community passionate about connecting people to Jesus Christ</h1>
+                    </a>
+                </hgroup>
+                <!-- END TITLE GROUP -->
+
+                <!-- SITE SEARCH -->
+                <div class="globalSearch  u-floatRight">
+                    <label for="site-search" class="globalSearch-label  u-floatLeft" id="globalSearch-label">Search</label>
+                    <form class="m0  site-search-form  navbar-form">
+                        <fieldset class="m0">
+                            <ul class="listInline">
+                                <li>
+                                    <select type="select" class="form-control site-search__select">
+                                        <option value="Entire Site">Entire Site</option>
+                                        <option value="Give">Give to Staff and Ministries</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input id="site-search" type="search" class="site-search__input  form-control"  aria-labelledby="globalSearch-label"></input>
+                                </li>
+                                <li>
+                                    <input type="submit" value="Go"  class="site-search__button  button button--subtle  button--small"></input>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
                 </div>
-                
-                <!-- SITE NAV -->
-<nav class="site-nav-wrap">
-    <ul role="navigation" class="site-nav  nav  m0">
-    
-        <li class="level0  has-dropdown  know-god">
-            
-            <a href="index.html#" class="level0__menu-link  menu-link">How to Know God<i class="icon-down-arrow"></i></a> 
-            
-            <div class="menu-dropdown  dropdown-toggle" style="display: none">
-                <ul class="menu-dropdown__content  nav-link  block-list">
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item" id="nav-cat-0">How to Know God Personally</a>                    
-                    </li>
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item">My Story: A Life Changed</a>
-                    </li>
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item">Jesus and the Intellectual</a>
-                    </li>
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item">Jesus: God or Just a Good Man?</a>
-                    </li>
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item">Why the Resurrection Matters to You</a>
-                    </li>
-                </ul>
-            </div>
-            
-        </li>
-    
-        <li class="level0  has-dropdown  train-grow">
-                                   
-            <a href="index.html#" class="level0__menu-link   menu-link">Train & Grow<i class="icon-down-arrow"></i></a>
-            
-            <div class="menu-dropdown">
-                <ul class="menu-dropdown__content  nav-link  block-list">
-                    <li class="has-submenu  dropdown-toggle">
-                        <a href="index.html#" class="nav-cat  nav-item" id="nav-cat-0">Classics</a>    
-                        
-                        <div class="menu-submenu  submenu-1  dropdown-toggle-1" style="width:300px;" style="display: none">
-                            <ul class="menu-submenu__content  block-list  m0  position--absolute">
-                                <li>
-                                    <a href="index.html#" class="nav-item">How to Know God Personally</a>                                
-                                </li> 
-                                <li>
-                                    <a href="index.html#" class="nav-item"> Have You Made the Wonderful Discovery of the Spirit-Filled Life?</a>                                
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-item">Transferable Concepts</a>                                
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-item">10 Basic Steps to Christian Maturity </a>                                
-                                </li>                        
-                            </ul>
-                        </div>                   
-                    </li>
-                    
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item">Bible Studies</a>
-                    </li>
-                    
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item">Training</a>
-                    </li>
-                    
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item">Evangelism</a>
-                    </li>
-                    
-                    <li class="has-submenu">
-                        <a href="index.html#" class="nav-cat  nav-item">Prayer, Quiet Times, Devotionals</a>
-                        
-                        <div class="menu-submenu  submenu-1">
-                            <ul class="menu-submenu__content  block-list  m0  position--absolute">      
-                                <li>
-                                    <a href="index.html#" class="nav-item">Discover God's Character E-Devotionals</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-item">Personal Guide to Fasting</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-item">7 Steps to Fasting</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-item">Advent</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-item">Lent</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-item">Today's Promise</a>
-                                </li>                     
-                            </ul>
-                        </div>
-                    </li>
-                    
-                </ul>
-            </div>
-                       
-        </li>
-     
-        <li class="level0  has-dropdown communities">
-                                   
-            <a href="index.html#" class="level0__menu-link   menu-link">Communities<i class="icon-down-arrow"></i></a>
-            
-            <div class="menu-dropdown  dropdown-toggle" style="display: none">
-                <ul class="menu-dropdown__content  nav-link  block-list">
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item" id="nav-cat-0">Campus</a>                     
-                    </li>
-                
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item">City</a>
-                    </li>
-                
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item">Inner City</a>
-                    </li>
-                
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item">Athletes</a>
-                    </li>
-                    
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item">Families</a>
-                    </li>
-                    
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item">High School</a>
-                    </li>
-                    
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item">Military</a>
-                    </li>
-                    
-                    <li class="has-submenu">
-                        <a href="index.html#" class="nav-cat  nav-item" id="nav-cat-0">Locate Cru Near You</a>    
-                    
-                        <div class="menu-submenu  submenu-1" style="display: none">
-                            <ul class="menu-submenu__content  block-list">
-                                <li>
-                                    <a href="index.html#" class="nav-item">Africa</a>                                
-                                </li> 
-                                <li>
-                                    <a href="index.html#" class="nav-item">Americas</a>                                
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-item">Asia</a>                                
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-item">Australia-Oceania</a>                                
-                                </li>  
-                                <li>
-                                    <a href="index.html#" class="nav-item">Europe</a>                                
-                                </li>                    
-                            </ul>
-                        </div>                   
-                    </li>
-                
-                    <li class="has-submenu">
-                        <a href="index.html#" class="nav-cat  nav-item">More</a>
-                    
-                        <div class="menu-submenu  submenu-1" style="display: none">
-                            <ul class="menu-submenu__content block-list" style="width: 500px">      
-                                <div class="grid">
-                                    <div class="grid__item  desk--one-half">
-                                        <li>
-                                            <a href="index.html#" class="nav-item">Athletes in Action</a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html#" class="nav-item">City</a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html#" class="nav-item">Christian Embassy, D.C.</a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html#" class="nav-item">Christian Embassy – United Nations</a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html#" class="nav-item">Faculty & Graduates</a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html#" class="nav-item">FamilyLife</a>
-                                        </li>  
-                                        <li>
-                                            <a href="index.html#" class="nav-item">Global Aid Network</a>
-                                        </li>
-                                    </div>
-                                
-                                    <div class="grid__item  desk--one-half">
-                                        <li>
-                                            <a href="index.html#" class="nav-item">Inner City</a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html#" class="nav-item">Military</a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html#" class="nav-item">The Impact Movement</a>
-                                        </li> 
-                                        <li>
-                                            <a href="index.html#" class="nav-item">The JESUS Film Project®</a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html#" class="nav-item">Josh McDowell Ministry</a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html#" class="nav-item">Keynote</a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html#" class="nav-item">All</a>
-                                        </li>
-                                    </div>
-                                </div>              
-                            </ul>
-                        </div>
-                    </li>
-                
-                </ul>  
-            </div>
-            
-        </li>
-        
-        <li class="level0  has-dropdown  opportunities">
-                                   
-            <a href="./flyout/opportunities/index.html" class="level0__menu-link  menu-link active">Opportunities<i class="icon-down-arrow"></i></a>
-        
-            <div class="menu-dropdown  dropdown-toggle" style="display: none">
-                <ul class="menu-dropdown__content  nav-link  block-list">
-                    <li class="has-submenu">
-                        <a href="./flyout/opportunities/mission-trips/index.html" class="nav-cat  nav-item" id="nav-cat-0">Mission Trips</a>  
-                        
-                        <div class="menu-submenu  submenu-1" style="display: none">
-                            <ul class="menu-submenu__content  block-list">
-                                <li>
-                                    <a href="index.html" class="nav-cat--sub  nav-item">Summer Missions</a>
-                                </li> 
-                            </ul>
-                        </div>                   
-                    </li>
-                    
-                    <li class="has-submenu">
-                        <a href="index.html#" class="nav-cat  nav-item" id="nav-cat-0">Internships</a>  
-                        
-                        <div class="menu-submenu  submenu-1" style="display: none">
-                            <ul class="menu-submenu__content  block-list">
-                                <li>
-                                    <a href="index.html#" class="nav-cat--sub  nav-item">Orlando Summer Project</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-cat--sub  nav-item">Preview Weekend</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-cat--sub  nav-item">1-Year Internship in Orlando</a>
-                                </li>
-                            </ul>
-                        </div>                   
-                    </li>
-                    
-                    <li class="has-submenu">
-                        <a href="index.html#" class="nav-cat  nav-item" id="nav-cat-0">Volunteer</a>    
-                        
-                        <div class="menu-submenu  submenu-1" style="display: none">
-                            <ul class="menu-submenu__content  block-list">
-                                <li>
-                                    <a href="index.html#" class="nav-cat--sub  nav-item">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-cat--sub  nav-item">Orlando Openings</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-cat--sub  nav-item">Volunteer Profiles</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-cat--sub  nav-item">Volunteer Sign Up</a>
-                                </li>
-                            </ul>
-                        </div>                 
-                    </li>
-                    
-                    <li class="has-submenu">
-                        <a href="index.html#" class="nav-cat  nav-item" id="nav-cat-0">Careers</a>   
-                        
-                        <div class="menu-submenu  submenu-1" style="display: none">
-                            <ul class="menu-submenu__content  block-list">
-                                <li>
-                                    <a href="index.html#" class="nav-cat--sub  nav-item">Hourly & Salaried Positions at Our World Headquarters</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-cat--sub  nav-item">World Headquarters Opportunities</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-cat--sub  nav-item">Missionary Staff Careers</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-cat--sub  nav-item">International Missions Opportunities</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" class="nav-cat--sub  nav-item">Staff Profiles</a>
-                                </li>
-                            </ul>
-                        </div>                  
-                    </li>
-                </ul>
+                <!-- END SITE SEARCH -->
             </div>
 
-        </li>
-        
-        <li class="level0  has-dropdown  about">
-           <a href="index.html#" class="level0__menu-link  menu-link">
-               About
-                <i class="icon-down-arrow"></i>
-           </a>
-           <div class="menu-dropdown  dropdown-toggle" style="display: none">
-               <ul class="menu-dropdown__content  nav-link  block-list">                     
-                   <li>
-                       <a href="index.html#" class="nav-cat  nav-item"  id="nav-cat-0">Donor Relations</a>           
-                   </li>
-                   <li>
-                       <a href="index.html#" class="nav-cat  nav-item">What We Do</a>
-                   </li>
-                   <li>
-                       <a href="index.html#" class="nav-cat  nav-item">Our Leadership</a>
-                   </li>
-                   <li>
-                       <a href="index.html#" class="nav-cat  nav-item">Contact Us</a>
-                   </li>
-                   <li>
-                       <a href="index.html#" class="nav-cat  nav-item">Press</a>
-                   </li>
-                   <li>
-                       <a href="index.html#" class="nav-cat  nav-item">WorldWide Challenge</a>
-                   </li>
-               </ul>
-           </div>
-        </li>
-        
-        <li class="level0  has-dropdown  store">
-            <a href="index.html#" class="level0__menu-link  menu-link">
-                Store
-                <i class="icon-down-arrow"></i>
-            </a>                            
-            <div class="menu-dropdown  dropdown-toggle  dropdown-toggle-6" style="display: none">
-               <ul class="menu-dropdown__content  nav-link  block-list">                     
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item"  id="nav-cat-0">All Stores</a>           
-                    </li>
-                    <li>
-                        <a href="index.html#" class="nav-cat  nav-item">Featured Products</a>
-                    </li>
-                </ul>
-            </div>
-        </li>
-        <li class="level0  give">
-            <a href="index.html#" class="level0__menu-link  menu-link">
-                Give
-                <i class="icon-down-arrow"></i>
-            </a>                            
-        </li>
-      
-    
-    </ul>
-    <a class="toggle-nav">Toggle Nav</a>
+            <!-- SITE NAV -->
+<nav class="site-nav-wrap">
+<ul role="navigation" class="site-nav  listInline  m0">
+
+    <li class="level0  has-dropdown  know-god">
+
+        <a href="index.html#" class="level0__menu-link  menu-link">How to Know God<i class="icon-down-arrow"></i></a>
+
+        <div class="menu-dropdown  dropdown-toggle" style="display: none">
+            <ul class="menu-dropdown__content  nav-link  block-list">
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item" id="nav-cat-0">How to Know God Personally</a>
+                </li>
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item">My Story: A Life Changed</a>
+                </li>
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item">Jesus and the Intellectual</a>
+                </li>
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item">Jesus: God or Just a Good Man?</a>
+                </li>
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item">Why the Resurrection Matters to You</a>
+                </li>
+            </ul>
+        </div>
+
+    </li>
+
+    <li class="level0  has-dropdown  train-grow">
+
+        <a href="index.html#" class="level0__menu-link   menu-link">Train & Grow<i class="icon-down-arrow"></i></a>
+
+        <div class="menu-dropdown">
+            <ul class="menu-dropdown__content  nav-link  block-list">
+                <li class="has-submenu  dropdown-toggle">
+                    <a href="index.html#" class="nav-cat  nav-item" id="nav-cat-0">Classics</a>
+
+                    <div class="menu-submenu  submenu-1  dropdown-toggle-1" style="width:300px;" style="display: none">
+                        <ul class="menu-submenu__content  block-list  m0  position--absolute">
+                            <li>
+                                <a href="index.html#" class="nav-item">How to Know God Personally</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-item"> Have You Made the Wonderful Discovery of the Spirit-Filled Life?</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-item">Transferable Concepts</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-item">10 Basic Steps to Christian Maturity </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item">Bible Studies</a>
+                </li>
+
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item">Training</a>
+                </li>
+
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item">Evangelism</a>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="index.html#" class="nav-cat  nav-item">Prayer, Quiet Times, Devotionals</a>
+
+                    <div class="menu-submenu  submenu-1">
+                        <ul class="menu-submenu__content  block-list  m0  position--absolute">
+                            <li>
+                                <a href="index.html#" class="nav-item">Discover God's Character E-Devotionals</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-item">Personal Guide to Fasting</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-item">7 Steps to Fasting</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-item">Advent</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-item">Lent</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-item">Today's Promise</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+    </li>
+
+    <li class="level0  has-dropdown communities">
+
+        <a href="index.html#" class="level0__menu-link   menu-link">Communities<i class="icon-down-arrow"></i></a>
+
+        <div class="menu-dropdown  dropdown-toggle" style="display: none">
+            <ul class="menu-dropdown__content  nav-link  block-list">
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item" id="nav-cat-0">Campus</a>
+                </li>
+
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item">City</a>
+                </li>
+
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item">Inner City</a>
+                </li>
+
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item">Athletes</a>
+                </li>
+
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item">Families</a>
+                </li>
+
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item">High School</a>
+                </li>
+
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item">Military</a>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="index.html#" class="nav-cat  nav-item" id="nav-cat-0">Locate Cru Near You</a>
+
+                    <div class="menu-submenu  submenu-1" style="display: none">
+                        <ul class="menu-submenu__content  block-list">
+                            <li>
+                                <a href="index.html#" class="nav-item">Africa</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-item">Americas</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-item">Asia</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-item">Australia-Oceania</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-item">Europe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="index.html#" class="nav-cat  nav-item">More</a>
+
+                    <div class="menu-submenu  submenu-1" style="display: none">
+                        <ul class="menu-submenu__content block-list" style="width: 500px">
+                            <div class="grid">
+                                <div class="grid__item  desk--one-half">
+                                    <li>
+                                        <a href="index.html#" class="nav-item">Athletes in Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#" class="nav-item">City</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#" class="nav-item">Christian Embassy, D.C.</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#" class="nav-item">Christian Embassy – United Nations</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#" class="nav-item">Faculty & Graduates</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#" class="nav-item">FamilyLife</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#" class="nav-item">Global Aid Network</a>
+                                    </li>
+                                </div>
+
+                                <div class="grid__item  desk--one-half">
+                                    <li>
+                                        <a href="index.html#" class="nav-item">Inner City</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#" class="nav-item">Military</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#" class="nav-item">The Impact Movement</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#" class="nav-item">The JESUS Film Project®</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#" class="nav-item">Josh McDowell Ministry</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#" class="nav-item">Keynote</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#" class="nav-item">All</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+    </li>
+
+    <li class="level0  has-dropdown  opportunities">
+
+        <a href="./flyout/opportunities/index.html" class="level0__menu-link  menu-link active">Opportunities<i class="icon-down-arrow"></i></a>
+
+        <div class="menu-dropdown  dropdown-toggle" style="display: none">
+            <ul class="menu-dropdown__content  nav-link  block-list">
+                <li class="has-submenu">
+                    <a href="./flyout/opportunities/mission-trips/index.html" class="nav-cat  nav-item" id="nav-cat-0">Mission Trips</a>
+
+                    <div class="menu-submenu  submenu-1" style="display: none">
+                        <ul class="menu-submenu__content  block-list">
+                            <li>
+                                <a href="index.html" class="nav-cat--sub  nav-item">Summer Missions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="index.html#" class="nav-cat  nav-item" id="nav-cat-0">Internships</a>
+
+                    <div class="menu-submenu  submenu-1" style="display: none">
+                        <ul class="menu-submenu__content  block-list">
+                            <li>
+                                <a href="index.html#" class="nav-cat--sub  nav-item">Orlando Summer Project</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-cat--sub  nav-item">Preview Weekend</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-cat--sub  nav-item">1-Year Internship in Orlando</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="index.html#" class="nav-cat  nav-item" id="nav-cat-0">Volunteer</a>
+
+                    <div class="menu-submenu  submenu-1" style="display: none">
+                        <ul class="menu-submenu__content  block-list">
+                            <li>
+                                <a href="index.html#" class="nav-cat--sub  nav-item">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-cat--sub  nav-item">Orlando Openings</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-cat--sub  nav-item">Volunteer Profiles</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-cat--sub  nav-item">Volunteer Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="index.html#" class="nav-cat  nav-item" id="nav-cat-0">Careers</a>
+
+                    <div class="menu-submenu  submenu-1" style="display: none">
+                        <ul class="menu-submenu__content  block-list">
+                            <li>
+                                <a href="index.html#" class="nav-cat--sub  nav-item">Hourly & Salaried Positions at Our World Headquarters</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-cat--sub  nav-item">World Headquarters Opportunities</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-cat--sub  nav-item">Missionary Staff Careers</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-cat--sub  nav-item">International Missions Opportunities</a>
+                            </li>
+                            <li>
+                                <a href="index.html#" class="nav-cat--sub  nav-item">Staff Profiles</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </li>
+
+    <li class="level0  has-dropdown  about">
+       <a href="index.html#" class="level0__menu-link  menu-link">
+           About
+            <i class="icon-down-arrow"></i>
+       </a>
+       <div class="menu-dropdown  dropdown-toggle" style="display: none">
+           <ul class="menu-dropdown__content  nav-link  block-list">
+               <li>
+                   <a href="index.html#" class="nav-cat  nav-item"  id="nav-cat-0">Donor Relations</a>
+               </li>
+               <li>
+                   <a href="index.html#" class="nav-cat  nav-item">What We Do</a>
+               </li>
+               <li>
+                   <a href="index.html#" class="nav-cat  nav-item">Our Leadership</a>
+               </li>
+               <li>
+                   <a href="index.html#" class="nav-cat  nav-item">Contact Us</a>
+               </li>
+               <li>
+                   <a href="index.html#" class="nav-cat  nav-item">Press</a>
+               </li>
+               <li>
+                   <a href="index.html#" class="nav-cat  nav-item">WorldWide Challenge</a>
+               </li>
+           </ul>
+       </div>
+    </li>
+
+    <li class="level0  has-dropdown  store">
+        <a href="index.html#" class="level0__menu-link  menu-link">
+            Store
+            <i class="icon-down-arrow"></i>
+        </a>
+        <div class="menu-dropdown  dropdown-toggle  dropdown-toggle-6" style="display: none">
+           <ul class="menu-dropdown__content  nav-link  block-list">
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item"  id="nav-cat-0">All Stores</a>
+                </li>
+                <li>
+                    <a href="index.html#" class="nav-cat  nav-item">Featured Products</a>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li class="level0  give">
+        <a href="index.html#" class="level0__menu-link  menu-link">
+            Give
+            <i class="icon-down-arrow"></i>
+        </a>
+    </li>
+
+
+</ul>
+<a class="toggle-nav">Toggle Nav</a>
 </nav>
 <!-- END SITE NAV -->
 
 
-        
-              <div class="nav-subnav">
-            <ul class="nav  m0">
-                <li class="subnav__link  subnav__link--primary">
-                    <a href="./flyout/opportunities/mission-trips/index.html">Missions Trips</a>
-                </li>
-                <li class="subnav__link  subnav__link--primary">
-                    <a href="./flyout/opportunities/mission-trips/index.html">Summer Missions</a>
-                </li>
-                <li class="subnav__link  subnav__link--secondary">
-                    <a href="index.html#">Learn</a>
-                </li>
-                <li class="subnav__link  subnav__link--secondary">
-                    <a href="index.html#">Explore</a>
-                </li>
-                <li class="subnav__link  subnav__link--secondary">
-                    <a href="index.html#">Plan</a>
-                </li>
-                <li class="subnav__link  subnav__link--secondary">
-                    <a href="index.html#">Apply</a>
-                </li>
-                
-            </ul>
-            
-        </div>
-    </div>     
+
+          <div class="nav-subnav">
+        <ul class="listInline m0">
+            <li class="subnav__link  subnav__link--primary">
+                <a href="./flyout/opportunities/mission-trips/index.html">Missions Trips</a>
+            </li>
+            <li class="subnav__link  subnav__link--primary">
+                <a href="./flyout/opportunities/mission-trips/index.html">Summer Missions</a>
+            </li>
+            <li class="subnav__link  subnav__link--secondary">
+                <a href="index.html#">Learn</a>
+            </li>
+            <li class="subnav__link  subnav__link--secondary">
+                <a href="index.html#">Explore</a>
+            </li>
+            <li class="subnav__link  subnav__link--secondary">
+                <a href="index.html#">Plan</a>
+            </li>
+            <li class="subnav__link  subnav__link--secondary">
+                <a href="index.html#">Apply</a>
+            </li>
+
+        </ul>
+
+    </div>
 </header>
 <!-- END TITLE BAR -->
 
@@ -501,7 +479,7 @@
             <div class="grid">
                 <div xk-section="v1" class="summer-missions-nav parbase base">
                     <div class="page__links-wrap">
-                        <ul class="page__links  nav  grid__item">
+                        <ul class="page__links  listInline  grid__item">
                             <li>
                                 <a href="http://cruglobal.github.io/opportunities/mission-trips/summer.html">Summer Missions</a>
                             </li><!--
@@ -522,33 +500,33 @@
                 </div>
             </div>
 
-    
+
 
     	<div class="content-parsys parsys"><div xk-section="v1" class="parbase base section-title section">
 
     <div class="section-title  center-block  masonry__item  grid__item">
     	<h2 class="section-title__item  banner-title  display--inline-block">
-			
+
     			Summer Missions
-		
+
     	</h2>
-	
+
     </div>
     </div>
     <div xk-section="v1" class="single parbase tile base section">
     <div class="grid__item masonry__item one-whole">
         <div class="tile__item">
-			
-            		<div>
-                    
-                        <img src="http://cru.org/content/cru/us/en/opportunities/mission-trips/summer/_jcr_content/content-parsys/tile.transform/Cru704x396/image.jpg" class="full-width" alt="">
-                    
-                    </div>
-        	
-      
 
-          
- 		
+            		<div>
+
+                        <img src="http://cru.org/content/cru/us/en/opportunities/mission-trips/summer/_jcr_content/content-parsys/tile.transform/Cru704x396/image.jpg" class="full-width" alt="">
+
+                    </div>
+
+
+
+
+
         </div>
       </div>
     </div>
@@ -556,107 +534,107 @@
 
     <div class="section-title  center-block  masonry__item  grid__item">
     	<h2 class="section-title__item  banner-title  display--inline-block  h3">
-			
+
     			Let&#x27;s do something extraordinary this summer.
-		
+
     	</h2>
-	
+
     </div>
     </div>
     <div xk-section="v1" class="single parbase tile base section">
     <div class="grid__item masonry__item desk--one-third  lap--one-half  one-whole">
         <div class="tile__item">
-			
+
             		<div>
-                    
+
                              <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/learn.html">
-                    
+
                         <img src="http://cru.org/content/cru/us/en/opportunities/mission-trips/summer/_jcr_content/content-parsys/tile_0.transform/CruHalf432x243/image.jpg" class="full-width" alt="Learn">
-                    
+
                              </a>
-                    
+
                     </div>
-        	
-      
-        
+
+
+
                 <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/learn.html">
-        
+
             <h4>Learn</h4>
-        
+
                 </a>
-        
-      
+
+
 
               <p>Why Cru? What's a Summer Mission like? What will I do?<br>
     </p>
 
- 		
+
             	<a class="button button--small button--secondary" href="http://cruglobal.github.io/opportunities/mission-trips/summer/learn.html">Read More</a>
-        
+
         </div>
       </div>
     </div>
     <div xk-section="v1" class="single parbase tile base section">
     <div class="grid__item masonry__item desk--one-third  lap--one-half  one-whole">
         <div class="tile__item">
-			
+
             		<div>
-                    
+
                              <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/explore.html">
-                    
+
                         <img src="http://cru.org/content/cru/us/en/opportunities/mission-trips/summer/_jcr_content/content-parsys/tile_1.transform/CruHalf432x243/image.jpg" class="full-width" alt="Explore">
-                    
+
                              </a>
-                    
+
                     </div>
-        	
-      
-        
+
+
+
                 <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/explore.html">
-        
+
             <h4>Explore</h4>
-        
+
                 </a>
-        
-      
+
+
 
               <p>Where can I go on Summer Mission?</p>
 
- 		
+
             	<a class="button button--small button--secondary" href="http://cruglobal.github.io/opportunities/mission-trips/summer/explore.html">Read More</a>
-        
+
         </div>
       </div>
     </div>
     <div xk-section="v1" class="single parbase tile base section">
     <div class="grid__item masonry__item desk--one-third  lap--one-half  one-whole">
         <div class="tile__item">
-			
+
             		<div>
-                    
+
                              <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/plan.html">
-                    
+
                         <img src="http://cru.org/content/cru/us/en/opportunities/mission-trips/summer/_jcr_content/content-parsys/tile_2.transform/CruHalf432x243/image.jpg" class="full-width" alt="Plan">
-                    
+
                              </a>
-                    
+
                     </div>
-        	
-      
-        
+
+
+
                 <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/plan.html">
-        
+
             <h4>Plan</h4>
-        
+
                 </a>
-        
-      
+
+
 
               <p>I'm interested ... and ready to apply!</p>
 
- 		
+
             	<a class="button button--small button--primary" href="http://cruglobal.github.io/opportunities/mission-trips/summer/plan.html">Apply</a>
-        
+
         </div>
       </div>
     </div>
@@ -664,25 +642,25 @@
 
     <div class="section-title  center-block  masonry__item  grid__item">
     	<h2 class="section-title__item  banner-title  display--inline-block  h3">
-			
+
     			Let&#x27;s go see God change our lives.
-		
+
     	</h2>
-	
+
     </div>
     </div>
     <div xk-section="v1" class="single parbase tile base section">
     <div class="grid__item masonry__item one-whole">
         <div class="tile__item">
-			
-				
 
-        	
-      
+
+
+
+
 
               <iframe width="851" height="479" frameborder="0" src="http://player.vimeo.com/video/106963473"></iframe>
 
- 		
+
         </div>
       </div>
     </div>
@@ -690,106 +668,106 @@
 
     <div class="section-title  center-block  masonry__item  grid__item">
     	<h2 class="section-title__item  banner-title  display--inline-block  h3">
-			
+
     			Step out of the ordinary. Let&#x27;s do something special this summer.
-		
+
     	</h2>
-	
+
     </div>
     </div>
     <div xk-section="v1" class="single parbase tile base section">
     <div class="grid__item masonry__item desk--one-third  lap--one-half  one-whole">
         <div class="tile__item">
-			
+
             		<div>
-                    
+
                              <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/learn/parents.html">
-                    
+
                         <img src="http://cru.org/content/cru/us/en/opportunities/mission-trips/summer/_jcr_content/content-parsys/tile_4.transform/CruHalf432x243/image.jpg" class="full-width" alt="For Parents">
-                    
+
                              </a>
-                    
+
                     </div>
-        	
-      
-        
+
+
+
                 <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/learn/parents.html">
-        
+
             <h4>For Parents</h4>
-        
+
                 </a>
-        
-      
+
+
 
               <p>Who is Cru? What are Summer Missions and what do I need to know before my student goes?</p>
 
- 		
+
             	<a class="button button--small button--secondary" href="http://cruglobal.github.io/opportunities/mission-trips/summer/learn/parents.html">Read More</a>
-        
+
         </div>
       </div>
     </div>
     <div xk-section="v1" class="single parbase tile base section">
     <div class="grid__item masonry__item desk--one-third  lap--one-half  one-whole">
         <div class="tile__item">
-			
+
             		<div>
-                    
+
                              <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/learn/faq.html">
-                    
+
                         <img src="http://cru.org/content/cru/us/en/opportunities/mission-trips/summer/_jcr_content/content-parsys/tile_5.transform/CruHalf432x243/image.jpg" class="full-width" alt="FAQ">
-                    
+
                              </a>
-                    
+
                     </div>
-        	
-      
-        
+
+
+
                 <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/learn/faq.html">
-        
+
             <h4>FAQ</h4>
-        
+
                 </a>
-        
-      
+
+
 
               <p>Have your Summer Missions questions answered!</p>
 
- 		
+
             	<a class="button button--small button--secondary" href="http://cruglobal.github.io/opportunities/mission-trips/summer/learn/faq.html">Read More</a>
-        
+
         </div>
       </div>
     </div>
     <div xk-section="v1" class="single parbase tile base section">
     <div class="grid__item masonry__item desk--one-third  lap--one-half  one-whole">
         <div class="tile__item">
-			
+
             		<div>
-                    
+
                              <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/plan/apply.html">
-                    
+
                         <img src="http://cru.org/content/cru/us/en/opportunities/mission-trips/summer/_jcr_content/content-parsys/tile_6.transform/CruHalf432x243/image.jpg" class="full-width" alt="APPLY">
-                    
+
                              </a>
-                    
+
                     </div>
-        	
-      
-        
+
+
+
                 <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/plan/apply.html">
-        
+
             <h4>APPLY</h4>
-        
+
                 </a>
-        
-      
+
+
 
               <p>Let's Go!</p>
 
- 		
+
             	<a class="button button--small button--primary" href="http://cruglobal.github.io/opportunities/mission-trips/summer/plan/apply.html">APPLY!</a>
-        
+
         </div>
       </div>
     </div>
@@ -797,36 +775,36 @@
 
     <div class="section-title  center-block  masonry__item  grid__item">
     	<h2 class="section-title__item  banner-title  display--inline-block  h3">
-			
+
     			Let&#x27;s explore the world and see what&#x27;s really out there.
-		
+
     	</h2>
-	
+
     </div>
     </div>
     <div xk-section="v1" class="single parbase tile base section">
     <div class="grid__item masonry__item one-whole">
         <div class="tile__item">
-			
+
             		<div>
-                    
+
                              <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/explore.html">
-                    
+
                         <img src="http://cru.org/content/cru/us/en/opportunities/mission-trips/summer/_jcr_content/content-parsys/tile_7.transform/Cru704x396/image.jpg" class="full-width" alt="">
-                    
+
                              </a>
-                    
+
                     </div>
-        	
-      
+
+
 
               <h4>Walk past the gift shops and into the hearts of people.</h4>
     <p>This is an experience you can't get being a tourist. Instead, you'll listen to people's dreams and fears. You'll hear their reality. You bring them hope through Jesus.<br>
     </p>
 
- 		
+
             	<a class="button button--small button--secondary" href="http://cruglobal.github.io/opportunities/mission-trips/summer/explore.html">Read More</a>
-        
+
         </div>
       </div>
     </div>
@@ -834,86 +812,86 @@
 
     <div class="section-title  center-block  masonry__item  grid__item">
     	<h2 class="section-title__item  banner-title  display--inline-block  h3">
-			
+
     			Let&#x27;s trust God together.
-		
+
     	</h2>
-	
+
     </div>
     </div>
     <div xk-section="v1" class="single parbase tile base section">
     <div class="grid__item masonry__item desk--one-half  lap--one-half  one-whole">
         <div class="tile__item">
-			
+
             		<div>
-                    
+
                              <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/plan/i-need-to-raise-funds.html">
-                    
+
                         <img src="http://cru.org/content/cru/us/en/opportunities/mission-trips/summer/_jcr_content/content-parsys/tile_8.transform/CruHalf432x243/image.jpg" class="full-width" alt="">
-                    
+
                              </a>
-                    
+
                     </div>
-        	
-      
+
+
 
               <p><b>How can I trust God to go when raising financial support seems hard or weird?</b></p>
     <p>There are biblical reasons for raising financial support. It's good for you and for those supporting you!</p>
 
- 		
+
             	<a class="button button--small button--secondary" href="http://cruglobal.github.io/opportunities/mission-trips/summer/plan/i-need-to-raise-funds.html">Read More</a>
-        
+
         </div>
       </div>
     </div>
     <div xk-section="v1" class="single parbase tile base section">
     <div class="grid__item masonry__item desk--one-half  lap--one-half  one-whole">
         <div class="tile__item">
-			
+
             		<div>
-                    
+
                              <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/explore/getting-a-job.html">
-                    
+
                         <img src="http://cru.org/content/cru/us/en/opportunities/mission-trips/summer/_jcr_content/content-parsys/tile_11.transform/CruHalf432x243/image.jpg" class="full-width" alt="">
-                    
+
                              </a>
-                    
+
                     </div>
-        	
-      
+
+
 
               <p><b>How can I trust God to go when I need money for tuition and living expenses?</b></p>
     <p>There are options for stateside Summer Missions where you can get a local job. Also, college credit internships are available.</p>
 
- 		
+
             	<a class="button button--small button--secondary" href="http://cruglobal.github.io/opportunities/mission-trips/summer/explore/getting-a-job.html">Read More</a>
-        
+
         </div>
       </div>
     </div>
     <div xk-section="v1" class="single parbase tile base section">
     <div class="grid__item masonry__item one-whole">
         <div class="tile__item">
-			
+
             		<div>
-                    
+
                              <a href="http://cruglobal.github.io/opportunities/mission-trips/summer/explore/getting-a-job.html">
-                    
+
                         <img src="http://cru.org/content/cru/us/en/opportunities/mission-trips/summer/_jcr_content/content-parsys/tile_10.transform/Cru704x396/image.jpg" class="full-width" alt="">
-                    
+
                              </a>
-                    
+
                     </div>
-        	
-      
+
+
 
               <h4><b>Let's find purpose in your profession.</b></h4>
     <p>Let's transform the way you think about work this summer. It's no longer punching in, getting things done, and then clocking out. On some Summer Missions with Cru across the US you get a job—not only to make money—but also to make an impact at your workplace.<br>
     </p>
 
- 		
+
             	<a class="button button--small button--secondary" href="http://cruglobal.github.io/opportunities/mission-trips/summer/explore/getting-a-job.html">Read More</a>
-        
+
         </div>
       </div>
     </div>
@@ -921,29 +899,29 @@
 
     <div class="section-title  center-block  masonry__item  grid__item">
     	<h2 class="section-title__item  banner-title  display--inline-block">
-			
+
     			Let&#x27;s trust God for your summer to be extraordinary!
-		
+
     	</h2>
-	
-		
+
+
     			<div class="section-title__item  display--inline-block  inline-btn">
     				<a href="http://cruglobal.github.io/opportunities/mission-trips/summer/plan/apply.html" class="button  button--primary">APPLY TODAY</a>
 
     			</div>
-		
-	
+
+
     </div>
     </div>
     <div xk-section="v1" class="parbase base section-title section">
 
     <div class="section-title  center-block  masonry__item  grid__item">
     	<h2 class="section-title__item  banner-title  display--inline-block  h3">
-			
+
     			to join a Summer Mission with Cru
-		
+
     	</h2>
-	
+
     </div>
     </div>
 
@@ -957,7 +935,7 @@
     </div>
 
 
-    
+
 </section>
 
         <!-- Footer Component -->
@@ -995,7 +973,7 @@
     <!-- End social wrapper -->
 
     <nav role="supplementary">
-        <ul class="nav  flush--bottom">
+        <ul class="listInline  flush--bottom">
 
                 <li>
                   <a href="http://cruglobal.github.io/about/contact-us.html">Contact Us</a>
@@ -1032,8 +1010,8 @@
     </footer>
     <!-- End footer component -->
 </section>
-            
-            
+
+
             <aside class="off-canvas  off-canvas--left">
                 <ul role="navigation" class="block-list  m0">
                     <li class="has-dropdown">
@@ -1072,40 +1050,40 @@
                         <a href="index.html#" class="site-nav__link">Give</a>
                     </li>
                 </ul>
-            </aside> 
+            </aside>
         </div>
     </div>
-    
+
     	</div><!-- End #js-inner-wrap -->
       </div><!-- End #js-outer-wrap -->
 
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
 
         <script type="text/javascript" src="http://cru.org/etc/designs/cru/clientlibs.min.js"></script>
-    
-        <script type="text/javascript">    
+
+        <script type="text/javascript">
             $(document).ready(function(){
                 $(  ".level0" ).hover(function() {
                     $( this ).delay( 1400 ).addClass( "is-active" );
-                    
+
                     //$(".cover").fadeIn(200).show();
                     $(".cover").show();
-                    
+
                 }, function() {
                     $( this ).delay( 1400 ).removeClass( "is-active" );
-                    
+
                     //$(".cover").fadeOut(200).hide();
                     $(".cover").hide();
-                    
+
                 });
-            });     
+            });
         </script>
 
         <script src="./js/menu-aim.js"></script>
-        
+
         <script>
             var $menu = $(".menu-dropdown__content");
-        
+
             $menu.menuAim({
                 activate: activateSubmenu,
                 deactivate: deactivateSubmenu,
@@ -1113,16 +1091,16 @@
                     return true;
                 }
             });
-        
+
             function activateSubmenu(row) {
                var $row = $(row),
                    //submenuClass = $row.find("submenuClass"),
                    $submenu = $row.find(".menu-submenu").first(),
                    height = $menu.outerHeight(),
                    width = $menu.outerWidth();
-                   
+
                    console.log($submenu);
-               
+
                // Show the submenu
                $submenu.css({
                    display: "block",
@@ -1142,10 +1120,10 @@
                $submenu.css("display", "none");
                $row.find(".nav-cat").removeClass("maintain-hover");
                $row.find(".nav-cat").removeClass("maintain-hover");
-               
+
                $row.parent(".menu-dropdown__content").first().removeClass("submenu-open");
            }
         </script>
-    
+
     </body>
 </html>

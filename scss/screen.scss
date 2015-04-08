@@ -9,8 +9,8 @@
  *
  * Be sure read the warning before continuing to edit or add any new
  * styles. In addition, be sure to change the variables to turn off
- * demo mode and debug mode before pushing to production. 
- * 
+ * demo mode and debug mode before pushing to production.
+ *
  */
 
 
@@ -108,28 +108,23 @@
   $WARNING
 \*------------------------------------*/
 /**
- * Custom styles for cru.org are meant to be place in the elements folder. 
- * They should be as specific to cru as possible and mainly ui related. If 
+ * Custom styles for cru.org are meant to be place in the elements folder.
+ * They should be as specific to cru as possible and mainly ui related. If
  * there is a generic feature needed, please submit an issue to the
- * brackets.css github page. 
+ * brackets.css github page.
  *
  */
 
 
 
-  
- 
+
+
 /*------------------------------------*\
  $IMPORTS
 \*------------------------------------*/
 /**
  * Core variables, mixins, utilities, etc
  */
-@import "compass";
-
-@import "compass/css3/box-sizing";
-@import "compass/css3/opacity";
-
 @import "vars";
 @import "generic/tools";
 @import "generic/mixins";
@@ -194,10 +189,10 @@
 //@import "elements/tables";
 //@import "elements/video";
 //@import "elements/images";
- 
+
 @import "elements/header";
 @import "elements/footer";
-@import "elements/social";  
+@import "elements/social";
 
 @import "elements/site-search";
 @import "elements/navigation";
@@ -212,7 +207,7 @@
 //@import "elements/campus-locator";
 //@import "elements/country-list";
 @import "elements/slider";
- 
+
 //@import "elements/post";
 //@import "elements/post-images";
 
