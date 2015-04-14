@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+.siteHeader {
+    height: $headerHeight;
+
+    @include transition(all .25s ease);
+
+    &.is-pinned {
+        @include transform(translateY(0));
+    }
+
+    &.is-unpinned {
+        @include transform(translateY(-100%));
+    }
+
+    .is-open--lunchMenu & {
+        @include transform(translateY(0));
+    }
+}
+
+.slide {
+    @include transition(all .25s ease);
+}
+
+.title-group {
+    width: 24%;
+    height: $headerHeight;
+    display: inline-block;
+    z-index: 10;
+    position: relative;
+
+    @include mq(520px) {
+        width: 15%;
+    }
+
+    @include mq(840px) {
+        width: 10%;
+    }
+}

@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    #GLOBAL-SEARCH
+\*------------------------------------*/
+
+$actionNav-height: $headerHeight / 2;
+$siteNav-height:   $headerHeight / 2;
+
+
+.wrap {
+    margin: 0 16px;
+}
+
+
+.actionNav {
+    height: $actionNav-height;
+    display: none;
+
+    @include mq(840px) {
+        display: inline-block;
+    }
+
+    .actionNav-link {
+        padding: 0 40px;
+    }
+}
+
+.actionNav .menu-link,
+.siteNav .menu-link {
+    line-height: $actionNav-height;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.siteNav {
+    height: $siteNav-height;
+    display: none;
+
+    @include mq(840px) {
+        display: inline-block;
+    }
+
+    > li {
+        line-height: $actionNav-height;
+    }
+}
